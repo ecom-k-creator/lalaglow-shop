@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pheromone Gummies | Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #fff5fa 0%, #ffe3ef 100%);
+      color: #2d1b24;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      padding: 24px 0;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #d94f8a;
+    }
+
+    .hero {
+      padding: 40px 0 60px;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      line-height: 1.1;
+      margin-bottom: 16px;
+      color: #b52f6a;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      color: #5f3b4a;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 34px;
+      font-weight: bold;
+      color: #e03478;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #e94f92;
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #c93b78;
+      transform: translateY(-2px);
+    }
+
+    .hero-image {
+      background: white;
+      border-radius: 24px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(217, 79, 138, 0.15);
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 14px;
+      color: #b52f6a;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #6c4a59;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    .benefits-grid,
+    .ingredients-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(217, 79, 138, 0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #d43d80;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #5f3b4a;
+      font-size: 15px;
+    }
+
+    .offer-box {
+      background: linear-gradient(135deg, #ffd7e8, #fff0f6);
+      border-radius: 24px;
+      padding: 35px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(217, 79, 138, 0.12);
+    }
+
+    .offer-box h2 {
+      color: #b52f6a;
+      margin-bottom: 10px;
+      font-size: 32px;
+    }
+
+    .offer-box p {
+      color: #6c4a59;
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
+
+    .order-section {
+      padding-top: 30px;
+    }
+
+    .form-wrapper {
+      background: white;
+      border-radius: 24px;
+      padding: 30px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 10px 30px rgba(217, 79, 138, 0.12);
+    }
+
+    .form-wrapper h2 {
+      text-align: center;
+      color: #b52f6a;
+      margin-bottom: 10px;
+    }
+
+    .form-wrapper p {
+      text-align: center;
+      color: #6c4a59;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #5b3042;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1px solid #f0bfd2;
+      border-radius: 12px;
+      outline: none;
+      font-size: 15px;
+      background: #fffafd;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #e94f92;
+      box-shadow: 0 0 0 3px rgba(233, 79, 146, 0.12);
+    }
+
+    .summary {
+      background: #fff4f8;
+      border: 1px solid #f7c8da;
+      border-radius: 16px;
+      padding: 18px;
+      margin: 20px 0;
+    }
+
+    .summary p {
+      margin: 8px 0;
+      color: #5f3b4a;
+      text-align: left;
+    }
+
+    .success-message,
+    .error-message {
+      margin-top: 18px;
+      padding: 14px;
+      border-radius: 12px;
+      display: none;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .success-message {
+      background: #eafcf1;
+      color: #1c7c43;
+    }
+
+    .error-message {
+      background: #ffeaea;
+      color: #b42318;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 0 40px;
+      color: #785566;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-text h1 {
+        font-size: 38px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Pheromone Gummies</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Révélez votre charme naturellement</h1>
+        <p>
+          Découvrez les <strong>Pheromone Gummies</strong>, un complément tendance
+          présenté dans un univers rose, moderne et féminin. Une présentation
+          élégante, des ingrédients mis en avant et une commande facile.
+        </p>
+        <div class="price">399 DH</div>
+        <a href="#commande" class="btn">Acheter maintenant</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="product.png" alt="Pheromone Gummies" />
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Bienfaits du produit</h2>
+      <p class="section-subtitle">
+        Une présentation claire et séduisante pour mettre en valeur ton produit.
+      </p>
+
+      <div class="benefits-grid">
+        <div class="card">
+          <h3>Attirant & moderne</h3>
+          <p>Un visuel rose élégant qui inspire confiance et donne envie d’acheter.</p>
+        </div>
+        <div class="card">
+          <h3>Commande simple</h3>
+          <p>Le client remplit rapidement son formulaire de commande en quelques secondes.</p>
+        </div>
+        <div class="card">
+          <h3>Prix clair</h3>
+          <p>Le prix est bien visible avec total automatique selon la quantité choisie.</p>
+        </div>
+        <div class="card">
+          <h3>Suivi facile</h3>
+          <p>Toutes les commandes sont enregistrées automatiquement dans Google Sheets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">Ingrédients mis en avant</h2>
+      <p class="section-subtitle">
+        Basé sur le visuel fourni, voici les ingrédients affichés autour du produit.
+      </p>
+
+      <div class="ingredients-grid">
+        <div class="card"><h3>Organic Peppermint Leaf</h3><p>Présenté comme un ingrédient naturel du produit.</p></div>
+        <div class="card"><h3>Slippery Elm Bark</h3><p>Mis en avant dans le visuel principal.</p></div>
+        <div class="card"><h3>Ergot Root</h3><p>Affiché parmi les composants illustrés.</p></div>
+        <div class="card"><h3>Beet Root</h3><p>Un ingrédient visuel marquant autour du packaging.</p></div>
+        <div class="card"><h3>Red Clover</h3><p>Présenté dans la composition visuelle du produit.</p></div>
+        <div class="card"><h3>Fenugreek</h3><p>Illustré comme ingrédient complémentaire.</p></div>
+        <div class="card"><h3>Maca Root</h3><p>Ajoute un aspect naturel au positionnement produit.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="offer-box">
+        <h2>Offre spéciale</h2>
+        <p>
+          Commandez dès maintenant vos Pheromone Gummies au prix de
+          <strong>399 DH</strong>.
+        </p>
+        <a href="#commande" class="btn">Commander maintenant</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="commande" class="order-section">
+    <div class="container">
+      <div class="form-wrapper">
+        <h2>Formulaire de commande</h2>
+        <p>Remplissez vos informations pour passer votre commande.</p>
+
+        <form id="orderForm">
+          <div class="form-group">
+            <label for="fullname">Nom complet</label>
+            <input type="text" id="fullname" name="fullname" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="text" id="phone" name="phone" required />
+          </div>
+
+          <div class="form-group">
+            <label for="city">Ville</label>
+            <input type="text" id="city" name="city" required />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Adresse</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Quantité</label>
+            <select id="quantity" name="quantity" required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+
+          <div class="summary">
+            <p><strong>Produit :</strong> Pheromone Gummies</p>
+            <p><strong>Prix unitaire :</strong> <span id="unitPrice">399</span> DH</p>
+            <p><strong>Quantité :</strong> <span id="qtyDisplay">1</span></p>
+            <p><strong>Total :</strong> <span id="totalPrice">399</span> DH</p>
+          </div>
+
+          <button type="submit" class="btn" style="width: 100%;">Valider la commande</button>
+
+          <div class="success-message" id="successMessage">
+            Commande envoyée avec succès.
+          </div>
+
+          <div class="error-message" id="errorMessage">
+            Une erreur est survenue. Réessayez.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © 2026 Pheromone Gummies - Tous droits réservés
+    </div>
+  </footer>
+
+  <script>
+    const quantitySelect = document.getElementById("quantity");
+    const qtyDisplay = document.getElementById("qtyDisplay");
+    const totalPrice = document.getElementById("totalPrice");
+    const unitPrice = 399;
+
+    quantitySelect.addEventListener("change", function () {
+      const qty = parseInt(this.value);
+      qtyDisplay.textContent = qty;
+      totalPrice.textContent = qty * unitPrice;
+    });
+
+    const form = document.getElementById("orderForm");
+    const successMessage = document.getElementById("successMessage");
+    const errorMessage = document.getElementById("errorMessage");
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      successMessage.style.display = "none";
+      errorMessage.style.display = "none";
+
+      const data = {
+        fullname: document.getElementById("fullname").value,
+        phone: document.getElementById("phone").value,
+        city: document.getElementById("city").value,
+        address: document.getElementById("address").value,
+        quantity: document.getElementById("quantity").value,
+        product: "Pheromone Gummies",
+        unitPrice: unitPrice,
+        total: parseInt(document.getElementById("quantity").value) * unitPrice
+      };
+
+      try {
+        const response = await fetch("COLLE_ICI_L_URL_DE_TON_APPS_SCRIPT", {
+          method: "POST",
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if (result.result === "success") {
+          successMessage.style.display = "block";
+          form.reset();
+          qtyDisplay.textContent = "1";
+          totalPrice.textContent = "399";
+        } else {
+          errorMessage.style.display = "block";
+        }
+      } catch (error) {
+        errorMessage.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>
