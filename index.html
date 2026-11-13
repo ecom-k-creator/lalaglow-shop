@@ -8,7 +8,7 @@
 
 <title>LALA GLOW | سر أنوثتك وجاذبيتك</title>
 
-<meta name="description" content="LALA GLOW - منتجات العناية والجمال. اكتشفي علكات الفيرومون للعناية اليومية واطلبي باقتك المفضلة.">
+<meta name="description" content="LALA GLOW - اكتشفي علكات الفيرومون للعناية اليومية واطلبي باقتك المفضلة.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,6 @@
   --text:#4a2639;
   --muted:#876579;
   --border:#f2d4e2;
-  --white:#ffffff;
 }
 
 * {
@@ -53,9 +52,7 @@ a {
   text-decoration:none;
 }
 
-button,
-input,
-textarea {
+button,input {
   font:inherit;
 }
 
@@ -70,8 +67,7 @@ img {
 
 button:focus-visible,
 a:focus-visible,
-input:focus-visible,
-textarea:focus-visible {
+input:focus-visible {
   outline:3px solid var(--pink);
   outline-offset:3px;
 }
@@ -90,28 +86,27 @@ section {
   text-align:center;
   font-size:31px;
   font-weight:900;
-  line-height:1.5;
   color:var(--dark);
   margin-bottom:12px;
 }
 
 .section-desc {
-  max-width:730px;
-  margin:0 auto 30px;
   text-align:center;
   color:var(--muted);
+  max-width:730px;
+  margin:0 auto 30px;
 }
 
 .btn {
   display:inline-block;
+  padding:13px 28px;
+  border:0;
+  border-radius:40px;
   background:linear-gradient(135deg,#f25199,#af1d61);
   color:white;
   text-align:center;
-  border:0;
-  border-radius:40px;
-  padding:13px 28px;
-  font-weight:900;
   font-size:14px;
+  font-weight:900;
   transition:.2s;
 }
 
@@ -131,18 +126,18 @@ section {
   border:1px solid #e7b8ce;
 }
 
-/* TOPBAR */
+/* ==========================================
+   HEADER
+========================================== */
 
 .topbar {
+  padding:9px 15px;
   background:var(--dark);
   color:white;
-  padding:9px 15px;
   text-align:center;
   font-size:13px;
   font-weight:800;
 }
-
-/* HEADER */
 
 header {
   background:white;
@@ -153,8 +148,8 @@ header {
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:18px;
   min-height:90px;
+  gap:18px;
 }
 
 .brand {
@@ -182,32 +177,29 @@ header {
   color:var(--dark);
   font-size:24px;
   font-weight:900;
-  letter-spacing:.5px;
 }
 
 .brand-slogan {
-  color:var(--muted);
   font-size:12px;
+  color:var(--muted);
   font-weight:700;
 }
 
 .header-nav {
   display:flex;
-  gap:20px;
   align-items:center;
+  gap:20px;
 }
 
 .header-nav a {
-  font-size:14px;
   color:var(--dark);
+  font-size:14px;
   font-weight:800;
 }
 
-.header-nav a:hover {
-  color:var(--pink);
-}
-
-/* ACCUEIL */
+/* ==========================================
+   ACCUEIL
+========================================== */
 
 .hero {
   min-height:650px;
@@ -238,12 +230,12 @@ header {
 .hero-label {
   display:inline-block;
   padding:7px 20px;
+  margin-bottom:15px;
   border-radius:30px;
   background:white;
   color:var(--dark);
   font-size:13px;
   font-weight:900;
-  margin-bottom:15px;
 }
 
 .hero h1 {
@@ -274,7 +266,9 @@ header {
   gap:14px;
 }
 
-/* PRESENTATION MARQUE */
+/* ==========================================
+   PRESENTATION
+========================================== */
 
 .brand-presentation {
   background:white;
@@ -310,7 +304,9 @@ header {
   font-size:13px;
 }
 
-/* COLLECTION */
+/* ==========================================
+   PRODUIT
+========================================== */
 
 .collection-section {
   background:linear-gradient(180deg,#fff4f9,#fff9fc);
@@ -320,7 +316,6 @@ header {
   display:grid;
   grid-template-columns:minmax(0,440px);
   justify-content:center;
-  gap:22px;
 }
 
 .product-card {
@@ -329,11 +324,6 @@ header {
   border-radius:25px;
   overflow:hidden;
   box-shadow:0 14px 34px #b71e661a;
-  transition:.2s;
-}
-
-.product-card:hover {
-  transform:translateY(-4px);
 }
 
 .product-photo {
@@ -355,9 +345,9 @@ header {
   padding:5px 15px;
   background:white;
   color:var(--dark);
+  border-radius:30px;
   font-size:12px;
   font-weight:900;
-  border-radius:30px;
 }
 
 .product-content {
@@ -388,7 +378,9 @@ header {
   display:block;
 }
 
-/* FICHE PRODUIT */
+/* ==========================================
+   FICHE PRODUIT
+========================================== */
 
 .product-detail {
   background:linear-gradient(180deg,#fff3f9,#fff);
@@ -411,12 +403,12 @@ header {
 .detail-tag {
   display:inline-block;
   padding:6px 16px;
+  margin-bottom:18px;
   background:#ffe2ef;
   color:var(--dark);
   border-radius:30px;
   font-size:12px;
   font-weight:900;
-  margin-bottom:18px;
 }
 
 .detail-info h1 {
@@ -432,9 +424,9 @@ header {
 }
 
 .detail-price {
+  color:var(--pink);
   font-size:31px;
   font-weight:900;
-  color:var(--pink);
   margin-bottom:20px;
 }
 
@@ -444,7 +436,9 @@ header {
   gap:12px;
 }
 
-/* CARROUSEL */
+/* ==========================================
+   CARROUSEL
+========================================== */
 
 .product-carousel {
   direction:ltr;
@@ -549,7 +543,9 @@ header {
   background:var(--dark);
 }
 
-/* INFORMATIONS PRODUIT */
+/* ==========================================
+   AVANTAGES
+========================================== */
 
 .benefits-grid {
   display:grid;
@@ -579,7 +575,9 @@ header {
   font-size:13px;
 }
 
-/* IMAGES PRESENTATION */
+/* ==========================================
+   PRESENTATION VISUELLE
+========================================== */
 
 .stories-section {
   background:linear-gradient(180deg,#fff0f6,#ffe5f0,#fff9fc);
@@ -625,7 +623,9 @@ header {
   color:var(--muted);
 }
 
-/* INGREDIENTS */
+/* ==========================================
+   INGREDIENTS
+========================================== */
 
 .ingredients-section {
   background:white;
@@ -660,7 +660,9 @@ header {
   font-size:13px;
 }
 
-/* AVIS */
+/* ==========================================
+   AVIS
+========================================== */
 
 .reviews-section {
   background:linear-gradient(180deg,#fff7fb,#ffedf5);
@@ -690,7 +692,9 @@ header {
   font-size:14px;
 }
 
-/* COMMANDE */
+/* ==========================================
+   FORMULAIRE
+========================================== */
 
 .order-section {
   background:linear-gradient(180deg,#ffe3f0,#fff8fb);
@@ -813,8 +817,7 @@ header {
   font-weight:800;
 }
 
-.form-group input,
-.form-group textarea {
+.form-group input {
   display:block;
   width:100%;
   padding:14px;
@@ -822,11 +825,6 @@ header {
   border:1px solid #edc5d7;
   border-radius:13px;
   font-size:15px;
-}
-
-.form-group textarea {
-  min-height:85px;
-  resize:vertical;
 }
 
 .summary {
@@ -903,7 +901,9 @@ header {
   font-size:12px;
 }
 
-/* FOOTER */
+/* ==========================================
+   FOOTER
+========================================== */
 
 footer {
   padding:35px 15px;
@@ -931,9 +931,12 @@ footer {
   font-size:13px;
 }
 
-/* RESPONSIVE */
+/* ==========================================
+   RESPONSIVE
+========================================== */
 
 @media(max-width:900px) {
+
   .detail-grid {
     grid-template-columns:1fr;
   }
@@ -948,6 +951,7 @@ footer {
 }
 
 @media(max-width:700px) {
+
   .presentation-grid,
   .benefits-grid,
   .stories-grid,
@@ -990,6 +994,7 @@ footer {
 }
 
 @media(max-width:520px) {
+
   .header-content {
     flex-wrap:wrap;
     justify-content:center;
@@ -1038,6 +1043,7 @@ footer {
 }
 
 @media(prefers-reduced-motion:reduce) {
+
   html {
     scroll-behavior:auto;
   }
@@ -1051,13 +1057,17 @@ footer {
 
 <body>
 
-<!-- BARRE SUPERIEURE -->
+<!-- ==========================================
+     TOPBAR
+========================================== -->
 
 <div class="topbar">
   🌸 LALA GLOW | سر أنوثتك وجاذبيتك ✨
 </div>
 
-<!-- HEADER -->
+<!-- ==========================================
+     HEADER
+========================================== -->
 
 <header>
   <div class="container header-content">
@@ -1066,8 +1076,8 @@ footer {
 
       <img
         src="images/lala.jpeg"
-        alt="LALA GLOW Logo"
-        class="brand-logo">
+        class="brand-logo"
+        alt="LALA GLOW">
 
       <span class="brand-text">
 
@@ -1080,7 +1090,6 @@ footer {
         </span>
 
       </span>
-
     </a>
 
     <nav class="header-nav">
@@ -1092,22 +1101,21 @@ footer {
   </div>
 </header>
 
-<!-- PAGE ACCUEIL -->
+<!-- ==========================================
+     PAGE D'ACCUEIL
+========================================== -->
 
 <main id="homePage">
-
-  <!-- PREMIERE PAGE : DESCRIPTION UNIQUEMENT -->
 
   <section class="hero" id="accueil">
 
     <div class="container">
-
       <div class="hero-content">
 
         <img
           src="images/lala.jpeg"
-          alt="LALA GLOW"
-          class="hero-logo">
+          class="hero-logo"
+          alt="LALA GLOW">
 
         <span class="hero-label">
           🌸 أهلاً بك في عالم LALA GLOW
@@ -1129,9 +1137,10 @@ footer {
         </p>
 
         <p class="hero-description">
-          🌷 اكتشفي مجموعتنا المختارة من منتجات
-          العناية الشخصية، وتعرفي على تفاصيل
-          كل منتج قبل اختيار ما يناسبك.
+          🌷 اكتشفي مجموعتنا المختارة
+          من منتجات العناية الشخصية،
+          وتعرفي على تفاصيل المنتج
+          قبل اختيار ما يناسبك.
         </p>
 
         <div class="hero-actions">
@@ -1146,14 +1155,12 @@ footer {
           </a>
 
         </div>
-
       </div>
-
     </div>
 
   </section>
 
-  <!-- PRESENTATION DE LA MARQUE -->
+  <!-- PRESENTATION -->
 
   <section class="brand-presentation">
 
@@ -1172,52 +1179,43 @@ footer {
         <div class="presentation-card">
           <div class="presentation-icon">🌸</div>
 
-          <h3>
-            عالم العناية والجمال
-          </h3>
+          <h3>عالم العناية والجمال</h3>
 
           <p>
-            اكتشفي منتجات مختارة
-            ضمن عالم العناية الشخصية
-            والجمال اليومي.
+            اكتشفي منتجات ضمن عالم
+            العناية الشخصية والجمال اليومي.
           </p>
         </div>
 
         <div class="presentation-card">
           <div class="presentation-icon">💖</div>
 
-          <h3>
-            ثقتك بنفسك أولاً
-          </h3>
+          <h3>ثقتك بنفسك أولاً</h3>
 
           <p>
-            لأن الاهتمام بالنفس
-            والثقة الشخصية جزء
-            من الإحساس بالجمال.
+            الاهتمام بالنفس والثقة الشخصية
+            جزء من الإحساس بالجمال.
           </p>
         </div>
 
         <div class="presentation-card">
           <div class="presentation-icon">📦</div>
 
-          <h3>
-            الطلب من المغرب
-          </h3>
+          <h3>الطلب من المغرب</h3>
 
           <p>
             سجلي طلبك بسهولة،
-            وسيتم تأكيد تفاصيل
-            التوصيل والدفع مع المورد.
+            وسيتم تأكيد معلومات التوصيل
+            مع المورد.
           </p>
         </div>
 
       </div>
-
     </div>
 
   </section>
 
-  <!-- PRODUITS APRES DESCRIPTION -->
+  <!-- PRODUIT UNIQUE -->
 
   <section class="collection-section" id="collection">
 
@@ -1271,22 +1269,20 @@ footer {
             </a>
 
           </div>
-
         </article>
 
       </div>
 
     </div>
-
   </section>
 
 </main>
 
-<!-- PAGE PRODUIT -->
+<!-- ==========================================
+     PAGE PRODUIT
+========================================== -->
 
 <main id="productPage" hidden>
-
-  <!-- FICHE -->
 
   <section class="product-detail">
 
@@ -1298,7 +1294,7 @@ footer {
 
       <div class="detail-grid">
 
-        <!-- IMAGES -->
+        <!-- CARROUSEL -->
 
         <div class="product-carousel"
              id="productCarousel">
@@ -1334,7 +1330,7 @@ footer {
 
         </div>
 
-        <!-- DESCRIPTION -->
+        <!-- DESCRIPTION PRODUIT -->
 
         <div class="detail-info">
 
@@ -1370,8 +1366,7 @@ footer {
 
           <div class="detail-actions">
 
-            <a href="#commande"
-               class="btn">
+            <a href="#commande" class="btn">
               💖 اطلبي الآن
             </a>
 
@@ -1385,7 +1380,6 @@ footer {
         </div>
 
       </div>
-
     </div>
 
   </section>
@@ -1447,12 +1441,11 @@ footer {
         </div>
 
       </div>
-
     </div>
 
   </section>
 
-  <!-- PRESENTATION VISUELLE -->
+  <!-- PHOTOS DE PRESENTATION -->
 
   <section class="stories-section">
 
@@ -1555,7 +1548,6 @@ footer {
       </p>
 
     </div>
-
   </section>
 
   <!-- INGREDIENTS -->
@@ -1582,66 +1574,82 @@ footer {
       <div class="ingredients-grid">
 
         <div class="ingredient-card">
+
           <h3>🌱 جذور الماكا</h3>
+
           <p>
             نبات جذري معروف
             في التركيبات العشبية.
           </p>
+
         </div>
 
         <div class="ingredient-card">
+
           <h3>🌿 الحلبة</h3>
+
           <p>
             نبات معروف
             في المنتجات الغذائية.
           </p>
+
         </div>
 
         <div class="ingredient-card">
+
           <h3>🍃 النعناع</h3>
+
           <p>
             نبات معروف
             برائحته المنعشة.
           </p>
+
         </div>
 
         <div class="ingredient-card">
+
           <h3>🌸 البرسيم الأحمر</h3>
+
           <p>
             مكون نباتي موجود
             في بعض التركيبات.
           </p>
+
         </div>
 
         <div class="ingredient-card">
+
           <h3>💗 الشمندر</h3>
+
           <p>
-            نبات جذري
-            يتميز بلونه الطبيعي.
+            نبات جذري يتميز
+            بلونه الطبيعي.
           </p>
+
         </div>
 
         <div class="ingredient-card">
+
           <h3>🌳 الدردار الزلق</h3>
+
           <p>
             لحاء نباتي
             معروف تقليدياً.
           </p>
+
         </div>
 
       </div>
 
       <p class="disclaimer">
-        لا تفترضي وجود هذه المكونات
-        في المنتج قبل التأكد من قائمة
-        المكونات على عبوة المورد.
+        يجب تأكيد وجود هذه المكونات
+        على الملصق الأصلي قبل اعتماد القائمة.
       </p>
 
     </div>
-
   </section>
 
-  <!-- AVIS ECRITS -->
+  <!-- AVIS CLIENTS -->
 
   <section class="reviews-section">
 
@@ -1652,8 +1660,8 @@ footer {
       </h2>
 
       <p class="section-desc">
-        هنا سيتم عرض تجارب
-        العملاء الحقيقية بعد التحقق منها.
+        هنا سيتم عرض تجارب العملاء
+        الحقيقية بعد التحقق منها.
       </p>
 
       <div class="reviews-box">
@@ -1665,19 +1673,20 @@ footer {
         </h3>
 
         <p>
-          نسعى إلى مشاركة
-          تقييمات حقيقية وموثقة،
+          نسعى إلى مشاركة تقييمات
+          حقيقية وموثقة،
           دون اختلاق شهادات
           أو نتائج غير مثبتة.
         </p>
 
       </div>
-
     </div>
 
   </section>
 
-  <!-- COMMANDE -->
+  <!-- ==========================================
+       COMMANDE : NOM ET TELEPHONE UNIQUEMENT
+  ========================================== -->
 
   <section class="order-section" id="commande">
 
@@ -1691,7 +1700,8 @@ footer {
 
         <p class="form-subtitle">
           اختاري باقتك المفضلة
-          وأدخلي معلومات التوصيل.
+          وأدخلي اسمك ورقم هاتفك.
+          سنتواصل معك لتأكيد تفاصيل الطلب.
         </p>
 
         <form id="orderForm">
@@ -1699,6 +1709,8 @@ footer {
           <h3 class="pack-heading">
             🌷 اختاري باقتك
           </h3>
+
+          <!-- PACKS -->
 
           <div class="pack-options">
 
@@ -1795,7 +1807,7 @@ footer {
 
           </div>
 
-          <!-- NOM -->
+          <!-- NOM COMPLET -->
 
           <div class="form-group">
 
@@ -1834,14 +1846,7 @@ footer {
 
           </div>
 
-          <!-- VILLE -->
-
-         
-
-
-        
-
-          <!-- RESUME -->
+          <!-- RESUME COMMANDE -->
 
           <div class="summary">
 
@@ -1899,17 +1904,15 @@ footer {
 
             <span>
               أوافق على مشاركة اسمي
-              ورقم هاتفي وعنواني وتفاصيل
-              الطلب مع المورد المسؤول
-              عن تجهيز الطلب وتوصيله.
-              يجب توفير هوية المورد
-              وسياسة الخصوصية قبل
-              استقبال طلبات حقيقية.
+              ورقم هاتفي والباقة المختارة
+              مع المورد المسؤول عن معالجة الطلب.
+              سيتم التواصل معي للحصول على معلومات
+              التوصيل وتأكيد الطلب.
             </span>
 
           </label>
 
-          <!-- SUBMIT -->
+          <!-- BOUTON ENVOI -->
 
           <button
             type="submit"
@@ -1927,23 +1930,23 @@ footer {
             aria-live="polite"></div>
 
           <p class="notice">
-            سيتم تأكيد الطلب وتفاصيل
-            التوصيل وطريقة الدفع
-            بعد التواصل معك.
-            قد تُضاف رسوم توصيل.
+            سيتم التواصل معك لتأكيد
+            الطلب والعنوان وطريقة الدفع
+            وتكاليف التوصيل عند الاقتضاء.
           </p>
 
         </form>
 
       </div>
-
     </div>
 
   </section>
 
 </main>
 
-<!-- FOOTER -->
+<!-- ==========================================
+     FOOTER
+========================================== -->
 
 <footer>
 
@@ -1962,7 +1965,9 @@ footer {
 
   <p class="footer-description">
     💖 منتجات للعناية والجمال
-    <br>
+  </p>
+
+  <p class="footer-description">
     📦 تفاصيل التوصيل والدفع
     تُؤكد عند معالجة الطلب.
   </p>
@@ -1983,7 +1988,7 @@ const SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycby0z0uu5RG_Byav_4a4Y1kpyLrZlEQiDqd1H657zudQWeMvBI8e1kK5L7RC7M-G0pfN_A/exec";
 
 /* ==========================================
-   UN SEUL PRODUIT
+   PRODUIT UNIQUE
 ========================================== */
 
 const product = {
@@ -2043,7 +2048,7 @@ function renderCarousel() {
     const image = document.createElement("img");
 
     image.src = src;
-    image.alt = product.title + " - " + (index+1);
+    image.alt = product.title + " - " + (index + 1);
 
     slide.appendChild(image);
     track.appendChild(slide);
@@ -2054,7 +2059,7 @@ function renderCarousel() {
 
     thumb.setAttribute(
       "aria-label",
-      "الصورة " + (index+1)
+      "الصورة " + (index + 1)
     );
 
     const thumbImage = document.createElement("img");
@@ -2063,7 +2068,7 @@ function renderCarousel() {
 
     thumb.appendChild(thumbImage);
 
-    thumb.addEventListener("click",() => {
+    thumb.addEventListener("click", () => {
       navigateSlide(index);
     });
 
@@ -2075,14 +2080,15 @@ function renderCarousel() {
 
     dot.setAttribute(
       "aria-label",
-      "الصورة " + (index+1)
+      "الصورة " + (index + 1)
     );
 
-    dot.addEventListener("click",() => {
+    dot.addEventListener("click", () => {
       navigateSlide(index);
     });
 
     dots.appendChild(dot);
+
   });
 
   showSlide(0);
@@ -2118,6 +2124,7 @@ function showSlide(index) {
       );
 
     });
+
 }
 
 function stopCarousel() {
@@ -2144,7 +2151,7 @@ function startCarousel() {
   }
 
   carouselTimer = setInterval(() => {
-    showSlide(currentSlide+1);
+    showSlide(currentSlide + 1);
   },4000);
 }
 
@@ -2156,12 +2163,12 @@ function navigateSlide(index) {
 
 el("previousSlide").addEventListener(
   "click",
-  () => navigateSlide(currentSlide-1)
+  () => navigateSlide(currentSlide - 1)
 );
 
 el("nextSlide").addEventListener(
   "click",
-  () => navigateSlide(currentSlide+1)
+  () => navigateSlide(currentSlide + 1)
 );
 
 el("productCarousel").addEventListener(
@@ -2297,7 +2304,7 @@ window.addEventListener(
 );
 
 /* ==========================================
-   BOUTIQUE : PACKS
+   PACKS
 ========================================== */
 
 const packs = {
@@ -2338,11 +2345,14 @@ function updatePrice() {
 
   const pack = selectedPack();
 
-  el("packDisplay").textContent = pack.name;
+  el("packDisplay").textContent =
+    pack.name;
 
-  el("qtyDisplay").textContent = pack.quantity;
+  el("qtyDisplay").textContent =
+    pack.quantity;
 
-  el("totalPrice").textContent = pack.total;
+  el("totalPrice").textContent =
+    pack.total;
 }
 
 document.querySelectorAll(
@@ -2356,17 +2366,18 @@ document.querySelectorAll(
 
 });
 
-
 /* ==========================================
-   FORMULAIRE GOOGLE SHEETS
+   FORMULAIRE GOOGLE SHEETS CORRIGE
+   NOM + TELEPHONE UNIQUEMENT
 ========================================== */
 
 const form = el("orderForm");
 const submitBtn = el("submitBtn");
 
-function showMessage(message, type) {
+function showMessage(message,type) {
 
-  el("formMessage").textContent = message;
+  el("formMessage").textContent =
+    message;
 
   el("formMessage").className =
     "form-message " + type;
@@ -2381,23 +2392,28 @@ form.addEventListener("submit", async event => {
   }
 
   /* ==========================================
-     INFORMATIONS DU FORMULAIRE
+     RECUPERER LES INFORMATIONS
   ========================================== */
 
-  const fullname = el("fullname").value.trim();
+  const fullname =
+    el("fullname").value.trim();
 
-  const phone = el("phone").value.trim();
+  const phone =
+    el("phone").value.trim();
 
-  const packId = selectedPackId();
+  const packId =
+    selectedPackId();
 
-  const pack = selectedPack();
+  const pack =
+    selectedPack();
 
-  const consent = el("shareConsent").checked
-    ? "yes"
-    : "no";
+  const consent =
+    el("shareConsent").checked
+      ? "yes"
+      : "no";
 
   /* ==========================================
-     VALIDATION DU NOM
+     VALIDATION NOM
   ========================================== */
 
   if (!fullname) {
@@ -2411,11 +2427,11 @@ form.addEventListener("submit", async event => {
   }
 
   /* ==========================================
-     VALIDATION DU TELEPHONE
+     VALIDATION TELEPHONE
   ========================================== */
 
   const normalizedPhone =
-    phone.replace(/[\s-]/g, "");
+    phone.replace(/[\s-]/g,"");
 
   const validPhone =
     /^(?:\+212|0)[5-7]\d{8}$/.test(
@@ -2433,7 +2449,7 @@ form.addEventListener("submit", async event => {
   }
 
   /* ==========================================
-     VALIDATION DU CONSENTEMENT
+     VALIDATION CONSENTEMENT
   ========================================== */
 
   if (consent !== "yes") {
@@ -2447,24 +2463,25 @@ form.addEventListener("submit", async event => {
   }
 
   /* ==========================================
-     DONNEES A ENVOYER A GOOGLE SHEETS
+     DONNEES A ENVOYER
+     AUCUNE VILLE NI ADRESSE
   ========================================== */
 
   const data = {
 
-    fullname: fullname,
+    fullname:fullname,
 
-    phone: normalizedPhone,
+    phone:normalizedPhone,
 
-    product: "Pheromone Gummies",
+    product:"Pheromone Gummies",
 
-    packId: packId,
+    packId:packId,
 
-    quantity: pack.quantity,
+    quantity:pack.quantity,
 
-    total: pack.total,
+    total:pack.total,
 
-    consent: consent
+    consent:consent
 
   };
 
@@ -2475,7 +2492,7 @@ form.addEventListener("submit", async event => {
   const params = new URLSearchParams();
 
   Object.entries(data).forEach(
-    ([key, value]) => {
+    ([key,value]) => {
 
       params.set(
         key,
@@ -2486,7 +2503,7 @@ form.addEventListener("submit", async event => {
   );
 
   /* ==========================================
-     DESACTIVER LE BOUTON
+     DESACTIVER BOUTON
   ========================================== */
 
   submitBtn.disabled = true;
@@ -2495,18 +2512,18 @@ form.addEventListener("submit", async event => {
     "جاري إرسال الطلب...";
 
   /* ==========================================
-     ENVOI VERS GOOGLE APPS SCRIPT
+     ENVOI GOOGLE APPS SCRIPT
   ========================================== */
 
   try {
 
     await fetch(SCRIPT_URL, {
 
-      method: "POST",
+      method:"POST",
 
-      mode: "no-cors",
+      mode:"no-cors",
 
-      body: params
+      body:params
 
     });
 
@@ -2515,7 +2532,7 @@ form.addEventListener("submit", async event => {
       "info"
     );
 
-  } catch (error) {
+  } catch(error) {
 
     showMessage(
       "تعذر إرسال الطلب. المرجو المحاولة مرة أخرى.",
