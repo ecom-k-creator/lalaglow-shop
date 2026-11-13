@@ -5,11 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#c52c72">
-<meta name="description" content="اكتشفي علكات الفيرومون وباقاتنا الخاصة">
 <title>علكات الفيرومون | Pheromone Gummies</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
@@ -96,7 +94,7 @@ header {
   font: 900 16px "Cairo", sans-serif;
   text-align: center;
   cursor: pointer;
-  transition: 0.25s;
+  transition: .25s;
 }
 
 .btn:hover,
@@ -106,7 +104,7 @@ header {
 }
 
 .btn:disabled {
-  opacity: 0.65;
+  opacity: .65;
   cursor: not-allowed;
 }
 
@@ -213,49 +211,55 @@ header {
   font-size: 14px;
 }
 
-/* CARROUSEL STYLE COSMETICS */
+/* ======================================
+   CARROUSEL PRODUIT AVEC MINIATURES
+====================================== */
 
 .gallery {
   background: #ffffff;
-  padding: 0 0 55px;
+  padding: 40px 0 55px;
 }
 
 .product-carousel {
-  width: 100%;
-  max-width: 900px;
+  width: min(92%, 760px);
   margin: 0 auto;
-  background: #ffffff;
   direction: ltr;
 }
+
+/* GRAND CADRE */
 
 .carousel-viewport {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: #ffffff;
+  border: 1px solid #f1dfeb;
+  border-radius: 20px;
+  background: #fff8fc;
+  box-shadow: 0 10px 30px rgba(165, 30, 92, .10);
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform .5s ease;
   will-change: transform;
 }
 
 .carousel-slide {
   flex: 0 0 100%;
   min-width: 100%;
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  padding: 12px;
+  background: #fff8fc;
 }
 
 .carousel-slide img {
   display: block;
   width: 100%;
-  height: 560px;
+  height: 100%;
   object-fit: contain;
-  background: #ffffff;
 }
 
 /* FLECHES */
@@ -269,68 +273,115 @@ header {
   height: 42px;
   border: none;
   border-radius: 50%;
-  background: rgba(255,255,255,0.92);
-  color: #777777;
-  font-size: 23px;
+  background: rgba(255,255,255,.95);
+  color: #777;
+  font-size: 22px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.2s;
+  box-shadow: 0 2px 10px #0002;
 }
 
 .carousel-btn.prev {
-  left: 15px;
+  left: 12px;
 }
 
 .carousel-btn.next {
-  right: 15px;
+  right: 12px;
 }
 
 .carousel-btn:hover {
-  background: #ffffff;
+  background: white;
   color: var(--dark);
-  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+/* MINIATURES SOUS LE CADRE */
+
+.carousel-thumbnails {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+  padding: 4px 2px 10px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  scrollbar-color: #d9a8c0 transparent;
+}
+
+.carousel-thumb {
+  flex: 0 0 clamp(90px, 30%, 150px);
+  aspect-ratio: 1 / 1;
+  padding: 5px;
+  border: 2px solid #eadbe3;
+  border-radius: 12px;
+  background: #ffffff;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: .7;
+  transition: .25s;
+  scroll-snap-align: center;
+}
+
+.carousel-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 7px;
+}
+
+.carousel-thumb:hover {
+  opacity: 1;
+}
+
+.carousel-thumb.active {
+  border-color: var(--pink);
+  opacity: 1;
+  box-shadow: 0 0 0 2px #fce1ee;
+}
+
+.carousel-thumb:focus-visible,
+.carousel-btn:focus-visible,
+.carousel-dot:focus-visible {
+  outline: 3px solid var(--dark);
+  outline-offset: 2px;
 }
 
 /* POINTS */
 
 .carousel-dots {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 14px;
-  padding: 14px 0 22px;
-  background: #ffffff;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0 20px;
 }
 
 .carousel-dot {
   width: 8px;
   height: 8px;
+  padding: 0;
   border: none;
   border-radius: 50%;
   background: #aaaaaa;
   cursor: pointer;
-  transition: 0.2s;
 }
 
 .carousel-dot.active {
   width: 10px;
   height: 10px;
-  background: #252525;
+  background: #333333;
 }
 
-/* TEXTE SOUS LE CARROUSEL */
+/* TEXTE SOUS GALERIE */
 
 .product-after-carousel {
   text-align: center;
-  padding-top: 15px;
+  padding-top: 8px;
 }
 
 .product-after-carousel .section-title {
-  color: #222222;
+  color: #222;
   font-size: 30px;
-  font-weight: 900;
 }
 
 .product-after-carousel .section-desc {
@@ -344,15 +395,10 @@ header {
   margin-bottom: 18px;
 }
 
-/* SCENARIOS AVANT APRES */
+/* SCENARIOS */
 
 .before-after-section {
-  background: linear-gradient(
-    180deg,
-    #fff0f6,
-    #ffe1ee,
-    #fff8fb
-  );
+  background: linear-gradient(180deg, #fff0f6, #ffe1ee, #fff8fb);
 }
 
 .scenarios-grid {
@@ -367,7 +413,7 @@ header {
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 12px 35px #ae1e6022;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .scenario-card:hover {
@@ -387,8 +433,8 @@ header {
 
 .scenario-content h3 {
   color: var(--dark);
-  margin-bottom: 12px;
   font-size: 19px;
+  margin-bottom: 12px;
 }
 
 .scenario-content p {
@@ -487,7 +533,7 @@ header {
   align-items: center;
   gap: 5px;
   text-align: center;
-  transition: 0.25s;
+  transition: .25s;
 }
 
 .pack input:checked + .pack-content {
@@ -521,7 +567,7 @@ header {
 .pack-badge.bestseller {
   background: linear-gradient(135deg, #22c55e, #15803d);
   color: white;
-  box-shadow: 0 4px 12px rgba(34,197,94,0.35);
+  box-shadow: 0 4px 12px rgba(34,197,94,.35);
 }
 
 .pack-icon {
@@ -669,30 +715,18 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .product-carousel {
-    max-width: 100%;
-  }
-
-  .carousel-slide img {
-    height: 440px;
-  }
-
   .carousel-btn {
     width: 38px;
     height: 38px;
     font-size: 20px;
   }
 
-  .carousel-btn.prev {
-    left: 12px;
-  }
-
-  .carousel-btn.next {
-    right: 12px;
-  }
-
   .product-after-carousel .section-title {
     font-size: 25px;
+  }
+
+  .carousel-thumb {
+    flex-basis: 28%;
   }
 }
 
@@ -736,12 +770,6 @@ footer {
   }
 }
 
-@media (max-width: 390px) {
-  .carousel-slide img {
-    height: 350px;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .carousel-track {
     transition: none;
@@ -781,7 +809,9 @@ footer {
         وتصميم أنيق يناسب روتينك اليومي.
       </p>
 
-      <div class="price">ابتداءً من 399 درهم</div>
+      <div class="price">
+        ابتداءً من 399 درهم
+      </div>
 
       <a href="#commande" class="btn">
         🛍️ اطلبي الآن
@@ -804,7 +834,9 @@ footer {
 <section>
   <div class="container">
 
-    <h2 class="section-title">🌸 اكتشفي منتجنا</h2>
+    <h2 class="section-title">
+      🌸 اكتشفي منتجنا
+    </h2>
 
     <p class="section-desc">
       تعرفي على المنتج واختاري الباقة المناسبة لك.
@@ -815,26 +847,34 @@ footer {
       <div class="benefit-card">
         <div class="benefit-icon">🌿</div>
         <h3>مكونات نباتية</h3>
-        <p>مجموعة من المكونات المعروضة في الصور التعريفية.</p>
+        <p>
+          مجموعة من المكونات المعروضة في الصور التعريفية.
+        </p>
       </div>
 
       <div class="benefit-card">
         <div class="benefit-icon">💕</div>
         <h3>شكل عملي</h3>
-        <p>مكمل غذائي على شكل علكات سهل الحمل والاستخدام.</p>
+        <p>
+          مكمل غذائي على شكل علكات سهل الحمل والاستخدام.
+        </p>
       </div>
 
       <div class="benefit-card">
         <div class="benefit-icon">🎁</div>
         <h3>باقات متنوعة</h3>
-        <p>ثلاث باقات مميزة، مع عبوة هدية في الباقة الكبيرة.</p>
+        <p>
+          ثلاث باقات مميزة، مع عبوة هدية في الباقة الكبيرة.
+        </p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- CARROUSEL PRODUIT -->
+<!-- ======================================
+     CARROUSEL AVEC MINIATURES
+====================================== -->
 
 <section class="gallery" id="galerie">
 
@@ -843,6 +883,8 @@ footer {
     id="productCarousel"
     aria-label="معرض صور المنتج"
   >
+
+    <!-- IMAGE PRINCIPALE -->
 
     <div class="carousel-viewport">
 
@@ -876,7 +918,8 @@ footer {
 
       </div>
 
-      <!-- FLECHE GAUCHE -->
+      <!-- FLECHES -->
+
       <button
         type="button"
         class="carousel-btn prev"
@@ -884,7 +927,6 @@ footer {
         aria-label="الصورة السابقة"
       >❮</button>
 
-      <!-- FLECHE DROITE -->
       <button
         type="button"
         class="carousel-btn next"
@@ -894,35 +936,76 @@ footer {
 
     </div>
 
-    <!-- POINTS -->
+    <!-- MINIATURES SOUS LE GRAND CADRE -->
+
+    <div
+      class="carousel-thumbnails"
+      id="carouselThumbnails"
+      aria-label="الصور المصغرة"
+    >
+
+      <button
+        type="button"
+        class="carousel-thumb active"
+        data-slide="0"
+        aria-label="عرض الصورة الأولى"
+        aria-current="true"
+      >
+        <img src="images/s.png" alt="" loading="lazy">
+      </button>
+
+      <button
+        type="button"
+        class="carousel-thumb"
+        data-slide="1"
+        aria-label="عرض الصورة الثانية"
+        aria-current="false"
+      >
+        <img src="images/pu.png" alt="" loading="lazy">
+      </button>
+
+      <button
+        type="button"
+        class="carousel-thumb"
+        data-slide="2"
+        aria-label="عرض الصورة الثالثة"
+        aria-current="false"
+      >
+        <img src="images/c2.png" alt="" loading="lazy">
+      </button>
+
+    </div>
+
+    <!-- POINTS DE NAVIGATION -->
+
     <div class="carousel-dots">
 
       <button
         type="button"
         class="carousel-dot active"
         data-slide="0"
-        aria-label="عرض الصورة الأولى"
+        aria-label="الصورة الأولى"
       ></button>
 
       <button
         type="button"
         class="carousel-dot"
         data-slide="1"
-        aria-label="عرض الصورة الثانية"
+        aria-label="الصورة الثانية"
       ></button>
 
       <button
         type="button"
         class="carousel-dot"
         data-slide="2"
-        aria-label="عرض الصورة الثالثة"
+        aria-label="الصورة الثالثة"
       ></button>
 
     </div>
 
   </div>
 
-  <!-- TITRE SOUS CARROUSEL -->
+  <!-- TEXTE SOUS LA GALERIE -->
 
   <div class="container product-after-carousel">
 
@@ -943,9 +1026,10 @@ footer {
     </a>
 
   </div>
+
 </section>
 
-<!-- SCENARIOS AVANT / APRES -->
+<!-- SCENARIOS AVANT APRES -->
 
 <section class="before-after-section" id="avant-apres">
   <div class="container">
@@ -972,7 +1056,9 @@ footer {
 
         <div class="scenario-content">
 
-          <h3>🌸 أناقتك تبدأ من ثقتك بنفسك</h3>
+          <h3>
+            🌸 أناقتك تبدأ من ثقتك بنفسك
+          </h3>
 
           <p>
             من لحظات التردد إلى الاهتمام بالنفس.
@@ -984,6 +1070,7 @@ footer {
           </a>
 
         </div>
+
       </article>
 
       <!-- DAKA -->
@@ -998,7 +1085,9 @@ footer {
 
         <div class="scenario-content">
 
-          <h3>✨ خصصي وقتاً لنفسك</h3>
+          <h3>
+            ✨ خصصي وقتاً لنفسك
+          </h3>
 
           <p>
             وسط مسؤوليات الحياة اليومية،
@@ -1010,6 +1099,7 @@ footer {
           </a>
 
         </div>
+
       </article>
 
       <!-- RAJL -->
@@ -1024,7 +1114,9 @@ footer {
 
         <div class="scenario-content">
 
-          <h3>💞 الثقة والجاذبية في العلاقات</h3>
+          <h3>
+            💞 الثقة والجاذبية في العلاقات
+          </h3>
 
           <p>
             الثقة والتواصل والاهتمام المتبادل
@@ -1036,6 +1128,7 @@ footer {
           </a>
 
         </div>
+
       </article>
 
     </div>
@@ -1053,7 +1146,9 @@ footer {
 <section>
   <div class="container">
 
-    <h2 class="section-title">🌿 المكونات النباتية</h2>
+    <h2 class="section-title">
+      🌿 المكونات النباتية
+    </h2>
 
     <p class="section-desc">
       بعض المكونات المذكورة في المواد التعريفية.
@@ -1071,32 +1166,44 @@ footer {
 
       <div class="ingredient">
         <h3>🌱 جذور الماكا</h3>
-        <p>نبات جذري معروف في بعض التركيبات العشبية.</p>
+        <p>
+          نبات جذري معروف في بعض التركيبات العشبية.
+        </p>
       </div>
 
       <div class="ingredient">
         <h3>🌿 الحلبة</h3>
-        <p>نبات يستخدم في مجموعة من المنتجات الغذائية.</p>
+        <p>
+          نبات يستخدم في مجموعة من المنتجات الغذائية.
+        </p>
       </div>
 
       <div class="ingredient">
         <h3>🍃 النعناع</h3>
-        <p>نبات معروف برائحته المنعشة والمميزة.</p>
+        <p>
+          نبات معروف برائحته المنعشة والمميزة.
+        </p>
       </div>
 
       <div class="ingredient">
         <h3>🌸 البرسيم الأحمر</h3>
-        <p>مكون نباتي مستخدم في بعض المستحضرات العشبية.</p>
+        <p>
+          مكون نباتي مستخدم في بعض المستحضرات العشبية.
+        </p>
       </div>
 
       <div class="ingredient">
         <h3>💗 الشمندر</h3>
-        <p>نبات جذري يتميز بلونه ومركباته النباتية.</p>
+        <p>
+          نبات جذري يتميز بلونه ومركباته النباتية.
+        </p>
       </div>
 
       <div class="ingredient">
         <h3>🌳 الدردار الزلق</h3>
-        <p>لحاء نباتي معروف في الاستخدامات التقليدية.</p>
+        <p>
+          لحاء نباتي معروف في الاستخدامات التقليدية.
+        </p>
       </div>
 
     </div>
@@ -1110,7 +1217,9 @@ footer {
 
     <div class="form-box">
 
-      <h2 class="form-title">🛍️ أكملي طلبك الآن</h2>
+      <h2 class="form-title">
+        🛍️ أكملي طلبك الآن
+      </h2>
 
       <p class="form-subtitle">
         اختاري الباقة وأدخلي اسمك ورقم هاتفك للتواصل معك.
@@ -1127,6 +1236,7 @@ footer {
           <!-- PACK 1 -->
 
           <label class="pack">
+
             <input
               type="radio"
               name="pack"
@@ -1141,11 +1251,13 @@ footer {
               <span class="pack-price">399 درهم</span>
               <span class="pack-desc">عبوة واحدة</span>
             </span>
+
           </label>
 
           <!-- PACK 2 -->
 
           <label class="pack">
+
             <input
               type="radio"
               name="pack"
@@ -1153,19 +1265,24 @@ footer {
             >
 
             <span class="pack-content">
+
               <span class="pack-badge bestseller">
                 🔥 الأكثر مبيعاً
               </span>
+
               <span class="pack-icon">💕</span>
               <span class="pack-name">الباقة الثنائية</span>
               <span class="pack-price">469 درهم</span>
               <span class="pack-desc">عبوتان</span>
+
             </span>
+
           </label>
 
           <!-- PACK 3 -->
 
           <label class="pack">
+
             <input
               type="radio"
               name="pack"
@@ -1173,12 +1290,18 @@ footer {
             >
 
             <span class="pack-content">
-              <span class="pack-badge">🎁 عبوة هدية</span>
+
+              <span class="pack-badge">
+                🎁 عبوة هدية
+              </span>
+
               <span class="pack-icon">💝</span>
               <span class="pack-name">الباقة المميزة</span>
               <span class="pack-price">599 درهم</span>
               <span class="pack-desc">3 + 1 مجاناً</span>
+
             </span>
+
           </label>
 
         </div>
@@ -1186,7 +1309,11 @@ footer {
         <!-- NOM -->
 
         <div class="form-group">
-          <label for="fullname">الاسم الكامل *</label>
+
+          <label for="fullname">
+            الاسم الكامل *
+          </label>
+
           <input
             type="text"
             id="fullname"
@@ -1196,12 +1323,17 @@ footer {
             autocomplete="name"
             required
           >
+
         </div>
 
         <!-- TELEPHONE -->
 
         <div class="form-group">
-          <label for="phone">رقم الهاتف *</label>
+
+          <label for="phone">
+            رقم الهاتف *
+          </label>
+
           <input
             type="tel"
             id="phone"
@@ -1212,9 +1344,10 @@ footer {
             pattern="[+]?[0-9 -]{9,16}"
             required
           >
+
         </div>
 
-        <!-- TOTAL -->
+        <!-- RESUME -->
 
         <div class="summary">
 
@@ -1277,11 +1410,21 @@ footer {
 
 <script>
 
-/* CARROUSEL */
+/* ======================================
+   CARROUSEL SYNCHRONISE
+====================================== */
 
 const carousel = document.getElementById("productCarousel");
 const track = document.getElementById("carouselTrack");
-const dots = [...document.querySelectorAll(".carousel-dot")];
+const thumbnails = document.getElementById("carouselThumbnails");
+
+const dots = [
+  ...document.querySelectorAll(".carousel-dot")
+];
+
+const thumbs = [
+  ...document.querySelectorAll(".carousel-thumb")
+];
 
 const slideCount = track.children.length;
 
@@ -1293,29 +1436,72 @@ let currentSlide = 0;
 let carouselTimer = null;
 let touchStartX = 0;
 
+/* AFFICHER UNE IMAGE */
+
 function showSlide(index) {
+
   currentSlide = (index + slideCount) % slideCount;
 
   track.style.transform =
     `translateX(-${currentSlide * 100}%)`;
 
-  dots.forEach((dot, i) => {
-    dot.classList.toggle("active", i === currentSlide);
-    dot.setAttribute(
-      "aria-current",
-      i === currentSlide ? "true" : "false"
-    );
-  });
-}
+  /* SYNCHRONISATION DES POINTS */
 
-function stopCarousel() {
-  if (carouselTimer) {
-    clearInterval(carouselTimer);
-    carouselTimer = null;
+  dots.forEach((dot, i) => {
+
+    const active = i === currentSlide;
+
+    dot.classList.toggle("active", active);
+    dot.setAttribute("aria-current", String(active));
+
+  });
+
+  /* SYNCHRONISATION DES MINIATURES */
+
+  thumbs.forEach((thumb, i) => {
+
+    const active = i === currentSlide;
+
+    thumb.classList.toggle("active", active);
+    thumb.setAttribute("aria-current", String(active));
+
+  });
+
+  /* DEFILEMENT DES MINIATURES */
+
+  const activeThumb = thumbs[currentSlide];
+
+  if (activeThumb) {
+
+    const position =
+      activeThumb.offsetLeft +
+      activeThumb.offsetWidth / 2 -
+      thumbnails.clientWidth / 2;
+
+    thumbnails.scrollTo({
+      left: position,
+      behavior: reduceMotion ? "instant" : "smooth"
+    });
+
   }
 }
 
+/* ARRETER LE DEFILEMENT */
+
+function stopCarousel() {
+
+  if (carouselTimer !== null) {
+
+    clearInterval(carouselTimer);
+    carouselTimer = null;
+
+  }
+}
+
+/* DEFILEMENT AUTOMATIQUE */
+
 function startCarousel() {
+
   stopCarousel();
 
   if (reduceMotion || document.hidden) {
@@ -1323,103 +1509,161 @@ function startCarousel() {
   }
 
   carouselTimer = setInterval(() => {
+
     showSlide(currentSlide + 1);
+
   }, 4000);
 }
 
+/* NAVIGATION */
+
+function navigateTo(index) {
+
+  showSlide(index);
+  startCarousel();
+
+}
+
+/* FLECHES */
+
 document.getElementById("previousSlide").addEventListener(
   "click",
-  () => {
-    showSlide(currentSlide - 1);
-    startCarousel();
-  }
+  () => navigateTo(currentSlide - 1)
 );
 
 document.getElementById("nextSlide").addEventListener(
   "click",
-  () => {
-    showSlide(currentSlide + 1);
-    startCarousel();
-  }
+  () => navigateTo(currentSlide + 1)
 );
 
+/* POINTS */
+
 dots.forEach((dot, i) => {
+
   dot.addEventListener("click", () => {
-    showSlide(i);
-    startCarousel();
+    navigateTo(i);
   });
+
 });
 
+/* CLIC SUR MINIATURE */
+
+thumbs.forEach((thumb, i) => {
+
+  thumb.addEventListener("click", () => {
+    navigateTo(i);
+  });
+
+});
+
+/* PAUSE AU SURVOL */
+
 carousel.addEventListener("mouseenter", stopCarousel);
+
 carousel.addEventListener("mouseleave", startCarousel);
+
 carousel.addEventListener("focusin", stopCarousel);
 
 carousel.addEventListener("focusout", (event) => {
+
   if (!carousel.contains(event.relatedTarget)) {
     startCarousel();
   }
+
 });
 
+/* GLISSEMENT TACTILE */
+
 carousel.addEventListener("touchstart", (event) => {
+
   touchStartX = event.changedTouches[0].screenX;
+
 }, { passive: true });
 
 carousel.addEventListener("touchend", (event) => {
+
+  if (event.target.closest(".carousel-thumbnails")) {
+    return;
+  }
+
   const difference =
     touchStartX - event.changedTouches[0].screenX;
 
   if (Math.abs(difference) > 45) {
-    showSlide(currentSlide + (difference > 0 ? 1 : -1));
-    startCarousel();
+
+    navigateTo(
+      currentSlide + (difference > 0 ? 1 : -1)
+    );
+
   }
+
 }, { passive: true });
 
+/* ONGLET INACTIF */
+
 document.addEventListener("visibilitychange", () => {
+
   if (document.hidden) {
     stopCarousel();
   } else {
     startCarousel();
   }
+
 });
+
+/* INITIALISATION */
 
 showSlide(0);
 startCarousel();
 
-/* FORMULAIRE ET PACKS */
+/* ======================================
+   FORMULAIRE ET PACKS
+====================================== */
 
 const SCRIPT_URL = "COLLE_ICI_L_URL_DE_TON_APPS_SCRIPT";
 
 const packs = {
+
   1: {
     name: "الباقة الأساسية",
     quantity: 1,
     total: 399
   },
+
   2: {
     name: "الباقة الثنائية",
     quantity: 2,
     total: 469
   },
+
   3: {
     name: "الباقة المميزة - 3 + 1 مجاناً",
     quantity: 4,
     total: 599
   }
+
 };
 
 const form = document.getElementById("orderForm");
 const message = document.getElementById("formMessage");
 const submitBtn = document.getElementById("submitBtn");
 
+/* PACK SELECTIONNE */
+
 function selectedPack() {
+
   const selected = document.querySelector(
     'input[name="pack"]:checked'
   );
 
   return packs[selected.value];
+
 }
 
+/* METTRE A JOUR LE PRIX */
+
 function updatePrice() {
+
   const pack = selectedPack();
 
   document.getElementById("packDisplay").textContent =
@@ -1430,54 +1674,74 @@ function updatePrice() {
 
   document.getElementById("totalPrice").textContent =
     pack.total;
+
 }
 
 document.querySelectorAll('input[name="pack"]').forEach(input => {
+
   input.addEventListener("change", updatePrice);
+
 });
 
+/* MESSAGES */
+
 function showMessage(text, type) {
+
   message.textContent = text;
   message.className = "form-message " + type;
+
 }
 
+/* ENVOI COMMANDE */
+
 form.addEventListener("submit", async (event) => {
+
   event.preventDefault();
 
   const pack = selectedPack();
 
   if (
-    !SCRIPT_URL.startsWith(
-      "https://script.google.com/macros/s/"
-    ) ||
+    !SCRIPT_URL.startsWith("https://script.google.com/macros/s/") ||
     !SCRIPT_URL.endsWith("/exec")
   ) {
+
     showMessage(
       "نظام استقبال الطلبات غير مفعّل حالياً.",
       "error"
     );
+
     return;
   }
 
   const data = {
+
     fullname: document.getElementById("fullname").value.trim(),
+
     phone: document.getElementById("phone").value.trim(),
+
     product: "Pheromone Gummies",
+
     pack: pack.name,
+
     quantity: pack.quantity,
+
     total: pack.total
+
   };
 
   const params = new URLSearchParams();
 
   Object.keys(data).forEach(key => {
+
     params.append(key, String(data[key]));
+
   });
 
   submitBtn.disabled = true;
   submitBtn.textContent = "جاري إرسال الطلب...";
 
   try {
+
     await fetch(SCRIPT_URL, {
       method: "POST",
       mode: "no-cors",
@@ -1490,15 +1754,20 @@ form.addEventListener("submit", async (event) => {
     );
 
   } catch (error) {
+
     showMessage(
       "تعذر إرسال الطلب. حاولي مرة أخرى.",
       "error"
     );
 
   } finally {
+
     submitBtn.disabled = false;
+
     submitBtn.textContent = "💗 تأكيد طلب الشراء";
+
   }
+
 });
 
 updatePrice();
