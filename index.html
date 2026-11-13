@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#e63e89">
-<meta name="description" content="Pheromone Beauty - متجر العلكات">
+<meta name="description" content="Pheromone Beauty - متجر العلكات والعناية بالجمال">
 <title>Pheromone Beauty</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,1221 +14,1195 @@
 
 <style>
 :root {
-  --pink:#e63e89;
-  --dark:#a51e5c;
-  --light:#fff0f6;
-  --text:#4a2639;
-  --muted:#876579;
+  --pink: #e63e89;
+  --dark: #a51e5c;
+  --light: #fff0f6;
+  --text: #4a2639;
+  --muted: #876579;
+  --border: #f2d4e2;
 }
 
 * {
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-  background:#fff9fc;
-  color:var(--text);
-  font-family:"Cairo",sans-serif;
-  line-height:1.8;
+  background: #fff9fc;
+  color: var(--text);
+  font-family: "Cairo", sans-serif;
+  line-height: 1.8;
 }
 
 [hidden] {
-  display:none!important;
+  display: none !important;
 }
 
 a {
-  color:inherit;
+  color: inherit;
 }
 
 button,
 input,
 textarea {
-  font:inherit;
+  font: inherit;
 }
 
 button {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 img {
-  max-width:100%;
+  max-width: 100%;
 }
 
 button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline:3px solid var(--pink);
-  outline-offset:3px;
+  outline: 3px solid var(--pink);
+  outline-offset: 3px;
 }
 
 .container {
-  width:92%;
-  max-width:1150px;
-  margin:auto;
+  width: 92%;
+  max-width: 1150px;
+  margin: auto;
 }
 
 section {
-  padding:55px 0;
+  padding: 55px 0;
 }
 
 .section-title {
-  text-align:center;
-  color:var(--dark);
-  font-size:30px;
-  margin-bottom:10px;
+  color: var(--dark);
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
 .section-desc {
-  text-align:center;
-  color:var(--muted);
-  max-width:700px;
-  margin:0 auto 32px;
+  max-width: 720px;
+  margin: 0 auto 32px;
+  text-align: center;
+  color: var(--muted);
 }
 
 /* HEADER */
 
 .topbar {
-  background:var(--dark);
-  color:white;
-  padding:8px;
-  text-align:center;
-  font-size:13px;
-  font-weight:800;
+  background: var(--dark);
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 800;
 }
 
 header {
-  background:white;
-  box-shadow:0 3px 20px #e63e8915;
+  background: white;
+  box-shadow: 0 3px 20px #e63e8915;
 }
 
 .header-content {
-  min-height:75px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:15px;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
 }
 
 .logo {
-  font-size:24px;
-  font-weight:900;
-  text-decoration:none;
-  color:var(--dark);
+  color: var(--dark);
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: none;
 }
 
 .header-nav {
-  display:flex;
-  gap:17px;
+  display: flex;
+  gap: 17px;
 }
 
 .header-nav a {
-  text-decoration:none;
-  font-size:14px;
-  font-weight:800;
-  color:var(--dark);
+  text-decoration: none;
+  font-weight: 800;
+  color: var(--dark);
+  font-size: 14px;
 }
 
-/* BOUTONS */
+/* BUTTONS */
 
 .btn {
-  display:inline-block;
-  border:0;
-  border-radius:40px;
-  padding:13px 27px;
-  background:linear-gradient(135deg,#f25199,#ae1b60);
-  color:white;
-  text-align:center;
-  text-decoration:none;
-  font-weight:900;
-  font-size:14px;
-  transition:.2s;
+  display: inline-block;
+  border: 0;
+  border-radius: 40px;
+  padding: 13px 27px;
+  background: linear-gradient(135deg, #f25199, #ae1b60);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+  transition: .2s;
 }
 
 .btn:hover {
-  transform:translateY(-2px);
-  box-shadow:0 7px 22px #e63e8940;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 22px #e63e8940;
 }
 
 .btn-outline {
-  background:white;
-  color:var(--dark);
-  border:1px solid #e7b8ce;
+  background: white;
+  color: var(--dark);
+  border: 1px solid #e7b8ce;
 }
 
 .btn:disabled {
-  opacity:.55;
-  cursor:not-allowed;
+  opacity: .55;
+  cursor: not-allowed;
 }
 
-/* ACCUEIL */
+/* HERO */
 
 .home-hero {
-  background:linear-gradient(135deg,#ffe1ee,#fff8fb);
+  background: linear-gradient(135deg, #ffe1ee, #fff8fb);
 }
 
 .home-hero-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:center;
-  gap:40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
 }
 
 .home-label {
-  display:inline-block;
-  background:white;
-  color:var(--dark);
-  padding:7px 18px;
-  border-radius:30px;
-  font-size:13px;
-  font-weight:900;
-  margin-bottom:20px;
+  display: inline-block;
+  background: white;
+  color: var(--dark);
+  padding: 7px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 20px;
 }
 
 .home-hero h1 {
-  color:var(--dark);
-  font-size:43px;
-  line-height:1.4;
-  margin-bottom:20px;
+  color: var(--dark);
+  font-size: 43px;
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
 
 .home-hero p {
-  color:#724a60;
-  margin-bottom:25px;
-  font-size:16px;
+  color: #724a60;
+  font-size: 16px;
+  margin-bottom: 25px;
 }
 
 .home-hero img {
-  display:block;
-  width:100%;
-  border-radius:25px;
-  box-shadow:0 20px 45px #b9267225;
+  display: block;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 20px 45px #b9267225;
 }
 
-/* PRODUITS */
+/* COLLECTION */
 
 .collection-grid {
-  display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:20px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
 }
 
 .product-card {
-  background:white;
-  border:1px solid #f2d4e2;
-  border-radius:22px;
-  overflow:hidden;
-  box-shadow:0 8px 25px #b71e6614;
-  transition:.2s;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px #b71e6614;
+  transition: .2s;
 }
 
 .product-card:hover {
-  transform:translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .product-photo {
-  position:relative;
-  aspect-ratio:1/1;
-  background:var(--light);
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #fff0f6;
 }
 
 .product-photo img {
-  width:100%;
-  height:100%;
-  object-fit:contain;
-}
-
-.product-icon {
-  width:100%;
-  height:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  gap:8px;
-  font-size:60px;
-}
-
-.product-icon small {
-  font-size:12px;
-  font-weight:800;
-}
-
-.lavender {
-  background:linear-gradient(140deg,#f8efff,#e7d4ff);
-}
-
-.peach {
-  background:linear-gradient(140deg,#fff4e8,#ffdbc1);
-}
-
-.blue {
-  background:linear-gradient(140deg,#eaf6ff,#d8e8ff);
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
 
 .product-badge {
-  position:absolute;
-  top:12px;
-  right:12px;
-  background:white;
-  color:var(--dark);
-  padding:3px 12px;
-  border-radius:25px;
-  font-size:11px;
-  font-weight:900;
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  top: 10px;
+  background: white;
+  color: var(--dark);
+  font-size: 10px;
+  font-weight: 900;
+  padding: 4px 11px;
+  border-radius: 25px;
+  box-shadow: 0 2px 10px #0001;
 }
 
 .product-content {
-  padding:18px 14px;
-  text-align:center;
+  padding: 18px 14px;
+  text-align: center;
 }
 
 .product-content h3 {
-  color:var(--dark);
-  font-size:18px;
+  color: var(--dark);
+  font-size: 17px;
+  line-height: 1.5;
+  min-height: 52px;
 }
 
-.product-content p {
-  min-height:44px;
-  font-size:13px;
-  color:var(--muted);
+.product-description {
+  color: var(--muted);
+  font-size: 12px;
+  min-height: 77px;
+  margin-top: 8px;
 }
 
 .product-price {
-  color:var(--pink);
-  font-size:23px;
-  font-weight:900;
-  margin:10px 0;
+  color: var(--pink);
+  font-size: 22px;
+  font-weight: 900;
+  margin: 10px 0;
 }
 
 .product-price.unknown {
-  color:var(--muted);
-  font-size:15px;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .product-content .btn {
-  display:block;
-  padding:9px;
-  font-size:12px;
+  display: block;
+  padding: 10px;
+  font-size: 12px;
 }
 
 .collection-note {
-  text-align:center;
-  font-size:12px;
-  color:var(--muted);
-  margin-top:25px;
+  margin-top: 25px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 12px;
 }
 
-/* DETAIL PRODUIT */
+/* FICHE PRODUIT */
 
 .product-detail {
-  background:linear-gradient(180deg,#fff5fa,#fff);
+  background: linear-gradient(180deg, #fff5fa, #fff);
 }
 
 .back-link {
-  display:inline-block;
-  margin-bottom:25px;
-  color:var(--dark);
-  text-decoration:none;
-  font-weight:900;
+  display: inline-block;
+  margin-bottom: 25px;
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 900;
 }
 
 .detail-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-  align-items:start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
 }
 
 .detail-info {
-  padding-top:15px;
+  padding-top: 15px;
 }
 
 .detail-tag {
-  display:inline-block;
-  padding:5px 15px;
-  background:#ffe4ef;
-  color:var(--dark);
-  border-radius:30px;
-  font-size:12px;
-  font-weight:900;
-  margin-bottom:12px;
+  display: inline-block;
+  padding: 5px 15px;
+  background: #ffe4ef;
+  color: var(--dark);
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 12px;
 }
 
 .detail-info h1 {
-  color:var(--dark);
-  font-size:34px;
-  margin-bottom:17px;
+  color: var(--dark);
+  font-size: 34px;
+  line-height: 1.5;
+  margin-bottom: 17px;
 }
 
 .detail-info p {
-  color:#735468;
-  margin-bottom:20px;
+  color: #735468;
+  margin-bottom: 20px;
 }
 
 .detail-price {
-  color:var(--pink);
-  font-size:30px;
-  font-weight:900;
-  margin-bottom:20px;
+  color: var(--pink);
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.detail-price.unknown {
+  font-size: 20px;
+  color: var(--muted);
 }
 
 .detail-actions {
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.detail-placeholder {
-  width:100%;
-  aspect-ratio:1/1;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:12px;
-  border-radius:24px;
-  font-size:90px;
-}
-
-.detail-placeholder small {
-  font-size:14px;
-  color:var(--muted);
-}
-
-/* CARROUSEL PHOTOS */
+/* CARROUSEL */
 
 .product-carousel {
-  max-width:600px;
-  margin:auto;
-  direction:ltr;
+  max-width: 600px;
+  margin: auto;
+  direction: ltr;
 }
 
 .carousel-viewport {
-  position:relative;
-  overflow:hidden;
-  background:white;
-  border:1px solid #f0d5e1;
-  border-radius:22px;
-  box-shadow:0 12px 35px #ae1e601c;
+  position: relative;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #f0d5e1;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px #ae1e601c;
 }
 
 .carousel-track {
-  display:flex;
-  transition:transform .45s ease;
+  display: flex;
+  transition: transform .45s ease;
 }
 
 .carousel-slide {
-  min-width:100%;
-  aspect-ratio:1/1;
-  padding:10px;
+  flex: 0 0 100%;
+  min-width: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 10px;
 }
 
 .carousel-slide img {
-  width:100%;
-  height:100%;
-  object-fit:contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
 
 .carousel-btn {
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  width:38px;
-  height:38px;
-  border:0;
-  border-radius:50%;
-  background:#fffffff0;
-  font-size:22px;
-  box-shadow:0 2px 12px #0002;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: #fffffff0;
+  font-size: 22px;
+  box-shadow: 0 2px 12px #0002;
+  z-index: 2;
 }
 
 .carousel-btn.prev {
-  left:10px;
+  left: 10px;
 }
 
 .carousel-btn.next {
-  right:10px;
+  right: 10px;
 }
 
 .carousel-thumbnails {
-  display:flex;
-  gap:10px;
-  overflow-x:auto;
-  padding:12px 0;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 12px 0;
 }
 
 .carousel-thumb {
-  flex:0 0 29%;
-  max-width:130px;
-  aspect-ratio:1/1;
-  border:2px solid #eadbe3;
-  border-radius:12px;
-  background:white;
-  padding:4px;
-  opacity:.7;
+  flex: 0 0 28%;
+  max-width: 130px;
+  aspect-ratio: 1 / 1;
+  background: white;
+  border: 2px solid #eadbe3;
+  border-radius: 12px;
+  padding: 4px;
+  opacity: .7;
 }
 
 .carousel-thumb img {
-  width:100%;
-  height:100%;
-  object-fit:contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .carousel-thumb.active {
-  border-color:var(--pink);
-  opacity:1;
+  opacity: 1;
+  border-color: var(--pink);
 }
 
 .carousel-dots {
-  display:flex;
-  justify-content:center;
-  gap:10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .carousel-dot {
-  width:9px;
-  height:9px;
-  border:0;
-  border-radius:50%;
-  background:#bbb;
+  width: 9px;
+  height: 9px;
+  background: #bbb;
+  border: 0;
+  border-radius: 50%;
 }
 
 .carousel-dot.active {
-  background:var(--dark);
+  background: var(--dark);
 }
 
 /* AVANTAGES */
 
 .benefits {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
 }
 
 .benefit-card {
-  background:white;
-  border:1px solid #f2d4e2;
-  padding:25px;
-  border-radius:20px;
-  text-align:center;
+  background: white;
+  border: 1px solid var(--border);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .benefit-icon {
-  font-size:34px;
+  font-size: 34px;
 }
 
 .benefit-card h3 {
-  color:var(--dark);
-  margin:8px 0;
+  color: var(--dark);
+  margin: 8px 0;
 }
 
 .benefit-card p {
-  font-size:13px;
-  color:var(--muted);
+  color: var(--muted);
+  font-size: 13px;
 }
 
 /* SCENARIOS */
 
 .before-after-section {
-  background:linear-gradient(180deg,#fff0f6,#ffe1ee,#fff8fb);
+  background: linear-gradient(180deg, #fff0f6, #ffe1ee, #fff8fb);
 }
 
 .scenarios-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .scenario-card {
-  overflow:hidden;
-  border:1px solid #f3c5d9;
-  background:white;
-  border-radius:24px;
+  background: white;
+  border: 1px solid #f3c5d9;
+  border-radius: 24px;
+  overflow: hidden;
 }
 
 .scenario-card img {
-  width:100%;
-  display:block;
+  display: block;
+  width: 100%;
 }
 
 .scenario-content {
-  padding:22px;
-  text-align:center;
+  padding: 22px;
+  text-align: center;
 }
 
 .scenario-content h3 {
-  color:var(--dark);
-  margin-bottom:10px;
+  color: var(--dark);
+  margin-bottom: 10px;
 }
 
 .scenario-content p {
-  color:var(--muted);
-  font-size:14px;
-  margin-bottom:17px;
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 17px;
 }
 
 .scenario-disclaimer {
-  margin-top:24px;
-  font-size:12px;
-  text-align:center;
-  color:var(--muted);
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
 }
 
 /* INGREDIENTS */
 
 .ingredients-section {
-  background:white;
+  background: white;
 }
 
 .ingredients-image {
-  display:block;
-  width:100%;
-  max-width:780px;
-  margin:0 auto 30px;
-  border-radius:22px;
+  display: block;
+  max-width: 780px;
+  width: 100%;
+  margin: 0 auto 30px;
+  border-radius: 22px;
 }
 
 .ingredient-cards {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 .ingredient {
-  padding:20px;
-  border:1px solid #f2d4e2;
-  border-radius:17px;
-  background:#fff9fc;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 17px;
+  background: #fff9fc;
 }
 
 .ingredient h3 {
-  color:var(--dark);
+  color: var(--dark);
 }
 
 .ingredient p {
-  font-size:13px;
-  color:var(--muted);
+  color: var(--muted);
+  font-size: 13px;
 }
 
 /* AVIS ECRITS */
 
 .reviews-section {
-  background:linear-gradient(180deg,#fff8fc,#ffedf5);
+  background: linear-gradient(180deg, #fff8fc, #ffedf5);
 }
 
 .reviews-wrapper {
-  max-width:900px;
-  margin:auto;
+  max-width: 900px;
+  margin: auto;
 }
 
 .reviews-summary {
-  background:white;
-  border:1px solid #f2d2e1;
-  padding:22px;
-  border-radius:22px;
-  text-align:center;
-  margin-bottom:25px;
+  background: white;
+  padding: 22px;
+  border: 1px solid #f2d2e1;
+  border-radius: 22px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .review-total-rating {
-  font-size:30px;
-  font-weight:900;
-  color:var(--dark);
+  color: var(--dark);
+  font-size: 30px;
+  font-weight: 900;
 }
 
 .review-summary-stars,
 .review-stars {
-  color:#e4ab37;
-  font-size:23px;
+  color: #e4ab37;
+  font-size: 23px;
 }
 
 .review-summary-count {
-  color:var(--muted);
-  font-size:13px;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .review-carousel {
-  display:flex;
-  align-items:center;
-  gap:12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .review-card {
-  flex:1;
-  min-width:0;
-  min-height:215px;
-  background:white;
-  border:1px solid #f3d5e3;
-  border-radius:22px;
-  padding:25px;
-  box-shadow:0 8px 28px #c4327510;
+  flex: 1;
+  min-width: 0;
+  min-height: 215px;
+  padding: 25px;
+  background: white;
+  border: 1px solid #f3d5e3;
+  border-radius: 22px;
 }
 
 .review-arrow {
-  width:40px;
-  height:40px;
-  flex:0 0 40px;
-  background:white;
-  border:1px solid #efd1df;
-  border-radius:50%;
-  color:var(--dark);
-  font-size:20px;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  background: white;
+  border: 1px solid #efd1df;
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--dark);
 }
 
 .review-arrow:disabled {
-  opacity:.35;
-  cursor:not-allowed;
+  opacity: .35;
 }
 
 .review-empty {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  min-height:170px;
-  gap:12px;
-  text-align:center;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
 }
 
 .review-empty-icon {
-  font-size:40px;
+  font-size: 40px;
 }
 
 .review-empty h3,
 .review-author {
-  color:var(--dark);
+  color: var(--dark);
 }
 
 .review-empty p,
 .review-text {
-  color:var(--muted);
-  font-size:13px;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .review-card-header {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .review-date,
 .review-source {
-  font-size:12px;
-  color:var(--muted);
+  font-size: 12px;
+  color: var(--muted);
 }
 
 .review-title {
-  color:var(--dark);
-  font-weight:900;
+  color: var(--dark);
+  font-weight: 900;
 }
 
 .review-text {
-  white-space:pre-line;
-  overflow-wrap:anywhere;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
 }
 
 .review-source {
-  margin-top:14px;
-  padding-top:10px;
-  border-top:1px solid #f4e4ed;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid #f4e4ed;
 }
 
 .review-dots {
-  display:flex;
-  justify-content:center;
-  gap:8px;
-  margin:20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px;
 }
 
 .review-dot {
-  width:9px;
-  height:9px;
-  border:0;
-  background:#d9adbf;
-  border-radius:50%;
+  width: 9px;
+  height: 9px;
+  border: 0;
+  border-radius: 50%;
+  background: #d9adbf;
 }
 
 .review-dot.active {
-  background:var(--pink);
+  background: var(--pink);
 }
 
 .reviews-disclaimer {
-  text-align:center;
-  font-size:12px;
-  color:var(--muted);
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 /* AVIS VIDEO */
 
 .video-reviews-section {
-  background:linear-gradient(180deg,#fff0f6,#fff9fc);
+  background: linear-gradient(180deg, #fff0f6, #fff9fc);
 }
 
 .video-reviews-container {
-  max-width:700px;
-  margin:auto;
+  max-width: 700px;
+  margin: auto;
 }
 
 .video-review-player {
-  background:white;
-  border:1px solid #f2d4e2;
-  border-radius:24px;
-  overflow:hidden;
-  box-shadow:0 12px 35px #ae1e601c;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px #ae1e601c;
 }
 
 .video-review-player video {
-  display:block;
-  width:100%;
-  max-height:520px;
-  background:#181218;
-  object-fit:contain;
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  background: #181218;
 }
 
 .video-review-empty {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  min-height:300px;
-  padding:30px;
-  gap:15px;
-  text-align:center;
+  min-height: 300px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
 }
 
 .video-empty-icon {
-  font-size:55px;
+  font-size: 55px;
 }
 
 .video-review-empty h3,
 .video-review-info h3 {
-  color:var(--dark);
+  color: var(--dark);
 }
 
 .video-review-empty p,
 .video-review-info p {
-  color:var(--muted);
-  font-size:14px;
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .video-review-info {
-  padding:18px;
+  padding: 18px;
 }
 
 .video-review-navigation {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:20px;
-  padding:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .video-nav-btn {
-  width:42px;
-  height:42px;
-  border:1px solid #f1c8db;
-  border-radius:50%;
-  background:white;
-  color:var(--dark);
-  font-size:22px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #f1c8db;
+  border-radius: 50%;
+  background: white;
+  color: var(--dark);
+  font-size: 22px;
 }
 
 .video-nav-btn:disabled {
-  opacity:.35;
-  cursor:not-allowed;
+  opacity: .35;
 }
 
 #videoReviewCounter {
-  color:var(--dark);
-  font-weight:800;
+  color: var(--dark);
+  font-weight: 800;
 }
 
 .video-review-thumbnails {
-  display:flex;
-  gap:12px;
-  justify-content:center;
-  overflow-x:auto;
-  padding:10px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 10px;
 }
 
 .video-review-thumb {
-  flex:0 0 95px;
-  height:110px;
-  background:white;
-  border:2px solid #f0d2e0;
-  border-radius:14px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
-  font-size:24px;
+  flex: 0 0 95px;
+  height: 110px;
+  border: 2px solid #f0d2e0;
+  border-radius: 14px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
 }
 
 .video-review-thumb span {
-  font-size:11px;
+  font-size: 11px;
 }
 
 .video-review-thumb.active {
-  border-color:var(--pink);
-  background:#fff0f6;
+  border-color: var(--pink);
+  background: #fff0f6;
 }
 
 .video-review-disclaimer {
-  margin-top:15px;
-  color:var(--muted);
-  font-size:12px;
-  text-align:center;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 15px;
+  text-align: center;
 }
 
-/* FORMULAIRE */
+/* COMMANDE */
 
 .order-section {
-  background:linear-gradient(180deg,#ffe3f0,#fff8fb);
+  background: linear-gradient(180deg, #ffe3f0, #fff8fb);
 }
 
 .form-box {
-  max-width:780px;
-  margin:auto;
-  padding:35px;
-  background:white;
-  border-radius:28px;
-  box-shadow:0 15px 45px #d83b831b;
+  max-width: 780px;
+  margin: auto;
+  padding: 35px;
+  background: white;
+  border-radius: 28px;
+  box-shadow: 0 15px 45px #d83b831b;
 }
 
 .form-title {
-  color:var(--dark);
-  text-align:center;
-  font-size:29px;
+  color: var(--dark);
+  text-align: center;
+  font-size: 29px;
 }
 
 .form-subtitle {
-  color:var(--muted);
-  text-align:center;
-  margin-bottom:30px;
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 30px;
 }
 
 .pack-heading {
-  color:var(--dark);
-  text-align:center;
-  margin-bottom:22px;
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 22px;
 }
 
 .pack-options {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:12px;
-  margin-bottom:30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 30px;
 }
 
 .pack {
-  position:relative;
-  cursor:pointer;
+  position: relative;
+  cursor: pointer;
 }
 
 .pack input {
-  position:absolute;
-  opacity:0;
-  width:1px;
-  height:1px;
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
 }
 
 .pack-content {
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  min-height:185px;
-  gap:6px;
-  border:2px solid #f0cbdc;
-  border-radius:20px;
-  background:#fffafd;
-  text-align:center;
-  padding:25px 7px 15px;
+  position: relative;
+  min-height: 185px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border: 2px solid #f0cbdc;
+  border-radius: 20px;
+  background: #fffafd;
+  padding: 25px 7px 15px;
+  text-align: center;
 }
 
 .pack input:checked + .pack-content {
-  border-color:var(--pink);
-  background:#ffe4ef;
-  box-shadow:0 8px 22px #e63e8920;
+  border-color: var(--pink);
+  background: #ffe4ef;
+  box-shadow: 0 8px 22px #e63e8920;
 }
 
 .pack input:focus-visible + .pack-content {
-  outline:3px solid var(--dark);
-  outline-offset:3px;
+  outline: 3px solid var(--dark);
+  outline-offset: 3px;
 }
 
 .pack-badge {
-  position:absolute;
-  top:-13px;
-  right:50%;
-  transform:translateX(50%);
-  padding:3px 9px;
-  background:var(--pink);
-  color:white;
-  border-radius:20px;
-  font-size:10px;
-  font-weight:900;
-  white-space:nowrap;
+  position: absolute;
+  top: -13px;
+  right: 50%;
+  transform: translateX(50%);
+  background: var(--pink);
+  padding: 3px 9px;
+  color: white;
+  font-size: 10px;
+  font-weight: 900;
+  white-space: nowrap;
+  border-radius: 20px;
 }
 
 .pack-icon {
-  font-size:32px;
+  font-size: 32px;
 }
 
 .pack-name {
-  color:var(--dark);
-  font-weight:900;
+  color: var(--dark);
+  font-weight: 900;
 }
 
 .pack-price {
-  color:var(--pink);
-  font-size:22px;
-  font-weight:900;
+  color: var(--pink);
+  font-size: 22px;
+  font-weight: 900;
 }
 
 .pack-desc {
-  color:var(--muted);
-  font-size:12px;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .form-group {
-  margin-bottom:19px;
+  margin-bottom: 19px;
 }
 
 .form-group label {
-  display:block;
-  color:#713952;
-  font-weight:800;
-  margin-bottom:7px;
+  display: block;
+  color: #713952;
+  font-weight: 800;
+  margin-bottom: 7px;
 }
 
 .form-group input,
 .form-group textarea {
-  display:block;
-  width:100%;
-  border:1px solid #edc5d7;
-  border-radius:13px;
-  padding:14px;
-  background:#fffbfd;
-  font-size:15px;
+  display: block;
+  width: 100%;
+  border: 1px solid #edc5d7;
+  border-radius: 13px;
+  padding: 14px;
+  background: #fffbfd;
+  font-size: 15px;
 }
 
 .form-group textarea {
-  resize:vertical;
-  min-height:85px;
+  min-height: 85px;
+  resize: vertical;
 }
 
 .summary {
-  margin:25px 0;
-  padding:21px;
-  border:1px solid #f5d1e1;
-  border-radius:18px;
-  background:#fff1f7;
+  margin: 25px 0;
+  padding: 21px;
+  border: 1px solid #f5d1e1;
+  border-radius: 18px;
+  background: #fff1f7;
 }
 
 .summary-row {
-  display:flex;
-  justify-content:space-between;
-  gap:12px;
-  margin-bottom:10px;
-  font-size:14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .summary-total {
-  margin-top:12px;
-  padding-top:14px;
-  border-top:1px solid #edbfd3;
-  color:var(--dark);
-  font-size:19px;
-  font-weight:900;
+  margin-top: 12px;
+  padding-top: 14px;
+  border-top: 1px solid #edbfd3;
+  color: var(--dark);
+  font-size: 19px;
+  font-weight: 900;
 }
 
 .privacy-consent {
-  display:flex;
-  align-items:flex-start;
-  gap:10px;
-  margin:18px 0;
-  font-size:13px;
-  color:#725368;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 18px 0;
+  color: #725368;
+  font-size: 13px;
 }
 
 .privacy-consent input {
-  width:19px;
-  height:19px;
-  flex:0 0 19px;
-  margin-top:5px;
-  accent-color:var(--dark);
+  width: 19px;
+  height: 19px;
+  flex: 0 0 19px;
+  margin-top: 5px;
+  accent-color: var(--dark);
 }
 
 .submit-btn {
-  width:100%;
+  width: 100%;
 }
 
 .form-message {
-  display:none;
-  text-align:center;
-  padding:13px;
-  border-radius:12px;
-  margin-top:15px;
-  font-weight:700;
+  display: none;
+  text-align: center;
+  padding: 13px;
+  border-radius: 12px;
+  margin-top: 15px;
+  font-weight: 700;
 }
 
 .form-message.error {
-  display:block;
-  color:#a82323;
-  background:#fff0ef;
+  display: block;
+  color: #a82323;
+  background: #fff0ef;
 }
 
 .form-message.info {
-  display:block;
-  color:#75520b;
-  background:#fff4df;
+  display: block;
+  color: #75520b;
+  background: #fff4df;
 }
 
 .notice {
-  color:var(--muted);
-  text-align:center;
-  font-size:12px;
-  margin-top:15px;
+  margin-top: 15px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 12px;
 }
 
 footer {
-  background:#8e1b51;
-  padding:30px;
-  color:white;
-  text-align:center;
-  font-size:13px;
+  background: #8e1b51;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  font-size: 13px;
 }
 
 /* RESPONSIVE */
 
 @media(max-width:1000px) {
   .collection-grid {
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media(max-width:900px) {
   .home-hero-grid,
   .detail-grid {
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
   }
 
   .scenarios-grid {
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media(max-width:700px) {
+  .collection-grid {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+
   .benefits,
-  .scenarios-grid,
-  .ingredient-cards {
-    grid-template-columns:1fr;
+  .ingredient-cards,
+  .scenarios-grid {
+    grid-template-columns: 1fr;
   }
 
   .home-hero h1 {
-    font-size:32px;
+    font-size: 32px;
   }
 
   .section-title {
-    font-size:25px;
+    font-size: 25px;
   }
 
   .form-box {
-    padding:25px 15px;
+    padding: 25px 15px;
   }
 }
 
 @media(max-width:520px) {
   .logo {
-    font-size:17px;
+    font-size: 17px;
   }
 
   .header-nav a {
-    font-size:12px;
+    font-size: 12px;
   }
 
   .collection-grid {
-    gap:10px;
+    gap: 10px;
   }
 
   .product-content {
-    padding:13px 9px;
+    padding: 13px 9px;
   }
 
   .product-content h3 {
-    font-size:14px;
+    font-size: 14px;
+    min-height: 44px;
   }
 
-  .product-content p {
-    font-size:11px;
+  .product-description {
+    font-size: 11px;
+    min-height: 90px;
   }
 
   .product-price {
-    font-size:18px;
+    font-size: 18px;
   }
 
   .pack-options {
-    gap:6px;
+    gap: 6px;
   }
 
   .pack-content {
-    min-height:155px;
-    padding:23px 4px 10px;
+    min-height: 155px;
+    padding: 23px 4px 10px;
   }
 
   .pack-name {
-    font-size:12px;
+    font-size: 12px;
   }
 
   .pack-price {
-    font-size:17px;
+    font-size: 17px;
   }
 
   .pack-desc {
-    font-size:10px;
+    font-size: 10px;
   }
 
   .pack-badge {
-    font-size:9px;
-    padding:3px 5px;
+    font-size: 9px;
+    padding: 3px 5px;
   }
 
   .review-card {
-    padding:15px;
+    padding: 15px;
   }
 
   .review-carousel {
-    gap:5px;
+    gap: 5px;
   }
 
   .review-arrow {
-    flex-basis:30px;
-    width:30px;
-    height:30px;
+    flex-basis: 30px;
+    width: 30px;
+    height: 30px;
   }
 
   .video-review-thumbnails {
-    justify-content:flex-start;
+    justify-content: flex-start;
   }
 }
 
 @media(prefers-reduced-motion:reduce) {
   html {
-    scroll-behavior:auto;
+    scroll-behavior: auto;
   }
 
   .carousel-track {
-    transition:none;
+    transition: none;
   }
 }
 </style>
@@ -1242,11 +1216,13 @@ footer {
 
 <header>
   <div class="container header-content">
-    <a href="#accueil" class="logo">💗 Pheromone Beauty</a>
+    <a href="#accueil" class="logo">
+      💗 Pheromone Beauty
+    </a>
 
     <nav class="header-nav">
       <a href="#accueil">الرئيسية</a>
-      <a href="#produit/pheromone">المنتج المميز</a>
+      <a href="#collection">منتجاتنا</a>
     </nav>
   </div>
 </header>
@@ -1257,9 +1233,10 @@ footer {
 
   <section class="home-hero">
     <div class="container home-hero-grid">
-
       <div>
-        <span class="home-label">✨ Pheromone Beauty</span>
+        <span class="home-label">
+          ✨ Pheromone Beauty
+        </span>
 
         <h1>
           اكتشفي عالم العلكات
@@ -1267,9 +1244,10 @@ footer {
         </h1>
 
         <p>
-          مرحباً بك في متجر Pheromone Beauty.
-          اكتشفي منتجنا الحالي وتعرفي على الأفكار
-          الجديدة لمجموعتنا من العلكات.
+          أهلاً بك في Pheromone Beauty.
+          اكتشفي مجموعتنا المتنوعة من العلكات
+          المخصصة للعناية اليومية والجمال،
+          وتعرفي على منتجاتنا وباقاتنا.
         </p>
 
         <a href="#collection" class="btn">
@@ -1278,153 +1256,108 @@ footer {
       </div>
 
       <div>
-        <img src="images/pu.png" alt="Pheromone Gummies">
+        <img
+          src="images/pu.png"
+          alt="Pheromone Gummies"
+        >
       </div>
-
     </div>
   </section>
 
   <section class="collection" id="collection">
     <div class="container">
-
-      <h2 class="section-title">💗 مجموعتنا من العلكات</h2>
+      <h2 class="section-title">
+        💗 اكتشفي مجموعتنا من العلكات
+      </h2>
 
       <p class="section-desc">
-        اضغطي على المنتج للاطلاع على صفحته الخاصة
+        اختاري المنتج الذي يهمك
+        للاطلاع على صورته ومعلوماته الخاصة
       </p>
 
       <div class="collection-grid" id="homeProducts"></div>
 
       <p class="collection-note">
-        المنتجات التي تحمل عبارة «قريباً»
-        أمثلة تصميمية وليست متاحة للطلب حالياً.
+        المنتجات التي تحمل عبارة «التوفر غير مؤكد»
+        معروضة للتعريف فقط حتى تأكيد السعر والمخزون من المورد.
       </p>
-
     </div>
   </section>
 
 </main>
 
-<!-- FICHE PRODUIT -->
+<!-- PAGE PRODUIT -->
 
 <main id="productPage" hidden>
 
   <section class="product-detail">
     <div class="container">
-
-      <a href="#accueil" class="back-link">
-        → العودة إلى المتجر
+      <a href="#collection" class="back-link">
+        → العودة إلى المنتجات
       </a>
 
       <div class="detail-grid">
 
-        <div>
+        <div class="product-carousel" id="productCarousel">
+          <div class="carousel-viewport">
+            <div class="carousel-track" id="carouselTrack"></div>
 
-          <div class="product-carousel" id="productCarousel">
+            <button type="button"
+                    class="carousel-btn prev"
+                    id="previousSlide"
+                    aria-label="الصورة السابقة">❮</button>
 
-            <div class="carousel-viewport">
-
-              <div class="carousel-track" id="carouselTrack">
-
-                <div class="carousel-slide">
-                  <img src="images/s.png" alt="صورة المنتج 1">
-                </div>
-
-                <div class="carousel-slide">
-                  <img src="images/pu.png" alt="صورة المنتج 2">
-                </div>
-
-                <div class="carousel-slide">
-                  <img src="images/c2.png" alt="صورة المنتج 3">
-                </div>
-
-              </div>
-
-              <button type="button"
-                class="carousel-btn prev"
-                id="previousSlide"
-                aria-label="الصورة السابقة">❮</button>
-
-              <button type="button"
-                class="carousel-btn next"
-                id="nextSlide"
-                aria-label="الصورة التالية">❯</button>
-
-            </div>
-
-            <div class="carousel-thumbnails" id="carouselThumbnails">
-
-              <button type="button" class="carousel-thumb active" data-slide="0">
-                <img src="images/s.png" alt="الصورة الأولى">
-              </button>
-
-              <button type="button" class="carousel-thumb" data-slide="1">
-                <img src="images/pu.png" alt="الصورة الثانية">
-              </button>
-
-              <button type="button" class="carousel-thumb" data-slide="2">
-                <img src="images/c2.png" alt="الصورة الثالثة">
-              </button>
-
-            </div>
-
-            <div class="carousel-dots" id="carouselDots">
-              <button type="button" class="carousel-dot active" data-slide="0"></button>
-              <button type="button" class="carousel-dot" data-slide="1"></button>
-              <button type="button" class="carousel-dot" data-slide="2"></button>
-            </div>
-
+            <button type="button"
+                    class="carousel-btn next"
+                    id="nextSlide"
+                    aria-label="الصورة التالية">❯</button>
           </div>
 
-          <div class="detail-placeholder lavender"
-               id="detailPlaceholder" hidden>
-            <span id="placeholderIcon">💜</span>
-            <small>الصورة الحقيقية للمنتج قريباً</small>
-          </div>
+          <div class="carousel-thumbnails"
+               id="carouselThumbnails"></div>
 
+          <div class="carousel-dots"
+               id="carouselDots"></div>
         </div>
 
         <div class="detail-info">
+          <span class="detail-tag" id="detailTag"></span>
 
-          <span class="detail-tag" id="detailTag">
-            🌸 المنتج المميز
-          </span>
-
-          <h1 id="detailTitle">Pheromone Gummies</h1>
+          <h1 id="detailTitle"></h1>
 
           <p id="detailDescription"></p>
 
           <div class="detail-price" id="detailPrice"></div>
 
           <div class="detail-actions">
-
-            <a href="#commande" id="detailOrderButton" class="btn">
+            <a href="#commande"
+               id="detailOrderButton"
+               class="btn">
               🛍️ اطلبي الآن
             </a>
 
-            <a href="#accueil" class="btn btn-outline">
-              العودة إلى المتجر
+            <a href="#collection" class="btn btn-outline">
+              العودة إلى المجموعة
             </a>
-
           </div>
 
-          <p id="detailNotice" style="margin-top:17px;font-size:13px"></p>
-
+          <p id="detailNotice"
+             style="margin-top:17px;font-size:13px"></p>
         </div>
 
       </div>
-
     </div>
   </section>
 
-  <!-- SECTIONS PRODUIT PHEROMONE -->
+  <!-- SECTIONS EXCLUSIVES PHEROMONE -->
 
   <div id="pheromoneSections">
 
     <section>
       <div class="container">
-
-        <h2 class="section-title">🌸 اكتشفي منتجنا</h2>
+        <h2 class="section-title">
+          🌸 اكتشفي منتجنا
+        </h2>
 
         <p class="section-desc">
           تعرفي على شكل المنتج وباقاته المتاحة.
@@ -1435,7 +1368,7 @@ footer {
           <div class="benefit-card">
             <div class="benefit-icon">🌿</div>
             <h3>مكونات نباتية</h3>
-            <p>تعرفي على المكونات المعروضة في المواد التعريفية.</p>
+            <p>تعرفي على المكونات من خلال الملصق الأصلي.</p>
           </div>
 
           <div class="benefit-card">
@@ -1451,7 +1384,6 @@ footer {
           </div>
 
         </div>
-
       </div>
     </section>
 
@@ -1470,15 +1402,16 @@ footer {
 
           <article class="scenario-card">
             <img src="images/anaka.png"
-                 alt="مشهد توضيحي"
+                 alt="مشهد توضيحي عن الأناقة"
                  loading="lazy">
 
             <div class="scenario-content">
               <h3>🌸 أناقتك تبدأ من ثقتك بنفسك</h3>
               <p>
-                من لحظات التردد إلى الاهتمام بالنفس.
-                اكتشفي عالم العناية الشخصية.
+                خصصي وقتاً لنفسك واكتشفي
+                عالم العناية الشخصية.
               </p>
+
               <a href="#commande" class="btn">
                 💕 اكتشفي الباقات
               </a>
@@ -1487,15 +1420,16 @@ footer {
 
           <article class="scenario-card">
             <img src="images/daka.png"
-                 alt="مشهد توضيحي"
+                 alt="مشهد توضيحي عن العناية بالنفس"
                  loading="lazy">
 
             <div class="scenario-content">
               <h3>✨ خصصي وقتاً لنفسك</h3>
               <p>
                 وسط مسؤوليات الحياة اليومية،
-                خصصي لحظات للاهتمام بنفسك وراحتك.
+                امنحي نفسك بعض لحظات الراحة.
               </p>
+
               <a href="#commande" class="btn">
                 🌷 اختاري باقتك
               </a>
@@ -1504,15 +1438,16 @@ footer {
 
           <article class="scenario-card">
             <img src="images/rajl.png"
-                 alt="مشهد توضيحي"
+                 alt="مشهد توضيحي عن العلاقات"
                  loading="lazy">
 
             <div class="scenario-content">
-              <h3>💞 الثقة والجاذبية في العلاقات</h3>
+              <h3>💞 الثقة في العلاقات</h3>
               <p>
                 الثقة والتواصل والاهتمام المتبادل
                 عناصر مهمة في العلاقات.
               </p>
+
               <a href="#commande" class="btn">
                 💗 تعرفي على المنتج
               </a>
@@ -1522,25 +1457,27 @@ footer {
         </div>
 
         <p class="scenario-disclaimer">
-          الصور تخيلية ولا تمثل نتائج حقيقية أو مضمونة لاستخدام المنتج.
+          الصور تخيلية ولا تمثل نتائج حقيقية
+          أو مضمونة لاستخدام المنتج.
         </p>
-
       </div>
     </section>
 
     <section class="ingredients-section">
       <div class="container">
 
-        <h2 class="section-title">🌿 المكونات النباتية</h2>
+        <h2 class="section-title">
+          🌿 المكونات النباتية
+        </h2>
 
         <p class="section-desc">
-          مكونات مذكورة في المواد التعريفية،
-          يجب التأكد منها على العبوة الأصلية.
+          قائمة تعريفية يجب مطابقتها
+          مع مكونات العبوة الأصلية قبل الاعتماد عليها.
         </p>
 
         <img src="images/pl23.png"
              class="ingredients-image"
-             alt="مكونات المنتج"
+             alt="صورة تعريفية للمكونات"
              loading="lazy">
 
         <div class="ingredient-cards">
@@ -1552,7 +1489,7 @@ footer {
 
           <div class="ingredient">
             <h3>🌿 الحلبة</h3>
-            <p>نبات يستخدم في المنتجات الغذائية.</p>
+            <p>نبات معروف في المنتجات الغذائية.</p>
           </div>
 
           <div class="ingredient">
@@ -1562,7 +1499,7 @@ footer {
 
           <div class="ingredient">
             <h3>🌸 البرسيم الأحمر</h3>
-            <p>مكون معروف في بعض المستحضرات العشبية.</p>
+            <p>مكون نباتي يستخدم في بعض التركيبات.</p>
           </div>
 
           <div class="ingredient">
@@ -1576,7 +1513,6 @@ footer {
           </div>
 
         </div>
-
       </div>
     </section>
 
@@ -1596,42 +1532,37 @@ footer {
       </p>
 
       <div class="reviews-summary">
-
-        <div class="review-total-rating" id="averageRating">
-          —
-        </div>
-
+        <div class="review-total-rating" id="averageRating">—</div>
         <div class="review-summary-stars" id="averageStars"></div>
 
         <div class="review-summary-count" id="reviewCount">
           لا توجد تقييمات منشورة حالياً
         </div>
-
       </div>
 
       <div class="review-carousel" id="reviewsCarousel">
+        <button type="button"
+                class="review-arrow"
+                id="previousReview"
+                aria-label="التقييم السابق"
+                disabled>❯</button>
+
+        <article class="review-card"
+                 id="reviewCard"
+                 aria-live="polite"></article>
 
         <button type="button"
-          class="review-arrow"
-          id="previousReview"
-          disabled>❯</button>
-
-        <article class="review-card" id="reviewCard"
-                 aria-live="polite">
-        </article>
-
-        <button type="button"
-          class="review-arrow"
-          id="nextReview"
-          disabled>❮</button>
-
+                class="review-arrow"
+                id="nextReview"
+                aria-label="التقييم التالي"
+                disabled>❮</button>
       </div>
 
       <div class="review-dots" id="reviewDots"></div>
 
       <p class="reviews-disclaimer">
         لا يتم عرض أي تقييمات غير موثقة.
-        سيتم ذكر مصدر التقييمات عند إضافتها.
+        سيتم ذكر المصدر عند إضافة التقييمات الحقيقية.
       </p>
 
     </div>
@@ -1639,9 +1570,7 @@ footer {
 
   <!-- AVIS VIDEO -->
 
-  <section class="video-reviews-section"
-           id="videoReviewsSection">
-
+  <section class="video-reviews-section" id="videoReviewsSection">
     <div class="container">
 
       <h2 class="section-title">
@@ -1655,25 +1584,24 @@ footer {
       <div class="video-reviews-container">
 
         <div class="video-review-player"
-             id="videoReviewPlayer">
-        </div>
+             id="videoReviewPlayer"></div>
 
         <div class="video-review-navigation">
-
           <button type="button"
-            class="video-nav-btn"
-            id="previousVideoReview"
-            disabled>❯</button>
+                  class="video-nav-btn"
+                  id="previousVideoReview"
+                  aria-label="الفيديو السابق"
+                  disabled>❯</button>
 
           <span id="videoReviewCounter">
             لا توجد فيديوهات حالياً
           </span>
 
           <button type="button"
-            class="video-nav-btn"
-            id="nextVideoReview"
-            disabled>❮</button>
-
+                  class="video-nav-btn"
+                  id="nextVideoReview"
+                  aria-label="الفيديو التالي"
+                  disabled>❮</button>
         </div>
 
         <div class="video-review-thumbnails"
@@ -1682,33 +1610,31 @@ footer {
       </div>
 
       <p class="video-review-disclaimer">
-        جميع التجارب المعروضة يجب أن تكون حقيقية،
-        وأي آراء شخصية لا تعني نتائج مضمونة للجميع.
+        يتم نشر الفيديوهات الحقيقية فقط بعد موافقة أصحابها.
+        الآراء الشخصية لا تعني نتائج مضمونة للجميع.
       </p>
-
     </div>
   </section>
 
-  <!-- PRODUIT A VENIR -->
+  <!-- PRODUITS NON DISPONIBLES -->
 
   <section id="comingSoonSection" hidden>
     <div class="container">
-
       <h2 class="section-title">
-        🌸 هذا المنتج قريباً
+        🌸 معلومات التوفر
       </h2>
 
       <p class="section-desc">
-        لم يتم تحديد الصور الحقيقية أو التركيبة
-        أو السعر أو موعد التوفر بعد.
+        المنتج معروض للتعريف.
+        يرجى انتظار تأكيد السعر والتوفر
+        من المورد قبل تقديم الطلب.
       </p>
 
       <div style="text-align:center">
-        <a href="#accueil" class="btn">
+        <a href="#collection" class="btn">
           العودة إلى المجموعة
         </a>
       </div>
-
     </div>
   </section>
 
@@ -1716,7 +1642,6 @@ footer {
 
   <section class="order-section" id="commande">
     <div class="container">
-
       <div class="form-box">
 
         <h2 class="form-title">
@@ -1780,8 +1705,6 @@ footer {
 
           </div>
 
-          <!-- NOM -->
-
           <div class="form-group">
             <label for="fullname">الاسم الكامل *</label>
 
@@ -1793,8 +1716,6 @@ footer {
                    autocomplete="name"
                    required>
           </div>
-
-          <!-- TELEPHONE -->
 
           <div class="form-group">
             <label for="phone">رقم الهاتف *</label>
@@ -1809,8 +1730,6 @@ footer {
                    required>
           </div>
 
-          <!-- VILLE -->
-
           <div class="form-group">
             <label for="city">المدينة *</label>
 
@@ -1822,8 +1741,6 @@ footer {
                    autocomplete="address-level2"
                    required>
           </div>
-
-          <!-- ADRESSE -->
 
           <div class="form-group">
             <label for="address">العنوان الكامل *</label>
@@ -1837,8 +1754,6 @@ footer {
                    required>
           </div>
 
-          <!-- REMARQUES -->
-
           <div class="form-group">
             <label for="customerNote">
               ملاحظات إضافية (اختياري)
@@ -1850,10 +1765,7 @@ footer {
                       placeholder="معلومات تساعد على التوصيل"></textarea>
           </div>
 
-          <!-- RECAPITULATIF -->
-
           <div class="summary">
-
             <div class="summary-row">
               <span>المنتج</span>
               <strong>علكات الفيرومون</strong>
@@ -1875,13 +1787,12 @@ footer {
                 <span id="totalPrice">399</span> درهم
               </strong>
             </div>
-
           </div>
 
-          <!-- CONSENTEMENT -->
-
           <label class="privacy-consent">
-            <input type="checkbox" id="shareConsent" required>
+            <input type="checkbox"
+                   id="shareConsent"
+                   required>
 
             <span>
               أوافق على مشاركة اسمي ورقم هاتفي
@@ -1910,9 +1821,7 @@ footer {
           </p>
 
         </form>
-
       </div>
-
     </div>
   </section>
 
@@ -1920,7 +1829,6 @@ footer {
 
   <section>
     <div class="container">
-
       <h2 class="section-title">
         💗 اكتشفي باقي المجموعة
       </h2>
@@ -1930,7 +1838,6 @@ footer {
       </p>
 
       <div class="collection-grid" id="relatedProducts"></div>
-
     </div>
   </section>
 
@@ -1944,7 +1851,7 @@ footer {
 <script>
 
 /* =========================================
-   CONFIGURATION GOOGLE SHEETS
+   GOOGLE APPS SCRIPT
 ========================================= */
 
 const SCRIPT_URL =
@@ -1957,100 +1864,136 @@ const SCRIPT_URL =
 const products = {
 
   pheromone: {
-    id:"pheromone",
-    name:"Pheromone Gummies",
-    title:"علكات الفيرومون للعناية اليومية",
+    id: "pheromone",
+    name: "Pheromone Gummies",
+    title: "علكات الفيرومون للعناية اليومية",
+    short: "علكات الفيرومون · اكتشفي الباقات المتاحة",
     description:
-      "اكتشفي علكات الفيرومون، مكمل غذائي على شكل حلوى. يرجى التحقق من التركيبة والمعلومات المكتوبة على العبوة الأصلية.",
-    price:"ابتداءً من 399 درهم",
-    available:true,
-    icon:"💗",
-    color:"lavender"
+      "اكتشفي علكات الفيرومون. يرجى مراجعة العبوة الأصلية للتأكد من المكونات وتعليمات الاستعمال.",
+    price: "ابتداءً من 399 درهم",
+    available: true,
+    badge: "متوفر",
+    images: [
+      "images/s.png",
+      "images/pu.png",
+      "images/c2.png"
+    ],
+    image: "images/pu.png"
   },
 
   collagen: {
-    id:"collagen",
-    name:"Collagen Gummies",
-    title:"Collagen Gummies",
-    description:"منتج مقترح للإضافة إلى المجموعة.",
-    price:"السعر قريباً",
-    available:false,
-    icon:"💜",
-    color:"lavender"
+    id: "collagen",
+    name: "Collagen & Glutathione",
+    title: "GummyLab Collagen & Glutathione",
+    short:
+      "كولاجين وغلوتاثيون · علكات للعناية بالجمال · 30 قطعة حسب الصورة",
+    description:
+      "علكات GummyLab بالكولاجين والغلوتاثيون، ضمن مجموعة العناية بالجمال. تظهر العبوة في الصورة بسعة 30 قطعة. راجعي الملصق الأصلي لمعرفة التركيبة وتعليمات الاستخدام.",
+    price: "السعر والتوفر قيد التأكيد",
+    available: false,
+    badge: "التوفر غير مؤكد",
+    images: [
+      "images/collagen-glutathione.png"
+    ],
+    image: "images/collagen-glutathione.png"
   },
 
   hair: {
-    id:"hair",
-    name:"Hair Gummies",
-    title:"Hair Gummies",
-    description:"منتج مقترح للإضافة إلى المجموعة.",
-    price:"السعر قريباً",
-    available:false,
-    icon:"🍑",
-    color:"peach"
+    id: "hair",
+    name: "Hair Skin Nails",
+    title: "GummyLab Hair Skin Nails",
+    short:
+      "مجموعة العناية بالشعر والبشرة والأظافر · 60 قطعة حسب الصورة",
+    description:
+      "علكات GummyLab من مجموعة العناية بالشعر والبشرة والأظافر. تُظهر الصورة عبوة من 60 قطعة مع ذكر البيوتين والزنك والسيلينيوم؛ يجب تأكيد المعلومات على العبوة الأصلية.",
+    price: "السعر والتوفر قيد التأكيد",
+    available: false,
+    badge: "التوفر غير مؤكد",
+    images: [
+      "images/hair-skin-nails.png"
+    ],
+    image: "images/hair-skin-nails.png"
   },
 
-  sleep: {
-    id:"sleep",
-    name:"Sleep Gummies",
-    title:"Sleep Gummies",
-    description:"منتج مقترح للإضافة إلى المجموعة.",
-    price:"السعر قريباً",
-    available:false,
-    icon:"🌙",
-    color:"blue"
+  joint: {
+    id: "joint",
+    name: "Joint Support",
+    title: "GummyLab Joint Support",
+    short:
+      "مجموعة العناية بالمفاصل · 30 قطعة حسب الصورة",
+    description:
+      "علكات GummyLab Joint Support المعروضة ضمن مجموعة العناية بالمفاصل. تُظهر الصورة عبوة من 30 قطعة. المنتج ليس بديلاً عن الاستشارة الطبية ويجب مراجعة المعلومات الرسمية على العبوة.",
+    price: "السعر والتوفر قيد التأكيد",
+    available: false,
+    badge: "التوفر غير مؤكد",
+    images: [
+      "images/joint-support.png"
+    ],
+    image: "images/joint-support.png"
+  },
+
+  hormone: {
+    id: "hormone",
+    name: "Hormone Balance Women",
+    title: "GummyLab Hormone Balance Women",
+    short:
+      "مجموعة العناية النسائية · 30 قطعة حسب الصورة",
+    description:
+      "علكات GummyLab Hormone Balance Women، مقدمة ضمن مجموعة العناية النسائية، وتُظهر الصورة عبوة من 30 قطعة. الاسم التجاري لا يثبت فعالية طبية أو هرمونية؛ يرجى التحقق من الملصق الأصلي.",
+    price: "السعر والتوفر قيد التأكيد",
+    available: false,
+    badge: "التوفر غير مؤكد",
+    images: [
+      "images/hormone-balance.png"
+    ],
+    image: "images/hormone-balance.png"
   }
 
 };
 
 /* =========================================
-   AVIS ECRITS
-   AJOUTER UNIQUEMENT DE VRAIS AVIS
+   AVIS CLIENTS
 ========================================= */
 
 const productReviews = {
   pheromone: [],
   collagen: [],
   hair: [],
-  sleep: []
+  joint: [],
+  hormone: []
 };
-
-/*
-Exemple de structure pour un vrai avis autorisé :
-
-{
-  author: "Prénom de la cliente",
-  rating: 5,
-  title: "Titre de son avis",
-  text: "Son commentaire exact",
-  date: "2026-11-13",
-  source: "Source réelle"
-}
-*/
-
-/* =========================================
-   AVIS VIDEO
-========================================= */
 
 const productVideoReviews = {
   pheromone: [],
   collagen: [],
   hair: [],
-  sleep: []
+  joint: [],
+  hormone: []
 };
 
 /*
-Exemple de vraie vidéo autorisée :
+Exemple de vrai avis écrit :
 
-{
+productReviews.pheromone.push({
+  author: "Prénom autorisé",
+  rating: 5,
+  title: "Titre réel",
+  text: "Commentaire réel",
+  date: "2026-11-13",
+  source: "Source vérifiable"
+});
+
+Exemple de vidéo autorisée :
+
+productVideoReviews.pheromone.push({
   src: "videos/avis1.mp4",
-  author: "Prénom de la cliente",
+  author: "Prénom autorisé",
   title: "تجربتي مع المنتج"
-}
+});
 */
 
 /* =========================================
-   OUTILS
+   UTILITAIRES
 ========================================= */
 
 function el(id) {
@@ -2060,11 +2003,11 @@ function el(id) {
 const homePage = el("homePage");
 const productPage = el("productPage");
 
-let currentProduct = "pheromone";
-
 const reducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)"
 ).matches;
+
+let currentProduct = "pheromone";
 
 /* =========================================
    CARTES PRODUITS
@@ -2080,35 +2023,15 @@ function createProductCard(product) {
 
   const badge = document.createElement("span");
   badge.className = "product-badge";
-  badge.textContent = product.available
-    ? "متوفر"
-    : "قريباً";
+  badge.textContent = product.badge;
+
+  const image = document.createElement("img");
+  image.src = product.image;
+  image.alt = product.name;
+  image.loading = "lazy";
 
   photo.appendChild(badge);
-
-  if (product.available) {
-
-    const image = document.createElement("img");
-    image.src = "images/pu.png";
-    image.alt = product.name;
-
-    photo.appendChild(image);
-
-  } else {
-
-    const icon = document.createElement("div");
-    icon.className = "product-icon " + product.color;
-
-    const symbol = document.createElement("span");
-    symbol.textContent = product.icon;
-
-    const small = document.createElement("small");
-    small.textContent = "صورة المنتج قريباً";
-
-    icon.appendChild(symbol);
-    icon.appendChild(small);
-    photo.appendChild(icon);
-  }
+  photo.appendChild(image);
 
   const content = document.createElement("div");
   content.className = "product-content";
@@ -2117,17 +2040,16 @@ function createProductCard(product) {
   name.textContent = product.name;
 
   const description = document.createElement("p");
-  description.textContent = product.available
-    ? "علكات الفيرومون"
-    : "منتج مقترح للمجموعة";
+  description.className = "product-description";
+  description.textContent = product.short;
 
   const price = document.createElement("div");
   price.className = "product-price";
+  price.textContent = product.available
+    ? "399 درهم"
+    : product.price;
 
-  if (product.available) {
-    price.textContent = "399 درهم";
-  } else {
-    price.textContent = "السعر قريباً";
+  if (!product.available) {
     price.classList.add("unknown");
   }
 
@@ -2172,6 +2094,206 @@ function renderRelatedProducts(activeId) {
 }
 
 /* =========================================
+   CARROUSEL PHOTOS DYNAMIQUE
+========================================= */
+
+let currentSlide = 0;
+let activeImages = [];
+let carouselTimer = null;
+let touchStartX = 0;
+
+function renderProductCarousel(product) {
+
+  stopCarousel();
+
+  activeImages = product.images;
+  currentSlide = 0;
+
+  const track = el("carouselTrack");
+  const thumbnails = el("carouselThumbnails");
+  const dots = el("carouselDots");
+
+  track.replaceChildren();
+  thumbnails.replaceChildren();
+  dots.replaceChildren();
+
+  activeImages.forEach((src, index) => {
+
+    const slide = document.createElement("div");
+    slide.className = "carousel-slide";
+
+    const image = document.createElement("img");
+    image.src = src;
+    image.alt = product.name + " - " + (index + 1);
+
+    slide.appendChild(image);
+    track.appendChild(slide);
+
+    const thumb = document.createElement("button");
+    thumb.type = "button";
+    thumb.className = "carousel-thumb";
+    thumb.setAttribute(
+      "aria-label",
+      "الصورة " + (index + 1)
+    );
+
+    const thumbImage = document.createElement("img");
+    thumbImage.src = src;
+    thumbImage.alt = "";
+
+    thumb.appendChild(thumbImage);
+
+    thumb.addEventListener("click", () => {
+      navigateSlide(index);
+    });
+
+    thumbnails.appendChild(thumb);
+
+    const dot = document.createElement("button");
+    dot.type = "button";
+    dot.className = "carousel-dot";
+
+    dot.setAttribute(
+      "aria-label",
+      "الصورة " + (index + 1)
+    );
+
+    dot.addEventListener("click", () => {
+      navigateSlide(index);
+    });
+
+    dots.appendChild(dot);
+  });
+
+  const multiple = activeImages.length > 1;
+
+  el("previousSlide").hidden = !multiple;
+  el("nextSlide").hidden = !multiple;
+  thumbnails.hidden = !multiple;
+  dots.hidden = !multiple;
+
+  showSlide(0);
+  startCarousel();
+}
+
+function showSlide(index) {
+
+  if (activeImages.length === 0) {
+    return;
+  }
+
+  currentSlide = (
+    index + activeImages.length
+  ) % activeImages.length;
+
+  el("carouselTrack").style.transform =
+    "translateX(-" + (currentSlide * 100) + "%)";
+
+  [...el("carouselThumbnails").children]
+    .forEach((thumb, i) => {
+      thumb.classList.toggle(
+        "active",
+        i === currentSlide
+      );
+    });
+
+  [...el("carouselDots").children]
+    .forEach((dot, i) => {
+      dot.classList.toggle(
+        "active",
+        i === currentSlide
+      );
+    });
+}
+
+function stopCarousel() {
+
+  if (carouselTimer !== null) {
+    clearInterval(carouselTimer);
+    carouselTimer = null;
+  }
+}
+
+function startCarousel() {
+
+  stopCarousel();
+
+  if (
+    document.hidden ||
+    productPage.hidden ||
+    reducedMotion ||
+    activeImages.length < 2
+  ) {
+    return;
+  }
+
+  carouselTimer = setInterval(() => {
+    showSlide(currentSlide + 1);
+  }, 4000);
+}
+
+function navigateSlide(index) {
+  showSlide(index);
+  startCarousel();
+}
+
+el("previousSlide").addEventListener("click", () => {
+  navigateSlide(currentSlide - 1);
+});
+
+el("nextSlide").addEventListener("click", () => {
+  navigateSlide(currentSlide + 1);
+});
+
+el("productCarousel").addEventListener(
+  "mouseenter",
+  stopCarousel
+);
+
+el("productCarousel").addEventListener(
+  "mouseleave",
+  startCarousel
+);
+
+el("productCarousel").addEventListener(
+  "touchstart",
+  event => {
+
+    touchStartX =
+      event.changedTouches[0].screenX;
+
+  },
+  { passive: true }
+);
+
+el("productCarousel").addEventListener(
+  "touchend",
+  event => {
+
+    if (
+      event.target.closest(".carousel-thumbnails")
+    ) {
+      return;
+    }
+
+    const difference =
+      touchStartX -
+      event.changedTouches[0].screenX;
+
+    if (Math.abs(difference) > 45) {
+
+      navigateSlide(
+        currentSlide +
+        (difference > 0 ? 1 : -1)
+      );
+
+    }
+
+  },
+  { passive: true }
+);
+
+/* =========================================
    NAVIGATION
 ========================================= */
 
@@ -2191,7 +2313,7 @@ function openHome(scrollCollection = false) {
     if (scrollCollection) {
       el("collection").scrollIntoView();
     } else {
-      window.scrollTo(0,0);
+      window.scrollTo(0, 0);
     }
 
   });
@@ -2212,56 +2334,54 @@ function openProduct(id, showOrder = false) {
   productPage.hidden = false;
 
   el("detailTitle").textContent = product.title;
-  el("detailDescription").textContent = product.description;
-  el("detailPrice").textContent = product.price;
 
-  const available = product.available;
+  el("detailDescription").textContent =
+    product.description;
 
-  el("productCarousel").hidden = !available;
-  el("detailPlaceholder").hidden = available;
+  el("detailPrice").textContent =
+    product.price;
 
-  el("pheromoneSections").hidden = !available;
-  el("comingSoonSection").hidden = available;
-  el("commande").hidden = !available;
+  el("detailPrice").classList.toggle(
+    "unknown",
+    !product.available
+  );
 
-  el("detailOrderButton").hidden = !available;
+  el("detailTag").textContent =
+    product.available
+      ? "🌸 المنتج المميز"
+      : "✨ التوفر غير مؤكد";
 
-  if (available) {
+  el("detailOrderButton").hidden =
+    !product.available;
 
-    el("detailTag").textContent = "🌸 المنتج المميز";
+  el("pheromoneSections").hidden =
+    !product.available;
 
-    el("detailNotice").textContent =
-      "اختاري الباقة التي تناسبك من الأسفل.";
+  el("commande").hidden =
+    !product.available;
 
-    startCarousel();
+  el("comingSoonSection").hidden =
+    product.available;
 
-  } else {
+  el("detailNotice").textContent =
+    product.available
+      ? "اختاري الباقة التي تناسبك من الأسفل."
+      : "يجب تأكيد السعر والتوفر من المورد قبل إمكانية الطلب.";
 
-    el("detailTag").textContent = "✨ منتج مقترح";
-
-    el("detailNotice").textContent =
-      "هذا المنتج غير متوفر للطلب حالياً.";
-
-    el("placeholderIcon").textContent = product.icon;
-
-    el("detailPlaceholder").className =
-      "detail-placeholder " + product.color;
-
-    stopCarousel();
-  }
-
+  renderProductCarousel(product);
   renderRelatedProducts(id);
   renderReviews(id);
   renderVideoReviews(id);
 
-  document.title = product.name + " | Pheromone Beauty";
+  document.title =
+    product.name + " | Pheromone Beauty";
 
   requestAnimationFrame(() => {
 
-    if (showOrder && available) {
+    if (showOrder && product.available) {
       el("commande").scrollIntoView();
     } else {
-      window.scrollTo(0,0);
+      window.scrollTo(0, 0);
     }
 
   });
@@ -2284,153 +2404,25 @@ function handleRoute() {
   }
 
   if (hash === "#commande") {
-    openProduct("pheromone",true);
+    openProduct("pheromone", true);
     return;
   }
 
   if (hash.startsWith("#produit/")) {
 
-    const productId = hash.replace("#produit/","");
+    const id =
+      hash.substring("#produit/".length);
 
-    openProduct(productId);
+    openProduct(id);
     return;
   }
 
   openHome();
 }
 
-window.addEventListener("hashchange",handleRoute);
-
-/* =========================================
-   CARROUSEL PHOTOS
-========================================= */
-
-const slides = [
-  ...document.querySelectorAll(".carousel-slide")
-];
-
-const thumbs = [
-  ...document.querySelectorAll(".carousel-thumb")
-];
-
-const dots = [
-  ...document.querySelectorAll(".carousel-dot")
-];
-
-let currentSlide = 0;
-let carouselTimer = null;
-let touchStartX = 0;
-
-function showSlide(index) {
-
-  currentSlide = (
-    index + slides.length
-  ) % slides.length;
-
-  el("carouselTrack").style.transform =
-    "translateX(-" + (currentSlide * 100) + "%)";
-
-  thumbs.forEach((thumb,i) => {
-    thumb.classList.toggle("active",i === currentSlide);
-  });
-
-  dots.forEach((dot,i) => {
-    dot.classList.toggle("active",i === currentSlide);
-  });
-}
-
-function stopCarousel() {
-
-  if (carouselTimer) {
-    clearInterval(carouselTimer);
-    carouselTimer = null;
-  }
-}
-
-function startCarousel() {
-
-  stopCarousel();
-
-  if (
-    reducedMotion ||
-    document.hidden ||
-    productPage.hidden ||
-    currentProduct !== "pheromone"
-  ) {
-    return;
-  }
-
-  carouselTimer = setInterval(() => {
-    showSlide(currentSlide + 1);
-  },4000);
-}
-
-function navigateSlide(index) {
-  showSlide(index);
-  startCarousel();
-}
-
-el("previousSlide").addEventListener("click",() => {
-  navigateSlide(currentSlide - 1);
-});
-
-el("nextSlide").addEventListener("click",() => {
-  navigateSlide(currentSlide + 1);
-});
-
-thumbs.forEach((thumb,index) => {
-
-  thumb.addEventListener("click",() => {
-    navigateSlide(index);
-  });
-
-});
-
-dots.forEach((dot,index) => {
-
-  dot.addEventListener("click",() => {
-    navigateSlide(index);
-  });
-
-});
-
-el("productCarousel").addEventListener(
-  "mouseenter",
-  stopCarousel
-);
-
-el("productCarousel").addEventListener(
-  "mouseleave",
-  startCarousel
-);
-
-el("productCarousel").addEventListener(
-  "touchstart",
-  event => {
-
-    touchStartX = event.changedTouches[0].screenX;
-
-  },
-  {passive:true}
-);
-
-el("productCarousel").addEventListener(
-  "touchend",
-  event => {
-
-    if (event.target.closest(".carousel-thumbnails")) {
-      return;
-    }
-
-    const diff =
-      touchStartX - event.changedTouches[0].screenX;
-
-    if (Math.abs(diff) > 45) {
-      navigateSlide(currentSlide + (diff > 0 ? 1 : -1));
-    }
-
-  },
-  {passive:true}
+window.addEventListener(
+  "hashchange",
+  handleRoute
 );
 
 /* =========================================
@@ -2443,17 +2435,20 @@ let reviewTimer = null;
 
 function starsText(rating) {
 
-  const n = Math.max(
+  const number = Math.max(
     0,
-    Math.min(5,Math.round(rating))
+    Math.min(5, Math.round(rating))
   );
 
-  return "★".repeat(n) + "☆".repeat(5-n);
+  return (
+    "★".repeat(number) +
+    "☆".repeat(5 - number)
+  );
 }
 
 function stopReviews() {
 
-  if (reviewTimer) {
+  if (reviewTimer !== null) {
     clearInterval(reviewTimer);
     reviewTimer = null;
   }
@@ -2474,7 +2469,7 @@ function startReviews() {
 
   reviewTimer = setInterval(() => {
     showReview(currentReview + 1);
-  },5000);
+  }, 5000);
 }
 
 function showReview(index) {
@@ -2520,7 +2515,8 @@ function showReview(index) {
 
   const source = document.createElement("p");
   source.className = "review-source";
-  source.textContent = "المصدر: " + review.source;
+  source.textContent =
+    "المصدر: " + review.source;
 
   card.appendChild(header);
   card.appendChild(stars);
@@ -2528,9 +2524,13 @@ function showReview(index) {
   card.appendChild(text);
   card.appendChild(source);
 
-  [...el("reviewDots").children].forEach((dot,i) => {
-    dot.classList.toggle("active",i === currentReview);
-  });
+  [...el("reviewDots").children]
+    .forEach((dot, i) => {
+      dot.classList.toggle(
+        "active",
+        i === currentReview
+      );
+    });
 }
 
 function renderReviews(productId) {
@@ -2550,7 +2550,6 @@ function renderReviews(productId) {
   );
 
   currentReview = 0;
-
   el("reviewDots").replaceChildren();
 
   if (activeReviews.length === 0) {
@@ -2561,17 +2560,27 @@ function renderReviews(productId) {
     el("reviewCount").textContent =
       "لا توجد تقييمات منشورة حالياً";
 
-    el("reviewCard").innerHTML = `
-      <div class="review-empty">
-        <div class="review-empty-icon">💗</div>
-        <h3>آراء العملاء قريباً</h3>
-        <p>
-          سيتم عرض تقييمات حقيقية لهذا المنتج
-          بعد التحقق من مصدرها والحصول
-          على إذن نشرها عند الحاجة.
-        </p>
-      </div>
-    `;
+    const card = el("reviewCard");
+    card.replaceChildren();
+
+    const empty = document.createElement("div");
+    empty.className = "review-empty";
+
+    const icon = document.createElement("div");
+    icon.className = "review-empty-icon";
+    icon.textContent = "💗";
+
+    const title = document.createElement("h3");
+    title.textContent = "آراء العملاء قريباً";
+
+    const message = document.createElement("p");
+    message.textContent =
+      "سيتم عرض تقييمات حقيقية لهذا المنتج بعد التحقق من مصدرها والحصول على إذن نشرها عند الحاجة.";
+
+    empty.appendChild(icon);
+    empty.appendChild(title);
+    empty.appendChild(message);
+    card.appendChild(empty);
 
     el("previousReview").disabled = true;
     el("nextReview").disabled = true;
@@ -2580,31 +2589,41 @@ function renderReviews(productId) {
   }
 
   const total = activeReviews.reduce(
-    (sum,review) => sum + review.rating,
+    (sum, review) => sum + review.rating,
     0
   );
 
-  const average = total / activeReviews.length;
+  const average =
+    total / activeReviews.length;
 
   el("averageRating").textContent =
     average.toFixed(1) + " / 5";
 
-  el("averageStars").textContent = starsText(average);
+  el("averageStars").textContent =
+    starsText(average);
 
   el("reviewCount").textContent =
     activeReviews.length + " تقييمات منشورة";
 
-  el("previousReview").disabled = activeReviews.length < 2;
-  el("nextReview").disabled = activeReviews.length < 2;
+  el("previousReview").disabled =
+    activeReviews.length < 2;
 
-  activeReviews.forEach((review,i) => {
+  el("nextReview").disabled =
+    activeReviews.length < 2;
+
+  activeReviews.forEach((review, i) => {
 
     const dot = document.createElement("button");
+
     dot.type = "button";
     dot.className = "review-dot";
-    dot.setAttribute("aria-label","التقييم " + (i+1));
 
-    dot.addEventListener("click",() => {
+    dot.setAttribute(
+      "aria-label",
+      "التقييم " + (i + 1)
+    );
+
+    dot.addEventListener("click", () => {
       showReview(i);
       startReviews();
     });
@@ -2616,12 +2635,12 @@ function renderReviews(productId) {
   startReviews();
 }
 
-el("previousReview").addEventListener("click",() => {
+el("previousReview").addEventListener("click", () => {
   showReview(currentReview - 1);
   startReviews();
 });
 
-el("nextReview").addEventListener("click",() => {
+el("nextReview").addEventListener("click", () => {
   showReview(currentReview + 1);
   startReviews();
 });
@@ -2645,7 +2664,8 @@ let currentVideoReview = 0;
 
 function pauseCurrentVideo() {
 
-  const video = el("videoReviewPlayer").querySelector("video");
+  const video =
+    el("videoReviewPlayer").querySelector("video");
 
   if (video) {
     video.pause();
@@ -2664,13 +2684,13 @@ function showVideoReview(index) {
     index + activeVideoReviews.length
   ) % activeVideoReviews.length;
 
-  const review = activeVideoReviews[currentVideoReview];
+  const review =
+    activeVideoReviews[currentVideoReview];
 
   const player = el("videoReviewPlayer");
   player.replaceChildren();
 
   const video = document.createElement("video");
-
   video.src = review.src;
   video.controls = true;
   video.playsInline = true;
@@ -2680,7 +2700,8 @@ function showVideoReview(index) {
   info.className = "video-review-info";
 
   const title = document.createElement("h3");
-  title.textContent = review.title || "تجربة عميل";
+  title.textContent =
+    review.title || "تجربة عميل";
 
   const author = document.createElement("p");
   author.textContent = review.author || "";
@@ -2696,14 +2717,15 @@ function showVideoReview(index) {
     " / " +
     activeVideoReviews.length;
 
-  [...el("videoReviewThumbnails").children].forEach(
-    (thumb,i) => {
+  [...el("videoReviewThumbnails").children]
+    .forEach((thumb, i) => {
+
       thumb.classList.toggle(
         "active",
         i === currentVideoReview
       );
-    }
-  );
+
+    });
 }
 
 function renderVideoReviews(productId) {
@@ -2724,16 +2746,29 @@ function renderVideoReviews(productId) {
 
   if (activeVideoReviews.length === 0) {
 
-    el("videoReviewPlayer").innerHTML = `
-      <div class="video-review-empty">
-        <div class="video-empty-icon">🎬</div>
-        <h3>تجارب العملاء قريباً</h3>
-        <p>
-          سيتم عرض فيديوهات حقيقية للعملاء هنا
-          بعد الحصول على موافقتهم على النشر.
-        </p>
-      </div>
-    `;
+    const player = el("videoReviewPlayer");
+    player.replaceChildren();
+
+    const empty = document.createElement("div");
+    empty.className = "video-review-empty";
+
+    const icon = document.createElement("div");
+    icon.className = "video-empty-icon";
+    icon.textContent = "🎬";
+
+    const title = document.createElement("h3");
+    title.textContent =
+      "تجارب العملاء قريباً";
+
+    const description = document.createElement("p");
+    description.textContent =
+      "سيتم عرض فيديوهات حقيقية للعملاء هنا بعد الحصول على موافقتهم على النشر.";
+
+    empty.appendChild(icon);
+    empty.appendChild(title);
+    empty.appendChild(description);
+
+    player.appendChild(empty);
 
     el("videoReviewCounter").textContent =
       "لا توجد فيديوهات حالياً";
@@ -2750,7 +2785,7 @@ function renderVideoReviews(productId) {
   el("nextVideoReview").disabled =
     activeVideoReviews.length < 2;
 
-  activeVideoReviews.forEach((review,i) => {
+  activeVideoReviews.forEach((review, i) => {
 
     const thumb = document.createElement("button");
     thumb.type = "button";
@@ -2765,7 +2800,7 @@ function renderVideoReviews(productId) {
     thumb.appendChild(icon);
     thumb.appendChild(label);
 
-    thumb.addEventListener("click",() => {
+    thumb.addEventListener("click", () => {
       showVideoReview(i);
     });
 
@@ -2775,36 +2810,42 @@ function renderVideoReviews(productId) {
   showVideoReview(0);
 }
 
-el("previousVideoReview").addEventListener("click",() => {
-  showVideoReview(currentVideoReview - 1);
-});
+el("previousVideoReview").addEventListener(
+  "click",
+  () => {
+    showVideoReview(currentVideoReview - 1);
+  }
+);
 
-el("nextVideoReview").addEventListener("click",() => {
-  showVideoReview(currentVideoReview + 1);
-});
+el("nextVideoReview").addEventListener(
+  "click",
+  () => {
+    showVideoReview(currentVideoReview + 1);
+  }
+);
 
 /* =========================================
-   FORMULAIRE DE COMMANDE
+   FORMULAIRE GOOGLE SHEETS
 ========================================= */
 
 const packs = {
 
   "1": {
-    name:"الباقة الأساسية",
-    quantity:1,
-    total:399
+    name: "الباقة الأساسية",
+    quantity: 1,
+    total: 399
   },
 
   "2": {
-    name:"الباقة الثنائية",
-    quantity:2,
-    total:469
+    name: "الباقة الثنائية",
+    quantity: 2,
+    total: 469
   },
 
   "3": {
-    name:"الباقة المميزة - 3 + 1 مجاناً",
-    quantity:4,
-    total:599
+    name: "الباقة المميزة - 3 + 1 مجاناً",
+    quantity: 4,
+    total: 599
   }
 
 };
@@ -2827,20 +2868,28 @@ function updatePrice() {
 
   const pack = selectedPack();
 
-  el("packDisplay").textContent = pack.name;
-  el("qtyDisplay").textContent = pack.quantity;
-  el("totalPrice").textContent = pack.total;
+  el("packDisplay").textContent =
+    pack.name;
+
+  el("qtyDisplay").textContent =
+    pack.quantity;
+
+  el("totalPrice").textContent =
+    pack.total;
 }
 
-document.querySelectorAll('input[name="pack"]').forEach(
-  input => {
+document.querySelectorAll(
+  'input[name="pack"]'
+).forEach(input => {
 
-    input.addEventListener("change",updatePrice);
+  input.addEventListener(
+    "change",
+    updatePrice
+  );
 
-  }
-);
+});
 
-function showMessage(message,type) {
+function showMessage(message, type) {
 
   el("formMessage").textContent = message;
 
@@ -2848,151 +2897,172 @@ function showMessage(message,type) {
     "form-message " + type;
 }
 
-form.addEventListener("submit",async event => {
+form.addEventListener(
+  "submit",
+  async event => {
 
-  event.preventDefault();
+    event.preventDefault();
 
-  if (currentProduct !== "pheromone") {
-    return;
-  }
+    if (currentProduct !== "pheromone") {
+      return;
+    }
 
-  if (!form.reportValidity()) {
-    return;
-  }
+    if (!form.reportValidity()) {
+      return;
+    }
 
-  const pack = selectedPack();
+    const pack = selectedPack();
 
-  const data = {
+    const data = {
 
-    fullname:el("fullname").value.trim(),
+      fullname:
+        el("fullname").value.trim(),
 
-    phone:el("phone").value.trim(),
+      phone:
+        el("phone").value.trim(),
 
-    city:el("city").value.trim(),
+      city:
+        el("city").value.trim(),
 
-    address:el("address").value.trim(),
+      address:
+        el("address").value.trim(),
 
-    note:el("customerNote").value.trim(),
+      note:
+        el("customerNote").value.trim(),
 
-    product:"Pheromone Gummies",
+      product:
+        "Pheromone Gummies",
 
-    packId:selectedPackId(),
+      packId:
+        selectedPackId(),
 
-    quantity:pack.quantity,
+      quantity:
+        pack.quantity,
 
-    total:pack.total,
+      total:
+        pack.total,
 
-    consent:el("shareConsent").checked ? "yes" : "no"
-  };
+      consent:
+        el("shareConsent").checked
+          ? "yes"
+          : "no"
+    };
 
-  const normalizedPhone =
-    data.phone.replace(/[ -]/g,"");
+    const normalizedPhone =
+      data.phone.replace(/[ -]/g, "");
 
-  const validPhone =
-    /^(?:\+212|0)[5-7]\d{8}$/.test(normalizedPhone);
+    const validPhone =
+      /^(?:\+212|0)[5-7]\d{8}$/.test(
+        normalizedPhone
+      );
 
-  if (!validPhone) {
+    if (!validPhone) {
 
-    showMessage(
-      "المرجو إدخال رقم هاتف مغربي صحيح.",
-      "error"
+      showMessage(
+        "المرجو إدخال رقم هاتف مغربي صحيح.",
+        "error"
+      );
+
+      return;
+    }
+
+    if (!data.city || !data.address) {
+
+      showMessage(
+        "المرجو إدخال المدينة والعنوان الكامل.",
+        "error"
+      );
+
+      return;
+    }
+
+    if (data.consent !== "yes") {
+
+      showMessage(
+        "المرجو الموافقة على مشاركة معلومات الطلب.",
+        "error"
+      );
+
+      return;
+    }
+
+    submitBtn.disabled = true;
+
+    submitBtn.textContent =
+      "جاري إرسال الطلب...";
+
+    const params = new URLSearchParams();
+
+    Object.entries(data).forEach(
+      ([key, value]) => {
+        params.set(key, String(value));
+      }
     );
 
-    return;
-  }
+    try {
 
-  if (!data.city || !data.address) {
+      await fetch(SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        body: params
+      });
 
-    showMessage(
-      "المرجو إدخال المدينة والعنوان الكامل.",
-      "error"
-    );
+      showMessage(
+        "تم إرسال الطلب للمعالجة، لكن لم نتمكن من التأكد من تسجيله. سيتم تأكيد الطلب بعد التواصل معك.",
+        "info"
+      );
 
-    return;
-  }
+    } catch (error) {
 
-  if (data.consent !== "yes") {
+      showMessage(
+        "تعذر إرسال الطلب. المرجو المحاولة مرة أخرى.",
+        "error"
+      );
 
-    showMessage(
-      "المرجو الموافقة على مشاركة معلومات الطلب.",
-      "error"
-    );
+    } finally {
 
-    return;
-  }
+      submitBtn.disabled = false;
 
-  submitBtn.disabled = true;
-  submitBtn.textContent = "جاري إرسال الطلب...";
+      submitBtn.textContent =
+        "💗 إرسال طلب الشراء";
 
-  const params = new URLSearchParams();
-
-  Object.entries(data).forEach(([key,value]) => {
-    params.set(key,String(value));
-  });
-
-  try {
-
-    await fetch(SCRIPT_URL,{
-      method:"POST",
-      mode:"no-cors",
-      body:params
-    });
-
-    showMessage(
-      "تم إرسال الطلب للمعالجة، لكن لم نتمكن من التأكد من تسجيله. سيتم تأكيد الطلب بعد التواصل معك.",
-      "info"
-    );
-
-  } catch(error) {
-
-    showMessage(
-      "تعذر إرسال الطلب. المرجو المحاولة مرة أخرى.",
-      "error"
-    );
-
-  } finally {
-
-    submitBtn.disabled = false;
-    submitBtn.textContent = "💗 إرسال طلب الشراء";
+    }
 
   }
-
-});
+);
 
 /* =========================================
    VISIBILITE
 ========================================= */
 
-document.addEventListener("visibilitychange",() => {
+document.addEventListener(
+  "visibilitychange",
+  () => {
 
-  if (document.hidden) {
+    if (document.hidden) {
 
-    stopCarousel();
-    stopReviews();
-    pauseCurrentVideo();
+      stopCarousel();
+      stopReviews();
+      pauseCurrentVideo();
 
-  } else {
+    } else {
 
-    startCarousel();
-    startReviews();
+      startCarousel();
+      startReviews();
+
+    }
 
   }
-
-});
+);
 
 /* =========================================
    DEMARRAGE
 ========================================= */
 
 renderHomeProducts();
-
 updatePrice();
-
-showSlide(0);
-
 handleRoute();
 
 </script>
-
 </body>
 </html>
