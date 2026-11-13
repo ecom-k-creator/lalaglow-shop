@@ -2356,6 +2356,7 @@ document.querySelectorAll(
 
 });
 
+
 /* ==========================================
    FORMULAIRE GOOGLE SHEETS
 ========================================== */
@@ -2363,7 +2364,7 @@ document.querySelectorAll(
 const form = el("orderForm");
 const submitBtn = el("submitBtn");
 
-function showMessage(message,type) {
+function showMessage(message, type) {
 
   el("formMessage").textContent = message;
 
@@ -2371,7 +2372,7 @@ function showMessage(message,type) {
     "form-message " + type;
 }
 
-form.addEventListener("submit",async event => {
+form.addEventListener("submit", async event => {
 
   event.preventDefault();
 
@@ -2379,46 +2380,42 @@ form.addEventListener("submit",async event => {
     return;
   }
 
+  /* ==========================================
+     INFORMATIONS DU FORMULAIRE
+  ========================================== */
+
+  const fullname = el("fullname").value.trim();
+
+  const phone = el("phone").value.trim();
+
+  const packId = selectedPackId();
+
   const pack = selectedPack();
 
-  const data = {
+  const consent = el("shareConsent").checked
+    ? "yes"
+    : "no";
 
-    fullname:
-      el("fullname").value.trim(),
+  /* ==========================================
+     VALIDATION DU NOM
+  ========================================== */
 
-    phone:
-      el("phone").value.trim(),
+  if (!fullname) {
 
-    city:
-      el("city").value.trim(),
+    showMessage(
+      "المرجو إدخال الاسم الكامل.",
+      "error"
+    );
 
-    address:
-      el("address").value.trim(),
+    return;
+  }
 
-    note:
-      el("customerNote").value.trim(),
-
-    product:
-      "Pheromone Gummies",
-
-    packId:
-      selectedPackId(),
-
-    quantity:
-      pack.quantity,
-
-    total:
-      pack.total,
-
-    consent:
-      el("shareConsent").checked
-        ? "yes"
-        : "no"
-
-  };
+  /* ==========================================
+     VALIDATION DU TELEPHONE
+  ========================================== */
 
   const normalizedPhone =
-    data.phone.replace(/[ -]/g,"");
+    phone.replace(/[\s-]/g, "");
 
   const validPhone =
     /^(?:\+212|0)[5-7]\d{8}$/.test(
@@ -2435,21 +2432,11 @@ form.addEventListener("submit",async event => {
     return;
   }
 
-  if (
-    !data.fullname ||
-    !data.city ||
-    !data.address
-  ) {
+  /* ==========================================
+     VALIDATION DU CONSENTEMENT
+  ========================================== */
 
-    showMessage(
-      "المرجو ملء جميع المعلومات المطلوبة.",
-      "error"
-    );
-
-    return;
-  }
-
-  if (data.consent !== "yes") {
+  if (consent !== "yes") {
 
     showMessage(
       "المرجو الموافقة على مشاركة معلومات الطلب.",
@@ -2459,15 +2446,36 @@ form.addEventListener("submit",async event => {
     return;
   }
 
-  submitBtn.disabled = true;
+  /* ==========================================
+     DONNEES A ENVOYER A GOOGLE SHEETS
+  ========================================== */
 
-  submitBtn.textContent =
-    "جاري إرسال الطلب...";
+  const data = {
+
+    fullname: fullname,
+
+    phone: normalizedPhone,
+
+    product: "Pheromone Gummies",
+
+    packId: packId,
+
+    quantity: pack.quantity,
+
+    total: pack.total,
+
+    consent: consent
+
+  };
+
+  /* ==========================================
+     PREPARATION DE L'ENVOI
+  ========================================== */
 
   const params = new URLSearchParams();
 
   Object.entries(data).forEach(
-    ([key,value]) => {
+    ([key, value]) => {
 
       params.set(
         key,
@@ -2477,24 +2485,37 @@ form.addEventListener("submit",async event => {
     }
   );
 
+  /* ==========================================
+     DESACTIVER LE BOUTON
+  ========================================== */
+
+  submitBtn.disabled = true;
+
+  submitBtn.textContent =
+    "جاري إرسال الطلب...";
+
+  /* ==========================================
+     ENVOI VERS GOOGLE APPS SCRIPT
+  ========================================== */
+
   try {
 
-    await fetch(SCRIPT_URL,{
+    await fetch(SCRIPT_URL, {
 
-      method:"POST",
+      method: "POST",
 
-      mode:"no-cors",
+      mode: "no-cors",
 
-      body:params
+      body: params
 
     });
 
     showMessage(
-      "تم إرسال الطلب للمعالجة، لكن لم نتمكن من التأكد من تسجيله. سيتم تأكيد الطلب بعد التواصل معك.",
+      "تم إرسال طلبك للمعالجة، لكن لم نتمكن من التأكد من تسجيله. سيتم التواصل معك لتأكيد الطلب والعنوان والتوصيل.",
       "info"
     );
 
-  } catch(error) {
+  } catch (error) {
 
     showMessage(
       "تعذر إرسال الطلب. المرجو المحاولة مرة أخرى.",
@@ -2538,7 +2559,9 @@ document.addEventListener(
 ========================================== */
 
 renderCarousel();
+
 updatePrice();
+
 handleRoute();
 
 </script>
