@@ -5,827 +5,664 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#c52c72">
-<title>علكات الفيرومون | Pheromone Gummies</title>
-
+<meta name="description" content="مجموعة علكات Pheromone Beauty">
+<title>Pheromone Beauty | مجموعة العلكات</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --pink: #e63e89;
-  --dark: #a51e5c;
-  --light: #fff0f6;
-  --text: #4a2639;
-  --muted: #876579;
+  --pink:#e63e89;
+  --dark:#a51e5c;
+  --light:#fff0f6;
+  --text:#4a2639;
+  --muted:#876579;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+* { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; }
 body {
-  font-family: "Cairo", sans-serif;
-  background: #fff9fc;
-  color: var(--text);
-  line-height: 1.8;
+  background:#fff9fc;
+  color:var(--text);
+  font-family:"Cairo",sans-serif;
+  line-height:1.8;
 }
-
-.container {
-  width: 92%;
-  max-width: 1150px;
-  margin: auto;
-}
-
-section {
-  padding: 65px 0;
-}
-
-/* HEADER */
+.container { width:92%; max-width:1150px; margin:auto; }
+section { padding:65px 0; }
 
 .topbar {
-  background: var(--dark);
-  color: white;
-  text-align: center;
-  padding: 9px;
-  font-size: 13px;
-  font-weight: 800;
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:9px;
+  font-size:13px;
+  font-weight:800;
 }
-
 header {
-  background: white;
-  padding: 17px 0;
-  box-shadow: 0 3px 18px #e63e8915;
+  background:white;
+  padding:17px 0;
+  box-shadow:0 3px 18px #e63e8915;
 }
-
 .header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
 }
+.logo { color:var(--dark); font-size:23px; font-weight:900; }
+.nav-btn { text-decoration:none; color:var(--pink); font-weight:900; }
 
-.logo {
-  color: var(--dark);
-  font-size: 23px;
-  font-weight: 900;
+.btn,.scenario-button {
+  display:inline-block;
+  background:linear-gradient(135deg,#f25199,#ae1b60);
+  color:white;
+  border:0;
+  border-radius:50px;
+  padding:13px 30px;
+  text-decoration:none;
+  text-align:center;
+  font:900 16px "Cairo",sans-serif;
+  cursor:pointer;
+  transition:.25s;
 }
-
-.nav-btn {
-  text-decoration: none;
-  color: var(--pink);
-  font-weight: 900;
+.btn:hover,.scenario-button:hover {
+  transform:translateY(-3px);
+  box-shadow:0 10px 25px #e63e8940;
 }
-
-.btn,
-.scenario-button {
-  display: inline-block;
-  background: linear-gradient(135deg, #f25199, #ae1b60);
-  color: white;
-  border: 0;
-  border-radius: 50px;
-  padding: 13px 30px;
-  text-decoration: none;
-  font: 900 16px "Cairo", sans-serif;
-  text-align: center;
-  cursor: pointer;
-  transition: .25s;
-}
-
-.btn:hover,
-.scenario-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px #e63e8940;
-}
-
-.btn:disabled {
-  opacity: .65;
-  cursor: not-allowed;
-}
-
-/* HERO */
-
-.hero {
-  background: linear-gradient(135deg, #ffe2ef, #fff8fb);
-  padding: 50px 0;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.tag {
-  display: inline-block;
-  background: white;
-  color: var(--dark);
-  padding: 6px 18px;
-  border-radius: 30px;
-  font-size: 13px;
-  font-weight: 900;
-  margin-bottom: 17px;
-}
-
-.hero h1 {
-  font-size: 43px;
-  color: var(--dark);
-  line-height: 1.45;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  margin-bottom: 20px;
-}
-
-.price {
-  font-size: 38px;
-  font-weight: 900;
-  color: var(--pink);
-  margin-bottom: 20px;
-}
-
-.hero-image img {
-  display: block;
-  width: 100%;
-  border-radius: 25px;
-  box-shadow: 0 15px 40px #e63e8922;
-}
-
-/* TITRES */
+.btn:disabled { opacity:.65; cursor:not-allowed; }
 
 .section-title {
-  text-align: center;
-  color: var(--dark);
-  font-size: 32px;
-  margin-bottom: 12px;
+  color:var(--dark);
+  font-size:32px;
+  text-align:center;
+  margin-bottom:12px;
+}
+.section-desc {
+  color:var(--muted);
+  max-width:750px;
+  margin:0 auto 35px;
+  text-align:center;
 }
 
-.section-desc {
-  color: var(--muted);
-  max-width: 750px;
-  text-align: center;
-  margin: 0 auto 35px;
+/* PRESENTATION */
+
+.hero {
+  background:linear-gradient(135deg,#ffe2ef,#fff8fb);
+  padding:50px 0;
+}
+.hero-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+.tag {
+  display:inline-block;
+  background:white;
+  color:var(--dark);
+  padding:6px 18px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:900;
+  margin-bottom:17px;
+}
+.hero h1 {
+  font-size:43px;
+  color:var(--dark);
+  line-height:1.45;
+  margin-bottom:15px;
+}
+.hero p { margin-bottom:20px; }
+.price {
+  font-size:38px;
+  color:var(--pink);
+  font-weight:900;
+  margin-bottom:20px;
+}
+.hero-image img {
+  width:100%;
+  display:block;
+  border-radius:25px;
+  box-shadow:0 15px 40px #e63e8922;
 }
 
 /* AVANTAGES */
 
-.benefits,
-.ingredient-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+.benefits,.ingredient-cards {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
 }
-
-.benefit-card,
-.ingredient {
-  background: white;
-  border: 1px solid #f8d4e4;
-  padding: 25px 20px;
-  border-radius: 22px;
-  box-shadow: 0 8px 25px #e63e8910;
+.benefit-card,.ingredient {
+  background:white;
+  padding:25px 20px;
+  border:1px solid #f8d4e4;
+  border-radius:22px;
+  box-shadow:0 8px 25px #e63e8910;
 }
-
-.benefit-card {
-  text-align: center;
+.benefit-card { text-align:center; }
+.benefit-icon { font-size:36px; }
+.benefit-card h3,.ingredient h3 {
+  color:var(--dark);
+  margin:8px 0;
 }
+.benefit-card p,.ingredient p { font-size:14px; }
 
-.benefit-icon {
-  font-size: 36px;
-}
+/* CARROUSEL AVEC MINIATURES */
 
-.benefit-card h3,
-.ingredient h3 {
-  color: var(--dark);
-  margin: 8px 0;
-}
-
-.benefit-card p,
-.ingredient p {
-  font-size: 14px;
-}
-
-/* ======================================
-   CARROUSEL PRODUIT AVEC MINIATURES
-====================================== */
-
-.gallery {
-  background: #ffffff;
-  padding: 40px 0 55px;
-}
-
+.gallery { background:white; padding:40px 0 55px; }
 .product-carousel {
-  width: min(92%, 760px);
-  margin: 0 auto;
-  direction: ltr;
+  width:min(92%,760px);
+  margin:auto;
+  direction:ltr;
 }
-
-/* GRAND CADRE */
-
 .carousel-viewport {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  border: 1px solid #f1dfeb;
-  border-radius: 20px;
-  background: #fff8fc;
-  box-shadow: 0 10px 30px rgba(165, 30, 92, .10);
+  position:relative;
+  overflow:hidden;
+  width:100%;
+  border:1px solid #f1dfeb;
+  border-radius:20px;
+  background:#fff8fc;
+  box-shadow:0 10px 30px #a51e5c1a;
 }
-
 .carousel-track {
-  display: flex;
-  transition: transform .5s ease;
-  will-change: transform;
+  display:flex;
+  transition:transform .5s ease;
 }
-
 .carousel-slide {
-  flex: 0 0 100%;
-  min-width: 100%;
-  aspect-ratio: 1 / 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-  background: #fff8fc;
+  flex:0 0 100%;
+  min-width:100%;
+  aspect-ratio:1/1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px;
 }
-
 .carousel-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
 }
-
-/* FLECHES */
-
 .carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-  width: 42px;
-  height: 42px;
-  border: none;
-  border-radius: 50%;
-  background: rgba(255,255,255,.95);
-  color: #777;
-  font-size: 22px;
-  cursor: pointer;
-  box-shadow: 0 2px 10px #0002;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:3;
+  width:42px;
+  height:42px;
+  border:0;
+  border-radius:50%;
+  background:#fffffff0;
+  color:#777;
+  font-size:22px;
+  cursor:pointer;
+  box-shadow:0 2px 10px #0002;
 }
-
-.carousel-btn.prev {
-  left: 12px;
-}
-
-.carousel-btn.next {
-  right: 12px;
-}
-
-.carousel-btn:hover {
-  background: white;
-  color: var(--dark);
-}
-
-/* MINIATURES SOUS LE CADRE */
+.carousel-btn.prev { left:12px; }
+.carousel-btn.next { right:12px; }
+.carousel-btn:hover { color:var(--dark); background:white; }
 
 .carousel-thumbnails {
-  display: flex;
-  gap: 12px;
-  margin-top: 14px;
-  padding: 4px 2px 10px;
-  overflow-x: auto;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: x proximity;
-  scrollbar-width: thin;
-  scrollbar-color: #d9a8c0 transparent;
+  display:flex;
+  gap:12px;
+  margin-top:14px;
+  padding:4px 2px 10px;
+  overflow-x:auto;
+  scroll-snap-type:x proximity;
+  scrollbar-width:thin;
+  scrollbar-color:#d9a8c0 transparent;
 }
-
 .carousel-thumb {
-  flex: 0 0 clamp(90px, 30%, 150px);
-  aspect-ratio: 1 / 1;
-  padding: 5px;
-  border: 2px solid #eadbe3;
-  border-radius: 12px;
-  background: #ffffff;
-  overflow: hidden;
-  cursor: pointer;
-  opacity: .7;
-  transition: .25s;
-  scroll-snap-align: center;
+  flex:0 0 clamp(90px,30%,150px);
+  aspect-ratio:1/1;
+  padding:5px;
+  border:2px solid #eadbe3;
+  border-radius:12px;
+  background:white;
+  cursor:pointer;
+  opacity:.7;
+  scroll-snap-align:center;
 }
-
 .carousel-thumb img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 7px;
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:contain;
+  border-radius:7px;
 }
-
-.carousel-thumb:hover {
-  opacity: 1;
-}
-
 .carousel-thumb.active {
-  border-color: var(--pink);
-  opacity: 1;
-  box-shadow: 0 0 0 2px #fce1ee;
+  border-color:var(--pink);
+  opacity:1;
+  box-shadow:0 0 0 2px #fce1ee;
 }
-
-.carousel-thumb:focus-visible,
-.carousel-btn:focus-visible,
-.carousel-dot:focus-visible {
-  outline: 3px solid var(--dark);
-  outline-offset: 2px;
-}
-
-/* POINTS */
-
 .carousel-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  padding: 8px 0 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  padding:8px 0 20px;
 }
-
 .carousel-dot {
-  width: 8px;
-  height: 8px;
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-  background: #aaaaaa;
-  cursor: pointer;
+  width:8px;
+  height:8px;
+  padding:0;
+  border:0;
+  border-radius:50%;
+  background:#aaa;
+  cursor:pointer;
 }
-
 .carousel-dot.active {
-  width: 10px;
-  height: 10px;
-  background: #333333;
+  width:10px;
+  height:10px;
+  background:#333;
 }
-
-/* TEXTE SOUS GALERIE */
-
+.carousel-btn:focus-visible,
+.carousel-thumb:focus-visible,
+.carousel-dot:focus-visible {
+  outline:3px solid var(--dark);
+  outline-offset:2px;
+}
 .product-after-carousel {
-  text-align: center;
-  padding-top: 8px;
+  text-align:center;
+  padding-top:8px;
 }
-
-.product-after-carousel .section-title {
-  color: #222;
-  font-size: 30px;
-}
-
-.product-after-carousel .section-desc {
-  margin-bottom: 12px;
-}
-
+.product-after-carousel .section-title { color:#222; }
+.product-after-carousel .section-desc { margin-bottom:12px; }
 .carousel-price {
-  color: var(--dark);
-  font-size: 28px;
-  font-weight: 900;
-  margin-bottom: 18px;
+  color:var(--dark);
+  font-size:28px;
+  font-weight:900;
+  margin-bottom:18px;
+}
+
+/* NOUVELLE COLLECTION */
+
+.collection {
+  background:linear-gradient(180deg,#fff4f9,#ffe9f2);
+}
+.collection-grid {
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:20px;
+}
+.collection-card {
+  position:relative;
+  background:white;
+  border:1px solid #f2cbdc;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 10px 30px #a51e5c15;
+  transition:.25s;
+}
+.collection-card:hover { transform:translateY(-5px); }
+.collection-picture {
+  height:245px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff1f7;
+  overflow:hidden;
+}
+.collection-picture img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.collection-placeholder {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  height:100%;
+  width:100%;
+  font-size:64px;
+}
+.collection-placeholder small {
+  font-size:13px;
+  font-weight:800;
+  color:#8d6580;
+}
+.lavender { background:linear-gradient(140deg,#f7ecff,#e5d4ff); }
+.peach { background:linear-gradient(140deg,#fff4e7,#ffd9bd); }
+.blue { background:linear-gradient(140deg,#eaf5ff,#d6e5ff); }
+.collection-content {
+  padding:20px 15px;
+  text-align:center;
+}
+.collection-content h3 {
+  color:var(--dark);
+  font-size:18px;
+  margin-bottom:6px;
+}
+.collection-content p {
+  color:var(--muted);
+  font-size:13px;
+  min-height:48px;
+}
+.collection-price {
+  color:var(--pink);
+  font-size:22px;
+  font-weight:900;
+  margin:10px 0;
+}
+.collection-link {
+  display:block;
+  padding:10px 12px;
+  background:var(--pink);
+  color:white;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:900;
+  font-size:13px;
+}
+.coming-soon {
+  display:block;
+  margin-top:10px;
+  padding:10px;
+  background:#f6eff3;
+  color:#8c6e7f;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:800;
+}
+.collection-note {
+  text-align:center;
+  margin-top:24px;
+  color:var(--muted);
+  font-size:12px;
 }
 
 /* SCENARIOS */
 
 .before-after-section {
-  background: linear-gradient(180deg, #fff0f6, #ffe1ee, #fff8fb);
+  background:linear-gradient(180deg,#fff0f6,#ffe1ee,#fff8fb);
 }
-
 .scenarios-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
 }
-
 .scenario-card {
-  background: white;
-  border: 1px solid #f3c5d9;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 12px 35px #ae1e6022;
-  transition: .3s;
+  background:white;
+  border:1px solid #f3c5d9;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 12px 35px #ae1e6022;
 }
-
-.scenario-card:hover {
-  transform: translateY(-6px);
-}
-
 .scenario-card img {
-  display: block;
-  width: 100%;
-  height: auto;
+  width:100%;
+  height:auto;
+  display:block;
 }
-
 .scenario-content {
-  padding: 24px 19px;
-  text-align: center;
+  text-align:center;
+  padding:24px 19px;
 }
-
 .scenario-content h3 {
-  color: var(--dark);
-  font-size: 19px;
-  margin-bottom: 12px;
+  color:var(--dark);
+  font-size:19px;
+  margin-bottom:12px;
 }
-
 .scenario-content p {
-  font-size: 14px;
-  color: #76566a;
-  margin-bottom: 18px;
+  color:#76566a;
+  font-size:14px;
+  margin-bottom:18px;
 }
-
-.scenario-button {
-  padding: 9px 23px;
-  font-size: 14px;
-}
-
+.scenario-button { padding:9px 23px; font-size:14px; }
 .scenario-disclaimer {
-  text-align: center;
-  font-size: 12px;
-  color: var(--muted);
-  margin-top: 25px;
+  text-align:center;
+  color:var(--muted);
+  font-size:12px;
+  margin-top:25px;
 }
-
-/* INGREDIENTS */
-
 .ingredients-image {
-  width: 100%;
-  max-width: 800px;
-  display: block;
-  margin: 0 auto 30px;
-  border-radius: 24px;
-  box-shadow: 0 10px 28px #e63e891f;
+  display:block;
+  width:100%;
+  max-width:800px;
+  margin:0 auto 30px;
+  border-radius:24px;
+  box-shadow:0 10px 28px #e63e891f;
 }
 
-/* FORMULAIRE */
+/* COMMANDE */
 
 .order-section {
-  background: linear-gradient(180deg, #ffe3f0, #fff8fb);
+  background:linear-gradient(180deg,#ffe3f0,#fff8fb);
 }
-
 .form-box {
-  background: white;
-  max-width: 780px;
-  margin: auto;
-  padding: 35px;
-  border-radius: 28px;
-  box-shadow: 0 15px 45px #d83b831b;
+  max-width:780px;
+  margin:auto;
+  background:white;
+  padding:35px;
+  border-radius:28px;
+  box-shadow:0 15px 45px #d83b831b;
 }
-
 .form-title {
-  text-align: center;
-  color: var(--dark);
-  font-size: 29px;
+  text-align:center;
+  color:var(--dark);
+  font-size:29px;
 }
-
 .form-subtitle {
-  color: var(--muted);
-  text-align: center;
-  margin-bottom: 30px;
+  text-align:center;
+  color:var(--muted);
+  margin-bottom:30px;
 }
-
 .pack-heading {
-  color: var(--dark);
-  text-align: center;
-  margin-bottom: 22px;
-  font-size: 20px;
+  text-align:center;
+  color:var(--dark);
+  margin-bottom:22px;
+  font-size:20px;
 }
-
 .pack-options {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin-bottom: 30px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  margin-bottom:30px;
 }
-
-.pack {
-  display: block;
-  cursor: pointer;
-  position: relative;
-}
-
+.pack { display:block; position:relative; cursor:pointer; }
 .pack input {
-  position: absolute;
-  opacity: 0;
-  width: 1px;
-  height: 1px;
+  position:absolute;
+  opacity:0;
+  width:1px;
+  height:1px;
 }
-
 .pack-content {
-  position: relative;
-  background: #fffafd;
-  border: 2px solid #f0cbdc;
-  border-radius: 21px;
-  min-height: 190px;
-  padding: 27px 8px 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  text-align: center;
-  transition: .25s;
+  position:relative;
+  min-height:190px;
+  padding:27px 8px 15px;
+  border:2px solid #f0cbdc;
+  border-radius:21px;
+  background:#fffafd;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  text-align:center;
+  transition:.25s;
 }
-
 .pack input:checked + .pack-content {
-  background: linear-gradient(145deg, #fff0f7, #ffdeed);
-  border-color: var(--pink);
-  box-shadow: 0 10px 25px #e63e8925;
-  transform: translateY(-4px);
+  background:linear-gradient(145deg,#fff0f7,#ffdeed);
+  border-color:var(--pink);
+  box-shadow:0 10px 25px #e63e8925;
+  transform:translateY(-4px);
 }
-
 .pack input:focus-visible + .pack-content {
-  outline: 3px solid var(--dark);
-  outline-offset: 3px;
+  outline:3px solid var(--dark);
+  outline-offset:3px;
 }
-
 .pack-badge {
-  position: absolute;
-  top: -14px;
-  right: 50%;
-  transform: translateX(50%);
-  background: var(--pink);
-  color: white;
-  border-radius: 25px;
-  padding: 3px 10px;
-  font-size: 11px;
-  font-weight: 900;
-  white-space: nowrap;
+  position:absolute;
+  top:-14px;
+  right:50%;
+  transform:translateX(50%);
+  background:var(--pink);
+  color:white;
+  border-radius:25px;
+  padding:3px 10px;
+  font-size:11px;
+  font-weight:900;
+  white-space:nowrap;
 }
-
-/* BADGE VERT */
-
 .pack-badge.bestseller {
-  background: linear-gradient(135deg, #22c55e, #15803d);
-  color: white;
-  box-shadow: 0 4px 12px rgba(34,197,94,.35);
+  background:linear-gradient(135deg,#22c55e,#15803d);
+  box-shadow:0 4px 12px #22c55e59;
 }
-
-.pack-icon {
-  font-size: 32px;
-}
-
-.pack-name {
-  color: var(--dark);
-  font-size: 16px;
-  font-weight: 900;
-}
-
-.pack-price {
-  color: var(--pink);
-  font-size: 22px;
-  font-weight: 900;
-}
-
-.pack-desc {
-  color: var(--muted);
-  font-size: 12px;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
+.pack-icon { font-size:32px; }
+.pack-name { color:var(--dark); font-size:16px; font-weight:900; }
+.pack-price { color:var(--pink); font-size:22px; font-weight:900; }
+.pack-desc { color:var(--muted); font-size:12px; }
+.form-group { margin-bottom:20px; }
 .form-group label {
-  display: block;
-  font-weight: 800;
-  color: #713952;
-  margin-bottom: 8px;
+  display:block;
+  color:#713952;
+  font-weight:800;
+  margin-bottom:8px;
 }
-
 .form-group input {
-  width: 100%;
-  padding: 15px;
-  background: #fffbfd;
-  border: 1px solid #edc5d7;
-  border-radius: 13px;
-  font: 500 15px "Cairo", sans-serif;
+  width:100%;
+  padding:15px;
+  border:1px solid #edc5d7;
+  border-radius:13px;
+  background:#fffbfd;
+  font:500 15px "Cairo",sans-serif;
 }
-
 .form-group input:focus {
-  outline: 2px solid #e63e8955;
-  border-color: var(--pink);
+  outline:2px solid #e63e8955;
+  border-color:var(--pink);
 }
-
 .summary {
-  background: #fff1f7;
-  border: 1px solid #f5d1e1;
-  padding: 22px;
-  border-radius: 18px;
-  margin: 25px 0;
+  background:#fff1f7;
+  border:1px solid #f5d1e1;
+  padding:22px;
+  border-radius:18px;
+  margin:25px 0;
 }
-
 .summary-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  font-size: 14px;
-  margin-bottom: 10px;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  font-size:14px;
+  margin-bottom:10px;
 }
-
 .summary-total {
-  border-top: 1px solid #edbfd3;
-  padding-top: 15px;
-  margin-top: 12px;
-  color: var(--dark);
-  font-size: 19px;
-  font-weight: 900;
+  border-top:1px solid #edbfd3;
+  padding-top:15px;
+  margin-top:12px;
+  color:var(--dark);
+  font-size:19px;
+  font-weight:900;
 }
-
-.submit-btn {
-  width: 100%;
-}
-
+.submit-btn { width:100%; }
 .form-message {
-  display: none;
-  margin-top: 18px;
-  padding: 13px;
-  border-radius: 12px;
-  text-align: center;
-  font-weight: 700;
+  display:none;
+  margin-top:18px;
+  padding:13px;
+  border-radius:12px;
+  text-align:center;
+  font-weight:700;
 }
-
 .form-message.error {
-  display: block;
-  background: #fff0ef;
-  color: #a82323;
+  display:block;
+  background:#fff0ef;
+  color:#a82323;
 }
-
 .form-message.info {
-  display: block;
-  background: #fff4df;
-  color: #75520b;
+  display:block;
+  background:#fff4df;
+  color:#75520b;
 }
-
 .notice {
-  text-align: center;
-  font-size: 12px;
-  color: var(--muted);
-  margin-top: 15px;
+  text-align:center;
+  color:var(--muted);
+  font-size:12px;
+  margin-top:15px;
 }
-
 footer {
-  background: #8e1b51;
-  color: white;
-  text-align: center;
-  padding: 30px 15px;
-  font-size: 13px;
+  background:#8e1b51;
+  color:white;
+  text-align:center;
+  padding:30px 15px;
+  font-size:13px;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 
-@media (max-width: 900px) {
-  .scenarios-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media(max-width:1000px) {
+  .collection-grid { grid-template-columns:repeat(2,1fr); }
 }
-
-@media (max-width: 800px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 34px;
-  }
-
-  .benefits,
-  .ingredient-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .form-box {
-    padding: 23px 16px;
-  }
+@media(max-width:900px) {
+  .scenarios-grid { grid-template-columns:repeat(2,1fr); }
 }
-
-@media (max-width: 600px) {
-  .scenarios-grid,
-  .benefits,
-  .ingredient-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .carousel-btn {
-    width: 38px;
-    height: 38px;
-    font-size: 20px;
-  }
-
-  .product-after-carousel .section-title {
-    font-size: 25px;
-  }
-
-  .carousel-thumb {
-    flex-basis: 28%;
-  }
+@media(max-width:800px) {
+  .hero-grid { grid-template-columns:1fr; }
+  .hero h1 { font-size:34px; }
+  .benefits,.ingredient-cards { grid-template-columns:repeat(2,1fr); }
+  .form-box { padding:23px 16px; }
 }
-
-@media (max-width: 520px) {
-  .logo {
-    font-size: 17px;
+@media(max-width:600px) {
+  .scenarios-grid,.benefits,.ingredient-cards {
+    grid-template-columns:1fr;
   }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .section-title {
-    font-size: 25px;
-  }
-
-  .pack-options {
-    gap: 7px;
-  }
-
-  .pack-content {
-    min-height: 165px;
-    padding: 25px 5px 10px;
-  }
-
-  .pack-name {
-    font-size: 12px;
-  }
-
-  .pack-price {
-    font-size: 17px;
-  }
-
-  .pack-desc {
-    font-size: 10px;
-  }
-
-  .pack-badge {
-    font-size: 9px;
-    padding: 3px 6px;
-  }
+  .carousel-btn { width:38px; height:38px; }
+  .carousel-thumb { flex-basis:28%; }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .carousel-track {
-    transition: none;
-  }
+@media(max-width:520px) {
+  .logo { font-size:17px; }
+  .hero h1 { font-size:28px; }
+  .section-title { font-size:25px; }
+  .collection-grid { gap:10px; }
+  .collection-picture { height:170px; }
+  .collection-placeholder { font-size:48px; }
+  .collection-content { padding:14px 9px; }
+  .collection-content h3 { font-size:14px; }
+  .pack-options { gap:7px; }
+  .pack-content { min-height:165px; padding:25px 5px 10px; }
+  .pack-name { font-size:12px; }
+  .pack-price { font-size:17px; }
+  .pack-desc { font-size:10px; }
+  .pack-badge { font-size:9px; padding:3px 6px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .carousel-track { transition:none; }
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-
 <div class="topbar">
-  🌸 اكتشفي علكات الفيرومون وباقاتنا الخاصة 🌸
+  🌸 اكتشفي مجموعتنا من العلكات وباقاتنا الخاصة 🌸
 </div>
 
 <header>
   <div class="container header-content">
-    <div class="logo">💗 Pheromone Gummies</div>
-    <a class="nav-btn" href="#commande">اطلبي الآن</a>
+    <div class="logo">💗 Pheromone Beauty</div>
+    <a class="nav-btn" href="#collection">مجموعتنا</a>
   </div>
 </header>
 
-<!-- HERO -->
+<!-- PRODUIT PRINCIPAL -->
 
 <section class="hero">
   <div class="container hero-grid">
-
     <div>
       <span class="tag">🌷 اكتشفي منتجنا</span>
-
       <h1>علكات الفيرومون للعناية اليومية</h1>
-
       <p>
         اكتشفي علكات الفيرومون، مكمل غذائي على شكل
         حلوى بتركيبة تعرض مكونات نباتية مختارة،
         وتصميم أنيق يناسب روتينك اليومي.
       </p>
-
-      <div class="price">
-        ابتداءً من 399 درهم
-      </div>
-
-      <a href="#commande" class="btn">
-        🛍️ اطلبي الآن
-      </a>
+      <div class="price">ابتداءً من 399 درهم</div>
+      <a href="#commande" class="btn">🛍️ اطلبي الآن</a>
     </div>
-
     <div class="hero-image">
-      <img
-        src="images/pu.png"
-        alt="علكات الفيرومون"
-        fetchpriority="high"
-      >
+      <img src="images/pu.png" alt="علكات الفيرومون">
     </div>
-
   </div>
 </section>
 
@@ -833,311 +670,244 @@ footer {
 
 <section>
   <div class="container">
-
-    <h2 class="section-title">
-      🌸 اكتشفي منتجنا
-    </h2>
-
+    <h2 class="section-title">🌸 اكتشفي منتجنا</h2>
     <p class="section-desc">
       تعرفي على المنتج واختاري الباقة المناسبة لك.
     </p>
-
     <div class="benefits">
-
       <div class="benefit-card">
         <div class="benefit-icon">🌿</div>
         <h3>مكونات نباتية</h3>
-        <p>
-          مجموعة من المكونات المعروضة في الصور التعريفية.
-        </p>
+        <p>مجموعة من المكونات المعروضة في الصور التعريفية.</p>
       </div>
-
       <div class="benefit-card">
         <div class="benefit-icon">💕</div>
         <h3>شكل عملي</h3>
-        <p>
-          مكمل غذائي على شكل علكات سهل الحمل والاستخدام.
-        </p>
+        <p>مكمل غذائي على شكل علكات سهل الحمل والاستخدام.</p>
       </div>
-
       <div class="benefit-card">
         <div class="benefit-icon">🎁</div>
         <h3>باقات متنوعة</h3>
-        <p>
-          ثلاث باقات مميزة، مع عبوة هدية في الباقة الكبيرة.
-        </p>
+        <p>ثلاث باقات، مع عبوة هدية في الباقة الكبيرة.</p>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ======================================
-     CARROUSEL AVEC MINIATURES
-====================================== -->
+<!-- CARROUSEL PRINCIPAL -->
 
 <section class="gallery" id="galerie">
 
-  <div
-    class="product-carousel"
-    id="productCarousel"
-    aria-label="معرض صور المنتج"
-  >
-
-    <!-- IMAGE PRINCIPALE -->
+  <div class="product-carousel" id="productCarousel">
 
     <div class="carousel-viewport">
 
       <div class="carousel-track" id="carouselTrack">
-
-        <!-- IMAGE 1 -->
         <div class="carousel-slide">
-          <img
-            src="images/s.png"
-            alt="الصورة الأولى لعلكات الفيرومون"
-          >
+          <img src="images/s.png" alt="الصورة الأولى للمنتج">
         </div>
-
-        <!-- IMAGE 2 -->
         <div class="carousel-slide">
-          <img
-            src="images/pu.png"
-            alt="الصورة الثانية لعلكات الفيرومون"
-            loading="lazy"
-          >
+          <img src="images/pu.png" alt="الصورة الثانية للمنتج">
         </div>
-
-        <!-- IMAGE 3 -->
         <div class="carousel-slide">
-          <img
-            src="images/c2.png"
-            alt="الصورة الثالثة لعلكات الفيرومون"
-            loading="lazy"
-          >
+          <img src="images/c2.png" alt="الصورة الثالثة للمنتج">
         </div>
-
       </div>
 
-      <!-- FLECHES -->
+      <button class="carousel-btn prev" id="previousSlide"
+        type="button" aria-label="الصورة السابقة">❮</button>
 
-      <button
-        type="button"
-        class="carousel-btn prev"
-        id="previousSlide"
-        aria-label="الصورة السابقة"
-      >❮</button>
-
-      <button
-        type="button"
-        class="carousel-btn next"
-        id="nextSlide"
-        aria-label="الصورة التالية"
-      >❯</button>
+      <button class="carousel-btn next" id="nextSlide"
+        type="button" aria-label="الصورة التالية">❯</button>
 
     </div>
 
-    <!-- MINIATURES SOUS LE GRAND CADRE -->
-
-    <div
-      class="carousel-thumbnails"
-      id="carouselThumbnails"
-      aria-label="الصور المصغرة"
-    >
-
-      <button
-        type="button"
-        class="carousel-thumb active"
-        data-slide="0"
-        aria-label="عرض الصورة الأولى"
-        aria-current="true"
-      >
-        <img src="images/s.png" alt="" loading="lazy">
+    <div class="carousel-thumbnails" id="carouselThumbnails">
+      <button class="carousel-thumb active" type="button"
+        data-slide="0" aria-label="الصورة الأولى">
+        <img src="images/s.png" alt="">
       </button>
-
-      <button
-        type="button"
-        class="carousel-thumb"
-        data-slide="1"
-        aria-label="عرض الصورة الثانية"
-        aria-current="false"
-      >
-        <img src="images/pu.png" alt="" loading="lazy">
+      <button class="carousel-thumb" type="button"
+        data-slide="1" aria-label="الصورة الثانية">
+        <img src="images/pu.png" alt="">
       </button>
-
-      <button
-        type="button"
-        class="carousel-thumb"
-        data-slide="2"
-        aria-label="عرض الصورة الثالثة"
-        aria-current="false"
-      >
-        <img src="images/c2.png" alt="" loading="lazy">
+      <button class="carousel-thumb" type="button"
+        data-slide="2" aria-label="الصورة الثالثة">
+        <img src="images/c2.png" alt="">
       </button>
-
     </div>
-
-    <!-- POINTS DE NAVIGATION -->
 
     <div class="carousel-dots">
-
-      <button
-        type="button"
-        class="carousel-dot active"
-        data-slide="0"
-        aria-label="الصورة الأولى"
-      ></button>
-
-      <button
-        type="button"
-        class="carousel-dot"
-        data-slide="1"
-        aria-label="الصورة الثانية"
-      ></button>
-
-      <button
-        type="button"
-        class="carousel-dot"
-        data-slide="2"
-        aria-label="الصورة الثالثة"
-      ></button>
-
+      <button class="carousel-dot active" data-slide="0"
+        type="button" aria-label="الصورة الأولى"></button>
+      <button class="carousel-dot" data-slide="1"
+        type="button" aria-label="الصورة الثانية"></button>
+      <button class="carousel-dot" data-slide="2"
+        type="button" aria-label="الصورة الثالثة"></button>
     </div>
 
   </div>
 
-  <!-- TEXTE SOUS LA GALERIE -->
-
   <div class="container product-after-carousel">
-
-    <h2 class="section-title">
-      علكات الفيرومون
-    </h2>
-
+    <h2 class="section-title">علكات الفيرومون</h2>
     <p class="section-desc">
       اكتشفي منتجنا وصوره من مختلف الزوايا
     </p>
-
-    <div class="carousel-price">
-      ابتداءً من 399 درهم
-    </div>
-
-    <a href="#commande" class="btn">
-      💗 اطلبي الآن
-    </a>
-
+    <div class="carousel-price">ابتداءً من 399 درهم</div>
+    <a href="#commande" class="btn">💗 اطلبي الآن</a>
   </div>
 
 </section>
 
-<!-- SCENARIOS AVANT APRES -->
+<!-- NOUVELLE COLLECTION -->
 
-<section class="before-after-section" id="avant-apres">
+<section class="collection" id="collection">
   <div class="container">
 
     <h2 class="section-title">
-      💗 قصص من وحي الثقة والجمال
+      🌸 اكتشفي مجموعتنا من العلكات
     </h2>
 
+    <p class="section-desc">
+      تعرفي على مجموعتنا الحالية والمنتجات المقترحة
+      للإضافة قريباً.
+    </p>
+
+    <div class="collection-grid">
+
+      <!-- PRODUIT 1 DISPONIBLE -->
+
+      <article class="collection-card">
+        <div class="collection-picture">
+          <img src="images/pu.png" alt="Pheromone Gummies">
+        </div>
+        <div class="collection-content">
+          <h3>Pheromone Gummies</h3>
+          <p>علكات الفيرومون</p>
+          <div class="collection-price">399 درهم</div>
+          <a href="#commande" class="collection-link">
+            🛍️ اطلبي الآن
+          </a>
+        </div>
+      </article>
+
+      <!-- PRODUIT 2 PROPOSITION -->
+
+      <article class="collection-card">
+        <div class="collection-picture">
+          <div class="collection-placeholder lavender">
+            💜
+            <small>صورة المنتج قريباً</small>
+          </div>
+        </div>
+        <div class="collection-content">
+          <h3>Collagen Gummies</h3>
+          <p>منتج مقترح لإضافته إلى المجموعة</p>
+          <div class="collection-price">—</div>
+          <span class="coming-soon">قريباً</span>
+        </div>
+      </article>
+
+      <!-- PRODUIT 3 PROPOSITION -->
+
+      <article class="collection-card">
+        <div class="collection-picture">
+          <div class="collection-placeholder peach">
+            🍑
+            <small>صورة المنتج قريباً</small>
+          </div>
+        </div>
+        <div class="collection-content">
+          <h3>Hair Gummies</h3>
+          <p>منتج مقترح لإضافته إلى المجموعة</p>
+          <div class="collection-price">—</div>
+          <span class="coming-soon">قريباً</span>
+        </div>
+      </article>
+
+      <!-- PRODUIT 4 PROPOSITION -->
+
+      <article class="collection-card">
+        <div class="collection-picture">
+          <div class="collection-placeholder blue">
+            🌙
+            <small>صورة المنتج قريباً</small>
+          </div>
+        </div>
+        <div class="collection-content">
+          <h3>Sleep Gummies</h3>
+          <p>منتج مقترح لإضافته إلى المجموعة</p>
+          <div class="collection-price">—</div>
+          <span class="coming-soon">قريباً</span>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="collection-note">
+      المنتجات المعروضة بعبارة «قريباً» أمثلة تصميمية
+      وليست عروضاً متاحة للشراء حالياً.
+    </p>
+  </div>
+</section>
+
+<!-- SCENARIOS -->
+
+<section class="before-after-section" id="avant-apres">
+  <div class="container">
+    <h2 class="section-title">💗 قصص من وحي الثقة والجمال</h2>
     <p class="section-desc">
       مواقف تخيلية عن العناية بالنفس والثقة والجمال.
     </p>
 
     <div class="scenarios-grid">
-
-      <!-- ANAKA -->
-
       <article class="scenario-card">
-
-        <img
-          src="images/anaka.png"
-          alt="سيناريو توضيحي عن الثقة بالنفس"
-          loading="lazy"
-        >
-
+        <img src="images/anaka.png" alt="مشهد توضيحي" loading="lazy">
         <div class="scenario-content">
-
-          <h3>
-            🌸 أناقتك تبدأ من ثقتك بنفسك
-          </h3>
-
+          <h3>🌸 أناقتك تبدأ من ثقتك بنفسك</h3>
           <p>
             من لحظات التردد إلى الاهتمام بالنفس.
             اكتشفي عالم العناية الشخصية بأسلوب مميز.
           </p>
-
-          <a class="scenario-button" href="#commande">
+          <a href="#commande" class="scenario-button">
             💕 اكتشفي الباقات
           </a>
-
         </div>
-
       </article>
 
-      <!-- DAKA -->
-
       <article class="scenario-card">
-
-        <img
-          src="images/daka.png"
-          alt="سيناريو توضيحي عن النشاط والعناية بالنفس"
-          loading="lazy"
-        >
-
+        <img src="images/daka.png" alt="مشهد توضيحي" loading="lazy">
         <div class="scenario-content">
-
-          <h3>
-            ✨ خصصي وقتاً لنفسك
-          </h3>
-
+          <h3>✨ خصصي وقتاً لنفسك</h3>
           <p>
             وسط مسؤوليات الحياة اليومية،
             خصصي لحظات للعناية بنفسك والاهتمام براحتك.
           </p>
-
-          <a class="scenario-button" href="#commande">
+          <a href="#commande" class="scenario-button">
             🌷 اختاري باقتك
           </a>
-
         </div>
-
       </article>
 
-      <!-- RAJL -->
-
       <article class="scenario-card">
-
-        <img
-          src="images/rajl.png"
-          alt="سيناريو تخيلي عن العلاقات والتواصل"
-          loading="lazy"
-        >
-
+        <img src="images/rajl.png" alt="مشهد توضيحي" loading="lazy">
         <div class="scenario-content">
-
-          <h3>
-            💞 الثقة والجاذبية في العلاقات
-          </h3>
-
+          <h3>💞 الثقة والجاذبية في العلاقات</h3>
           <p>
             الثقة والتواصل والاهتمام المتبادل
             عناصر مهمة في العلاقات.
           </p>
-
-          <a class="scenario-button" href="#commande">
+          <a href="#commande" class="scenario-button">
             💗 تعرفي على المنتج
           </a>
-
         </div>
-
       </article>
-
     </div>
 
     <p class="scenario-disclaimer">
       الصور والمشاهد توضيحية وخيالية،
       ولا تمثل نتائج حقيقية أو مضمونة لاستخدام المنتج.
     </p>
-
   </div>
 </section>
 
@@ -1145,250 +915,133 @@ footer {
 
 <section>
   <div class="container">
-
-    <h2 class="section-title">
-      🌿 المكونات النباتية
-    </h2>
-
+    <h2 class="section-title">🌿 المكونات النباتية</h2>
     <p class="section-desc">
-      بعض المكونات المذكورة في المواد التعريفية.
+      بعض المكونات المذكورة في المواد التعريفية لعلكات الفيرومون.
       يرجى التأكد من التركيبة الفعلية على العبوة الأصلية.
     </p>
 
-    <img
-      src="images/pl23.png"
-      class="ingredients-image"
-      alt="مكونات نباتية توضيحية"
-      loading="lazy"
-    >
+    <img src="images/pl23.png" class="ingredients-image"
+      alt="المكونات النباتية" loading="lazy">
 
     <div class="ingredient-cards">
-
       <div class="ingredient">
         <h3>🌱 جذور الماكا</h3>
-        <p>
-          نبات جذري معروف في بعض التركيبات العشبية.
-        </p>
+        <p>نبات جذري معروف في بعض التركيبات العشبية.</p>
       </div>
-
       <div class="ingredient">
         <h3>🌿 الحلبة</h3>
-        <p>
-          نبات يستخدم في مجموعة من المنتجات الغذائية.
-        </p>
+        <p>نبات يستخدم في مجموعة من المنتجات الغذائية.</p>
       </div>
-
       <div class="ingredient">
         <h3>🍃 النعناع</h3>
-        <p>
-          نبات معروف برائحته المنعشة والمميزة.
-        </p>
+        <p>نبات معروف برائحته المنعشة والمميزة.</p>
       </div>
-
       <div class="ingredient">
         <h3>🌸 البرسيم الأحمر</h3>
-        <p>
-          مكون نباتي مستخدم في بعض المستحضرات العشبية.
-        </p>
+        <p>مكون نباتي مستخدم في بعض المستحضرات العشبية.</p>
       </div>
-
       <div class="ingredient">
         <h3>💗 الشمندر</h3>
-        <p>
-          نبات جذري يتميز بلونه ومركباته النباتية.
-        </p>
+        <p>نبات جذري يتميز بلونه ومركباته النباتية.</p>
       </div>
-
       <div class="ingredient">
         <h3>🌳 الدردار الزلق</h3>
-        <p>
-          لحاء نباتي معروف في الاستخدامات التقليدية.
-        </p>
+        <p>لحاء نباتي معروف في الاستخدامات التقليدية.</p>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- FORMULAIRE DE COMMANDE -->
+<!-- COMMANDE PHEROMONE GUMMIES -->
 
 <section class="order-section" id="commande">
   <div class="container">
-
     <div class="form-box">
 
-      <h2 class="form-title">
-        🛍️ أكملي طلبك الآن
-      </h2>
-
+      <h2 class="form-title">🛍️ أكملي طلبك الآن</h2>
       <p class="form-subtitle">
-        اختاري الباقة وأدخلي اسمك ورقم هاتفك للتواصل معك.
+        طلب علكات الفيرومون: اختاري الباقة وأدخلي معلوماتك.
       </p>
 
       <form id="orderForm">
 
-        <h3 class="pack-heading">
-          🌷 اختاري باقتك المفضلة
-        </h3>
+        <h3 class="pack-heading">🌷 اختاري باقتك المفضلة</h3>
 
         <div class="pack-options">
-
-          <!-- PACK 1 -->
-
           <label class="pack">
-
-            <input
-              type="radio"
-              name="pack"
-              value="1"
-              checked
-              required
-            >
-
+            <input type="radio" name="pack" value="1" checked required>
             <span class="pack-content">
               <span class="pack-icon">🌸</span>
               <span class="pack-name">الباقة الأساسية</span>
               <span class="pack-price">399 درهم</span>
               <span class="pack-desc">عبوة واحدة</span>
             </span>
-
           </label>
 
-          <!-- PACK 2 -->
-
           <label class="pack">
-
-            <input
-              type="radio"
-              name="pack"
-              value="2"
-            >
-
+            <input type="radio" name="pack" value="2">
             <span class="pack-content">
-
-              <span class="pack-badge bestseller">
-                🔥 الأكثر مبيعاً
-              </span>
-
+              <span class="pack-badge bestseller">🔥 الأكثر مبيعاً</span>
               <span class="pack-icon">💕</span>
               <span class="pack-name">الباقة الثنائية</span>
               <span class="pack-price">469 درهم</span>
               <span class="pack-desc">عبوتان</span>
-
             </span>
-
           </label>
 
-          <!-- PACK 3 -->
-
           <label class="pack">
-
-            <input
-              type="radio"
-              name="pack"
-              value="3"
-            >
-
+            <input type="radio" name="pack" value="3">
             <span class="pack-content">
-
-              <span class="pack-badge">
-                🎁 عبوة هدية
-              </span>
-
+              <span class="pack-badge">🎁 عبوة هدية</span>
               <span class="pack-icon">💝</span>
               <span class="pack-name">الباقة المميزة</span>
               <span class="pack-price">599 درهم</span>
               <span class="pack-desc">3 + 1 مجاناً</span>
-
             </span>
-
           </label>
-
         </div>
 
-        <!-- NOM -->
-
         <div class="form-group">
-
-          <label for="fullname">
-            الاسم الكامل *
-          </label>
-
-          <input
-            type="text"
-            id="fullname"
-            name="fullname"
+          <label for="fullname">الاسم الكامل *</label>
+          <input type="text" id="fullname" name="fullname"
             placeholder="اكتبي اسمك الكامل"
-            maxlength="100"
-            autocomplete="name"
-            required
-          >
-
+            maxlength="100" autocomplete="name" required>
         </div>
-
-        <!-- TELEPHONE -->
 
         <div class="form-group">
-
-          <label for="phone">
-            رقم الهاتف *
-          </label>
-
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
+          <label for="phone">رقم الهاتف *</label>
+          <input type="tel" id="phone" name="phone"
             placeholder="06XXXXXXXX"
-            autocomplete="tel"
-            inputmode="tel"
-            pattern="[+]?[0-9 -]{9,16}"
-            required
-          >
-
+            autocomplete="tel" inputmode="tel"
+            pattern="[+]?[0-9 -]{9,16}" required>
         </div>
-
-        <!-- RESUME -->
 
         <div class="summary">
-
           <div class="summary-row">
             <span>المنتج</span>
-            <strong>علكات الفيرومون</strong>
+            <strong id="productDisplay">علكات الفيرومون</strong>
           </div>
-
           <div class="summary-row">
             <span>الباقة المختارة</span>
             <strong id="packDisplay">الباقة الأساسية</strong>
           </div>
-
           <div class="summary-row">
             <span>عدد العبوات</span>
             <strong id="qtyDisplay">1</strong>
           </div>
-
           <div class="summary-row summary-total">
             <span>المجموع</span>
-            <span>
-              <span id="totalPrice">399</span> درهم
-            </span>
+            <span><span id="totalPrice">399</span> درهم</span>
           </div>
-
         </div>
 
-        <button
-          class="btn submit-btn"
-          type="submit"
-          id="submitBtn"
-        >
+        <button class="btn submit-btn" type="submit" id="submitBtn">
           💗 تأكيد طلب الشراء
         </button>
 
-        <div
-          id="formMessage"
-          class="form-message"
-          role="status"
-          aria-live="polite"
-        ></div>
+        <div id="formMessage" class="form-message"
+          role="status" aria-live="polite"></div>
 
         <p class="notice">
           سيتم استخدام معلوماتك للتواصل معك بخصوص طلبك فقط.
@@ -1396,382 +1049,209 @@ footer {
         </p>
 
       </form>
-
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-
 <footer>
-  <p>💗 Pheromone Gummies</p>
+  <p>💗 Pheromone Beauty</p>
   <p>© 2026 جميع الحقوق محفوظة</p>
 </footer>
 
 <script>
-
-/* ======================================
-   CARROUSEL SYNCHRONISE
-====================================== */
+/* CARROUSEL */
 
 const carousel = document.getElementById("productCarousel");
 const track = document.getElementById("carouselTrack");
 const thumbnails = document.getElementById("carouselThumbnails");
-
-const dots = [
-  ...document.querySelectorAll(".carousel-dot")
-];
-
-const thumbs = [
-  ...document.querySelectorAll(".carousel-thumb")
-];
-
+const dots = [...document.querySelectorAll(".carousel-dot")];
+const thumbs = [...document.querySelectorAll(".carousel-thumb")];
 const slideCount = track.children.length;
-
-const reduceMotion = window.matchMedia(
-  "(prefers-reduced-motion: reduce)"
-).matches;
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 let currentSlide = 0;
 let carouselTimer = null;
 let touchStartX = 0;
 
-/* AFFICHER UNE IMAGE */
-
 function showSlide(index) {
-
   currentSlide = (index + slideCount) % slideCount;
-
-  track.style.transform =
-    `translateX(-${currentSlide * 100}%)`;
-
-  /* SYNCHRONISATION DES POINTS */
+  track.style.transform = `translateX(-${currentSlide * 100}%)`;
 
   dots.forEach((dot, i) => {
-
     const active = i === currentSlide;
-
     dot.classList.toggle("active", active);
     dot.setAttribute("aria-current", String(active));
-
   });
-
-  /* SYNCHRONISATION DES MINIATURES */
 
   thumbs.forEach((thumb, i) => {
-
     const active = i === currentSlide;
-
     thumb.classList.toggle("active", active);
     thumb.setAttribute("aria-current", String(active));
-
   });
 
-  /* DEFILEMENT DES MINIATURES */
+  const thumb = thumbs[currentSlide];
 
-  const activeThumb = thumbs[currentSlide];
-
-  if (activeThumb) {
-
-    const position =
-      activeThumb.offsetLeft +
-      activeThumb.offsetWidth / 2 -
-      thumbnails.clientWidth / 2;
-
+  if (thumb) {
     thumbnails.scrollTo({
-      left: position,
-      behavior: reduceMotion ? "instant" : "smooth"
+      left: thumb.offsetLeft + thumb.offsetWidth / 2
+        - thumbnails.clientWidth / 2,
+      behavior: reducedMotion ? "instant" : "smooth"
     });
-
   }
 }
-
-/* ARRETER LE DEFILEMENT */
 
 function stopCarousel() {
-
   if (carouselTimer !== null) {
-
     clearInterval(carouselTimer);
     carouselTimer = null;
-
   }
 }
 
-/* DEFILEMENT AUTOMATIQUE */
-
 function startCarousel() {
-
   stopCarousel();
-
-  if (reduceMotion || document.hidden) {
-    return;
-  }
+  if (reducedMotion || document.hidden) return;
 
   carouselTimer = setInterval(() => {
-
     showSlide(currentSlide + 1);
-
   }, 4000);
 }
 
-/* NAVIGATION */
-
 function navigateTo(index) {
-
   showSlide(index);
   startCarousel();
-
 }
 
-/* FLECHES */
-
 document.getElementById("previousSlide").addEventListener(
-  "click",
-  () => navigateTo(currentSlide - 1)
+  "click", () => navigateTo(currentSlide - 1)
 );
 
 document.getElementById("nextSlide").addEventListener(
-  "click",
-  () => navigateTo(currentSlide + 1)
+  "click", () => navigateTo(currentSlide + 1)
 );
 
-/* POINTS */
-
 dots.forEach((dot, i) => {
-
-  dot.addEventListener("click", () => {
-    navigateTo(i);
-  });
-
+  dot.addEventListener("click", () => navigateTo(i));
 });
-
-/* CLIC SUR MINIATURE */
 
 thumbs.forEach((thumb, i) => {
-
-  thumb.addEventListener("click", () => {
-    navigateTo(i);
-  });
-
+  thumb.addEventListener("click", () => navigateTo(i));
 });
-
-/* PAUSE AU SURVOL */
 
 carousel.addEventListener("mouseenter", stopCarousel);
-
 carousel.addEventListener("mouseleave", startCarousel);
-
 carousel.addEventListener("focusin", stopCarousel);
-
-carousel.addEventListener("focusout", (event) => {
-
-  if (!carousel.contains(event.relatedTarget)) {
-    startCarousel();
-  }
-
+carousel.addEventListener("focusout", event => {
+  if (!carousel.contains(event.relatedTarget)) startCarousel();
 });
 
-/* GLISSEMENT TACTILE */
-
-carousel.addEventListener("touchstart", (event) => {
-
+carousel.addEventListener("touchstart", event => {
   touchStartX = event.changedTouches[0].screenX;
+}, { passive:true });
 
-}, { passive: true });
+carousel.addEventListener("touchend", event => {
+  if (event.target.closest(".carousel-thumbnails")) return;
 
-carousel.addEventListener("touchend", (event) => {
-
-  if (event.target.closest(".carousel-thumbnails")) {
-    return;
-  }
-
-  const difference =
-    touchStartX - event.changedTouches[0].screenX;
+  const difference = touchStartX - event.changedTouches[0].screenX;
 
   if (Math.abs(difference) > 45) {
-
-    navigateTo(
-      currentSlide + (difference > 0 ? 1 : -1)
-    );
-
+    navigateTo(currentSlide + (difference > 0 ? 1 : -1));
   }
-
-}, { passive: true });
-
-/* ONGLET INACTIF */
+}, { passive:true });
 
 document.addEventListener("visibilitychange", () => {
-
-  if (document.hidden) {
-    stopCarousel();
-  } else {
-    startCarousel();
-  }
-
+  if (document.hidden) stopCarousel();
+  else startCarousel();
 });
-
-/* INITIALISATION */
 
 showSlide(0);
 startCarousel();
 
-/* ======================================
-   FORMULAIRE ET PACKS
-====================================== */
+/* PACKS */
 
 const SCRIPT_URL = "COLLE_ICI_L_URL_DE_TON_APPS_SCRIPT";
 
 const packs = {
-
-  1: {
-    name: "الباقة الأساسية",
-    quantity: 1,
-    total: 399
-  },
-
-  2: {
-    name: "الباقة الثنائية",
-    quantity: 2,
-    total: 469
-  },
-
-  3: {
-    name: "الباقة المميزة - 3 + 1 مجاناً",
-    quantity: 4,
-    total: 599
-  }
-
+  1: {name:"الباقة الأساسية", quantity:1, total:399},
+  2: {name:"الباقة الثنائية", quantity:2, total:469},
+  3: {name:"الباقة المميزة - 3 + 1 مجاناً", quantity:4, total:599}
 };
 
 const form = document.getElementById("orderForm");
 const message = document.getElementById("formMessage");
 const submitBtn = document.getElementById("submitBtn");
 
-/* PACK SELECTIONNE */
-
 function selectedPack() {
-
-  const selected = document.querySelector(
-    'input[name="pack"]:checked'
-  );
-
+  const selected = document.querySelector('input[name="pack"]:checked');
   return packs[selected.value];
-
 }
 
-/* METTRE A JOUR LE PRIX */
-
 function updatePrice() {
-
   const pack = selectedPack();
-
-  document.getElementById("packDisplay").textContent =
-    pack.name;
-
-  document.getElementById("qtyDisplay").textContent =
-    pack.quantity;
-
-  document.getElementById("totalPrice").textContent =
-    pack.total;
-
+  document.getElementById("packDisplay").textContent = pack.name;
+  document.getElementById("qtyDisplay").textContent = pack.quantity;
+  document.getElementById("totalPrice").textContent = pack.total;
 }
 
 document.querySelectorAll('input[name="pack"]').forEach(input => {
-
   input.addEventListener("change", updatePrice);
-
 });
 
-/* MESSAGES */
-
 function showMessage(text, type) {
-
   message.textContent = text;
   message.className = "form-message " + type;
-
 }
 
-/* ENVOI COMMANDE */
-
-form.addEventListener("submit", async (event) => {
-
+form.addEventListener("submit", async event => {
   event.preventDefault();
-
-  const pack = selectedPack();
 
   if (
     !SCRIPT_URL.startsWith("https://script.google.com/macros/s/") ||
     !SCRIPT_URL.endsWith("/exec")
   ) {
-
-    showMessage(
-      "نظام استقبال الطلبات غير مفعّل حالياً.",
-      "error"
-    );
-
+    showMessage("نظام استقبال الطلبات غير مفعّل حالياً.", "error");
     return;
   }
 
+  const pack = selectedPack();
+
   const data = {
-
-    fullname: document.getElementById("fullname").value.trim(),
-
-    phone: document.getElementById("phone").value.trim(),
-
-    product: "Pheromone Gummies",
-
-    pack: pack.name,
-
-    quantity: pack.quantity,
-
-    total: pack.total
-
+    fullname:document.getElementById("fullname").value.trim(),
+    phone:document.getElementById("phone").value.trim(),
+    product:"Pheromone Gummies",
+    pack:pack.name,
+    quantity:pack.quantity,
+    total:pack.total
   };
 
   const params = new URLSearchParams();
 
   Object.keys(data).forEach(key => {
-
     params.append(key, String(data[key]));
-
   });
 
   submitBtn.disabled = true;
   submitBtn.textContent = "جاري إرسال الطلب...";
 
   try {
-
     await fetch(SCRIPT_URL, {
-      method: "POST",
-      mode: "no-cors",
-      body: params
+      method:"POST",
+      mode:"no-cors",
+      body:params
     });
 
     showMessage(
       "تم إرسال طلب التسجيل، لكن تعذر التأكد من حفظه. يرجى انتظار التواصل معك.",
       "info"
     );
-
   } catch (error) {
-
-    showMessage(
-      "تعذر إرسال الطلب. حاولي مرة أخرى.",
-      "error"
-    );
-
+    showMessage("تعذر إرسال الطلب. حاولي مرة أخرى.", "error");
   } finally {
-
     submitBtn.disabled = false;
-
     submitBtn.textContent = "💗 تأكيد طلب الشراء";
-
   }
-
 });
 
 updatePrice();
-
 </script>
 </body>
 </html>
