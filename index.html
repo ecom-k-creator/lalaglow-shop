@@ -1,21 +1,15 @@
 
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#e63e89">
 
 <title>LALA GLOW | سر أنوثتك وجاذبيتك</title>
-
 <meta name="description" content="LALA GLOW - اكتشفي علكات الفيرومون للعناية اليومية واطلبي باقتك المفضلة.">
 
-<!-- =====================================
-     META PIXEL FACEBOOK
-===================================== -->
-
-<!-- Meta Pixel Code -->
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -23,24 +17,19 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '853731276995407');
-fbq('track', 'PageView');
+fbq('init','1092834127084287');
+fbq('track','PageView');
 </script>
-<!-- End Meta Pixel Code -->
+<!-- END META PIXEL -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-
-/* =====================================
-   COULEURS
-===================================== */
-
 :root {
   --pink:#e63e89;
   --rose:#f25199;
@@ -58,9 +47,7 @@ fbq('track', 'PageView');
   box-sizing:border-box;
 }
 
-html {
-  scroll-behavior:smooth;
-}
+html { scroll-behavior:smooth; }
 
 body {
   font-family:"Cairo",sans-serif;
@@ -69,26 +56,22 @@ body {
   line-height:1.8;
 }
 
-[hidden] {
-  display:none!important;
-}
+[hidden] { display:none!important; }
 
 a {
   color:inherit;
   text-decoration:none;
 }
 
-button,input {
-  font:inherit;
-}
+button,input { font:inherit; }
+button { cursor:pointer; }
+img { display:block;max-width:100%; }
 
-button {
-  cursor:pointer;
-}
-
-img {
-  display:block;
-  max-width:100%;
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline:3px solid var(--pink);
+  outline-offset:3px;
 }
 
 .container {
@@ -97,9 +80,7 @@ img {
   margin:auto;
 }
 
-section {
-  padding:60px 0;
-}
+section { padding:60px 0; }
 
 .section-title {
   text-align:center;
@@ -145,16 +126,7 @@ section {
   border:1px solid #e7b8ce;
 }
 
-a:focus-visible,
-button:focus-visible,
-input:focus-visible {
-  outline:3px solid var(--pink);
-  outline-offset:3px;
-}
-
-/* =====================================
-   HEADER
-===================================== */
+/* HEADER */
 
 .topbar {
   padding:9px 15px;
@@ -223,9 +195,7 @@ header {
   font-weight:800;
 }
 
-/* =====================================
-   PAGE ACCUEIL
-===================================== */
+/* ACCUEIL */
 
 .hero {
   min-height:650px;
@@ -292,13 +262,9 @@ header {
   gap:14px;
 }
 
-/* =====================================
-   PRESENTATION
-===================================== */
+/* PRESENTATION MARQUE */
 
-.brand-presentation {
-  background:white;
-}
+.brand-presentation { background:white; }
 
 .presentation-grid {
   display:grid;
@@ -330,9 +296,7 @@ header {
   font-size:13px;
 }
 
-/* =====================================
-   PRODUIT
-===================================== */
+/* COLLECTION */
 
 .collection-section {
   background:linear-gradient(180deg,#fff4f9,#fff9fc);
@@ -400,13 +364,9 @@ header {
   margin-bottom:17px;
 }
 
-.product-content .btn {
-  display:block;
-}
+.product-content .btn { display:block; }
 
-/* =====================================
-   FICHE PRODUIT
-===================================== */
+/* FICHE PRODUIT */
 
 .product-detail {
   background:linear-gradient(180deg,#fff3f9,#fff);
@@ -462,9 +422,7 @@ header {
   gap:12px;
 }
 
-/* =====================================
-   CARROUSEL
-===================================== */
+/* CARROUSEL */
 
 .product-carousel {
   direction:ltr;
@@ -514,13 +472,8 @@ header {
   box-shadow:0 2px 12px #0002;
 }
 
-.carousel-btn.prev {
-  left:10px;
-}
-
-.carousel-btn.next {
-  right:10px;
-}
+.carousel-btn.prev { left:10px; }
+.carousel-btn.next { right:10px; }
 
 .carousel-thumbnails {
   display:flex;
@@ -565,13 +518,9 @@ header {
   background:#ccc;
 }
 
-.carousel-dot.active {
-  background:var(--dark);
-}
+.carousel-dot.active { background:var(--dark); }
 
-/* =====================================
-   AVANTAGES
-===================================== */
+/* AVANTAGES */
 
 .benefits-grid {
   display:grid;
@@ -587,9 +536,7 @@ header {
   text-align:center;
 }
 
-.benefit-card .emoji {
-  font-size:35px;
-}
+.benefit-card .emoji { font-size:35px; }
 
 .benefit-card h3 {
   color:var(--dark);
@@ -601,9 +548,7 @@ header {
   font-size:13px;
 }
 
-/* =====================================
-   PRESENTATION VISUELLE
-===================================== */
+/* IMAGES PRESENTATION */
 
 .stories-section {
   background:linear-gradient(180deg,#fff0f6,#ffe5f0,#fff9fc);
@@ -622,9 +567,7 @@ header {
   border:1px solid #f3c5d9;
 }
 
-.story-card img {
-  width:100%;
-}
+.story-card img { width:100%; }
 
 .story-card-content {
   padding:22px;
@@ -649,13 +592,9 @@ header {
   color:var(--muted);
 }
 
-/* =====================================
-   INGREDIENTS
-===================================== */
+/* INGREDIENTS */
 
-.ingredients-section {
-  background:white;
-}
+.ingredients-section { background:white; }
 
 .ingredients-image {
   width:100%;
@@ -677,18 +616,14 @@ header {
   border-radius:17px;
 }
 
-.ingredient-card h3 {
-  color:var(--dark);
-}
+.ingredient-card h3 { color:var(--dark); }
 
 .ingredient-card p {
   color:var(--muted);
   font-size:13px;
 }
 
-/* =====================================
-   AVIS
-===================================== */
+/* AVIS */
 
 .reviews-section {
   background:linear-gradient(180deg,#fff7fb,#ffedf5);
@@ -704,9 +639,7 @@ header {
   text-align:center;
 }
 
-.reviews-box .emoji {
-  font-size:45px;
-}
+.reviews-box .emoji { font-size:45px; }
 
 .reviews-box h3 {
   color:var(--dark);
@@ -718,9 +651,7 @@ header {
   font-size:14px;
 }
 
-/* =====================================
-   FORMULAIRE
-===================================== */
+/* COMMANDE */
 
 .order-section {
   background:linear-gradient(180deg,#ffe3f0,#fff8fb);
@@ -812,9 +743,7 @@ header {
   border-radius:20px;
 }
 
-.pack-icon {
-  font-size:32px;
-}
+.pack-icon { font-size:32px; }
 
 .pack-name {
   color:var(--dark);
@@ -832,9 +761,7 @@ header {
   font-size:12px;
 }
 
-.form-group {
-  margin-bottom:19px;
-}
+.form-group { margin-bottom:19px; }
 
 .form-group label {
   display:block;
@@ -895,9 +822,7 @@ header {
   accent-color:var(--dark);
 }
 
-.submit-btn {
-  width:100%;
-}
+.submit-btn { width:100%; }
 
 .form-message {
   display:none;
@@ -927,9 +852,7 @@ header {
   font-size:12px;
 }
 
-/* =====================================
-   FOOTER
-===================================== */
+/* FOOTER */
 
 footer {
   padding:35px 15px;
@@ -957,27 +880,15 @@ footer {
   font-size:13px;
 }
 
-/* =====================================
-   RESPONSIVE
-===================================== */
+/* RESPONSIVE */
 
 @media(max-width:900px) {
-
-  .detail-grid {
-    grid-template-columns:1fr;
-  }
-
-  .hero {
-    min-height:570px;
-  }
-
-  .hero h1 {
-    font-size:43px;
-  }
+  .detail-grid { grid-template-columns:1fr; }
+  .hero { min-height:570px; }
+  .hero h1 { font-size:43px; }
 }
 
 @media(max-width:700px) {
-
   .presentation-grid,
   .benefits-grid,
   .stories-grid,
@@ -985,42 +896,17 @@ footer {
     grid-template-columns:1fr;
   }
 
-  .section-title {
-    font-size:25px;
-  }
-
-  .hero h1 {
-    font-size:36px;
-  }
-
-  .hero h2 {
-    font-size:21px;
-  }
-
-  .hero-description {
-    font-size:15px;
-  }
-
-  .form-box {
-    padding:25px 15px;
-  }
-
-  .brand-logo {
-    width:50px;
-    height:50px;
-  }
-
-  .brand-name {
-    font-size:18px;
-  }
-
-  .brand-slogan {
-    font-size:10px;
-  }
+  .section-title { font-size:25px; }
+  .hero h1 { font-size:36px; }
+  .hero h2 { font-size:21px; }
+  .hero-description { font-size:15px; }
+  .form-box { padding:25px 15px; }
+  .brand-logo { width:50px;height:50px; }
+  .brand-name { font-size:18px; }
+  .brand-slogan { font-size:10px; }
 }
 
 @media(max-width:520px) {
-
   .header-content {
     flex-wrap:wrap;
     justify-content:center;
@@ -1032,35 +918,18 @@ footer {
     justify-content:center;
   }
 
-  .hero-logo {
-    width:125px;
-    height:125px;
-  }
-
-  .hero h1 {
-    font-size:32px;
-  }
-
-  .pack-options {
-    gap:6px;
-  }
+  .hero-logo { width:125px;height:125px; }
+  .hero h1 { font-size:32px; }
+  .pack-options { gap:6px; }
 
   .pack-content {
     min-height:155px;
     padding:23px 4px 10px;
   }
 
-  .pack-name {
-    font-size:12px;
-  }
-
-  .pack-price {
-    font-size:17px;
-  }
-
-  .pack-desc {
-    font-size:10px;
-  }
+  .pack-name { font-size:12px; }
+  .pack-price { font-size:17px; }
+  .pack-desc { font-size:10px; }
 
   .pack-badge {
     font-size:9px;
@@ -1069,66 +938,44 @@ footer {
 }
 
 @media(prefers-reduced-motion:reduce) {
-
-  html {
-    scroll-behavior:auto;
-  }
-
-  .carousel-track {
-    transition:none;
-  }
+  html { scroll-behavior:auto; }
+  .carousel-track { transition:none; }
 }
-
 </style>
 </head>
 
 <body>
 
-<!-- =====================================
-     META PIXEL NOSCRIPT
-===================================== -->
-
+<!-- META PIXEL FALLBACK -->
 <noscript>
   <img
     height="1"
     width="1"
     style="display:none"
     alt=""
-    src="https://www.facebook.com/tr?id=853731276995407&amp;ev=PageView&amp;noscript=1">
+    src="https://www.facebook.com/tr?id=1092834127084287&amp;ev=PageView&amp;noscript=1">
 </noscript>
 
-<!-- =====================================
-     TOPBAR
-===================================== -->
+<!-- BARRE SUPERIEURE -->
 
 <div class="topbar">
   🌸 LALA GLOW | سر أنوثتك وجاذبيتك ✨
 </div>
 
-<!-- =====================================
-     HEADER
-===================================== -->
+<!-- HEADER -->
 
 <header>
   <div class="container header-content">
 
     <a href="#accueil" class="brand">
-
       <img
         src="images/lala.jpeg"
         class="brand-logo"
         alt="LALA GLOW">
 
       <span class="brand-text">
-
-        <span class="brand-name">
-          LALA GLOW
-        </span>
-
-        <span class="brand-slogan">
-          ✨ سر أنوثتك وجاذبيتك
-        </span>
-
+        <span class="brand-name">LALA GLOW</span>
+        <span class="brand-slogan">✨ سر أنوثتك وجاذبيتك</span>
       </span>
     </a>
 
@@ -1141,14 +988,11 @@ footer {
   </div>
 </header>
 
-<!-- =====================================
-     PAGE D'ACCUEIL
-===================================== -->
+<!-- PAGE D'ACCUEIL -->
 
 <main id="homePage">
 
   <section class="hero" id="accueil">
-
     <div class="container">
       <div class="hero-content">
 
@@ -1161,13 +1005,8 @@ footer {
           🌸 أهلاً بك في عالم LALA GLOW
         </span>
 
-        <h1>
-          ✨ LALA GLOW
-        </h1>
-
-        <h2>
-          سر أنوثتك وجاذبيتك
-        </h2>
+        <h1>✨ LALA GLOW</h1>
+        <h2>سر أنوثتك وجاذبيتك</h2>
 
         <p class="hero-description">
           💖 مرحباً بك في LALA GLOW،
@@ -1184,32 +1023,25 @@ footer {
         </p>
 
         <div class="hero-actions">
-
           <a href="#collection" class="btn">
             🌸 اكتشفي منتجاتنا
           </a>
 
-          <a href="#produit/pheromone"
-             class="btn btn-outline">
+          <a href="#produit/pheromone" class="btn btn-outline">
             💗 تعرفي على المنتج
           </a>
-
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- =====================================
-       PRESENTATION
-  ===================================== -->
+  <!-- PRESENTATION DE LA MARQUE -->
 
   <section class="brand-presentation">
-
     <div class="container">
 
-      <h2 class="section-title">
-        💖 لماذا LALA GLOW؟
-      </h2>
+      <h2 class="section-title">💖 لماذا LALA GLOW؟</h2>
 
       <p class="section-desc">
         لأن العناية بنفسك تستحق اهتماماً خاصاً.
@@ -1219,9 +1051,7 @@ footer {
 
         <div class="presentation-card">
           <div class="presentation-icon">🌸</div>
-
           <h3>عالم العناية والجمال</h3>
-
           <p>
             اكتشفي منتجات ضمن عالم
             العناية الشخصية والجمال اليومي.
@@ -1230,9 +1060,7 @@ footer {
 
         <div class="presentation-card">
           <div class="presentation-icon">💖</div>
-
           <h3>ثقتك بنفسك أولاً</h3>
-
           <p>
             الاهتمام بالنفس والثقة الشخصية
             جزء من الإحساس بالجمال.
@@ -1241,9 +1069,7 @@ footer {
 
         <div class="presentation-card">
           <div class="presentation-icon">📦</div>
-
           <h3>الطلب من المغرب</h3>
-
           <p>
             سجلي طلبك بسهولة،
             وسيتم تأكيد معلومات التوصيل
@@ -1255,12 +1081,9 @@ footer {
     </div>
   </section>
 
-  <!-- =====================================
-       PRODUIT UNIQUE
-  ===================================== -->
+  <!-- PRODUIT UNIQUE -->
 
   <section class="collection-section" id="collection">
-
     <div class="container">
 
       <h2 class="section-title">
@@ -1272,26 +1095,17 @@ footer {
       </p>
 
       <div class="collection-grid">
-
         <article class="product-card">
 
           <div class="product-photo">
-
-            <span class="product-badge">
-              💗 متوفر
-            </span>
-
+            <span class="product-badge">💗 متوفر</span>
             <img
               src="images/pu.png"
               alt="علكات الفيرومون للعناية اليومية">
-
           </div>
 
           <div class="product-content">
-
-            <h3>
-              علكات الفيرومون للعناية اليومية
-            </h3>
+            <h3>علكات الفيرومون للعناية اليومية</h3>
 
             <p class="product-description">
               Pheromone Gummies
@@ -1305,14 +1119,12 @@ footer {
               ابتداءً من 399 درهم
             </div>
 
-            <a href="#produit/pheromone"
-               class="btn">
+            <a href="#produit/pheromone" class="btn">
               💗 اكتشفي المنتج
             </a>
-
           </div>
-        </article>
 
+        </article>
       </div>
 
     </div>
@@ -1320,14 +1132,11 @@ footer {
 
 </main>
 
-<!-- =====================================
-     PAGE PRODUIT
-===================================== -->
+<!-- PAGE PRODUIT -->
 
 <main id="productPage" hidden>
 
   <section class="product-detail">
-
     <div class="container">
 
       <a href="#collection" class="back-link">
@@ -1338,13 +1147,10 @@ footer {
 
         <!-- CARROUSEL -->
 
-        <div class="product-carousel"
-             id="productCarousel">
-
+        <div class="product-carousel" id="productCarousel">
           <div class="carousel-viewport">
 
-            <div class="carousel-track"
-                 id="carouselTrack"></div>
+            <div class="carousel-track" id="carouselTrack"></div>
 
             <button
               type="button"
@@ -1369,10 +1175,9 @@ footer {
 
           <div class="carousel-dots"
                id="carouselDots"></div>
-
         </div>
 
-        <!-- DESCRIPTION PRODUIT -->
+        <!-- DESCRIPTION -->
 
         <div class="detail-info">
 
@@ -1380,9 +1185,7 @@ footer {
             🌸 LALA GLOW
           </span>
 
-          <h1>
-            علكات الفيرومون للعناية اليومية
-          </h1>
+          <h1>علكات الفيرومون للعناية اليومية</h1>
 
           <p>
             اكتشفي Pheromone Gummies،
@@ -1407,31 +1210,24 @@ footer {
           </div>
 
           <div class="detail-actions">
-
             <a href="#commande" class="btn">
               💖 اطلبي الآن
             </a>
 
-            <a href="#collection"
-               class="btn btn-outline">
+            <a href="#collection" class="btn btn-outline">
               العودة إلى المنتجات
             </a>
-
           </div>
 
         </div>
 
       </div>
     </div>
-
   </section>
 
-  <!-- =====================================
-       AVANTAGES
-  ===================================== -->
+  <!-- AVANTAGES -->
 
   <section>
-
     <div class="container">
 
       <h2 class="section-title">
@@ -1446,55 +1242,38 @@ footer {
       <div class="benefits-grid">
 
         <div class="benefit-card">
-
           <div class="emoji">🌿</div>
-
           <h3>مكونات المنتج</h3>
-
           <p>
             راجعي الملصق الأصلي
             لمعرفة المكونات الفعلية.
           </p>
-
         </div>
 
         <div class="benefit-card">
-
           <div class="emoji">💕</div>
-
           <h3>علكات عملية</h3>
-
           <p>
             يأتي المنتج على شكل
             مكمل غذائي قابل للمضغ.
           </p>
-
         </div>
 
         <div class="benefit-card">
-
           <div class="emoji">🎁</div>
-
           <h3>ثلاث باقات</h3>
-
           <p>
-            اختاري من بين
-            ثلاثة عروض مختلفة.
+            اختاري من بين ثلاثة عروض مختلفة.
           </p>
-
         </div>
 
       </div>
     </div>
-
   </section>
 
-  <!-- =====================================
-       PHOTOS DE PRESENTATION
-  ===================================== -->
+  <!-- PRESENTATION VISUELLE -->
 
   <section class="stories-section">
-
     <div class="container">
 
       <h2 class="section-title">
@@ -1509,81 +1288,57 @@ footer {
       <div class="stories-grid">
 
         <article class="story-card">
-
           <img
             src="images/anaka.png"
             alt="مشهد عن الأناقة"
             loading="lazy">
 
           <div class="story-card-content">
-
-            <h3>
-              💖 أناقتك تبدأ من ثقتك
-            </h3>
-
+            <h3>💖 أناقتك تبدأ من ثقتك</h3>
             <p>
               اهتمي بنفسك وامنحي
               جمالك وقتاً خاصاً.
             </p>
-
             <a href="#commande" class="btn">
               اكتشفي الباقات
             </a>
-
           </div>
-
         </article>
 
         <article class="story-card">
-
           <img
             src="images/daka.png"
             alt="مشهد عن العناية بالنفس"
             loading="lazy">
 
           <div class="story-card-content">
-
-            <h3>
-              ✨ خصصي وقتاً لنفسك
-            </h3>
-
+            <h3>✨ خصصي وقتاً لنفسك</h3>
             <p>
               لحظات العناية الشخصية
               جزء جميل من يومك.
             </p>
-
             <a href="#commande" class="btn">
               اختاري باقتك
             </a>
-
           </div>
-
         </article>
 
         <article class="story-card">
-
           <img
             src="images/rajl.png"
             alt="مشهد عن العلاقات"
             loading="lazy">
 
           <div class="story-card-content">
-
-            <h3>
-              💕 ثقتك جزء من جمالك
-            </h3>
-
+            <h3>💕 ثقتك جزء من جمالك</h3>
             <p>
               الثقة بالنفس والتواصل
               عناصر مهمة في العلاقات.
             </p>
-
             <a href="#commande" class="btn">
               تعرفي على العروض
             </a>
-
           </div>
-
         </article>
 
       </div>
@@ -1596,17 +1351,12 @@ footer {
     </div>
   </section>
 
-  <!-- =====================================
-       INGREDIENTS
-  ===================================== -->
+  <!-- INGREDIENTS -->
 
   <section class="ingredients-section">
-
     <div class="container">
 
-      <h2 class="section-title">
-        🌿 المكونات النباتية
-      </h2>
+      <h2 class="section-title">🌿 المكونات النباتية</h2>
 
       <p class="section-desc">
         معلومات تعريفية يجب مطابقتها
@@ -1622,69 +1372,33 @@ footer {
       <div class="ingredients-grid">
 
         <div class="ingredient-card">
-
           <h3>🌱 جذور الماكا</h3>
-
-          <p>
-            نبات جذري معروف
-            في التركيبات العشبية.
-          </p>
-
+          <p>نبات جذري معروف في التركيبات العشبية.</p>
         </div>
 
         <div class="ingredient-card">
-
           <h3>🌿 الحلبة</h3>
-
-          <p>
-            نبات معروف
-            في المنتجات الغذائية.
-          </p>
-
+          <p>نبات معروف في المنتجات الغذائية.</p>
         </div>
 
         <div class="ingredient-card">
-
           <h3>🍃 النعناع</h3>
-
-          <p>
-            نبات معروف
-            برائحته المنعشة.
-          </p>
-
+          <p>نبات معروف برائحته المنعشة.</p>
         </div>
 
         <div class="ingredient-card">
-
           <h3>🌸 البرسيم الأحمر</h3>
-
-          <p>
-            مكون نباتي موجود
-            في بعض التركيبات.
-          </p>
-
+          <p>مكون نباتي موجود في بعض التركيبات.</p>
         </div>
 
         <div class="ingredient-card">
-
           <h3>💗 الشمندر</h3>
-
-          <p>
-            نبات جذري يتميز
-            بلونه الطبيعي.
-          </p>
-
+          <p>نبات جذري يتميز بلونه الطبيعي.</p>
         </div>
 
         <div class="ingredient-card">
-
           <h3>🌳 الدردار الزلق</h3>
-
-          <p>
-            لحاء نباتي
-            معروف تقليدياً.
-          </p>
-
+          <p>لحاء نباتي معروف تقليدياً.</p>
         </div>
 
       </div>
@@ -1697,17 +1411,12 @@ footer {
     </div>
   </section>
 
-  <!-- =====================================
-       AVIS CLIENTS
-  ===================================== -->
+  <!-- AVIS -->
 
   <section class="reviews-section">
-
     <div class="container">
 
-      <h2 class="section-title">
-        ⭐ آراء العملاء
-      </h2>
+      <h2 class="section-title">⭐ آراء العملاء</h2>
 
       <p class="section-desc">
         هنا سيتم عرض تجارب العملاء
@@ -1715,33 +1424,21 @@ footer {
       </p>
 
       <div class="reviews-box">
-
         <div class="emoji">💗</div>
-
-        <h3>
-          آراء العملاء قريباً
-        </h3>
-
+        <h3>آراء العملاء قريباً</h3>
         <p>
-          نسعى إلى مشاركة تقييمات
-          حقيقية وموثقة،
-          دون اختلاق شهادات
-          أو نتائج غير مثبتة.
+          نسعى إلى مشاركة تقييمات حقيقية وموثقة،
+          دون اختلاق شهادات أو نتائج غير مثبتة.
         </p>
-
       </div>
-    </div>
 
+    </div>
   </section>
 
-  <!-- =====================================
-       FORMULAIRE DE COMMANDE
-  ===================================== -->
+  <!-- COMMANDE -->
 
   <section class="order-section" id="commande">
-
     <div class="container">
-
       <div class="form-box">
 
         <h2 class="form-title">
@@ -1760,12 +1457,11 @@ footer {
             🌷 اختاري باقتك
           </h3>
 
-          <!-- PACKS -->
+          <!-- PACK 1 -->
 
           <div class="pack-options">
 
             <label class="pack">
-
               <input
                 type="radio"
                 name="pack"
@@ -1774,93 +1470,56 @@ footer {
                 required>
 
               <span class="pack-content">
-
                 <span class="pack-icon">🌸</span>
-
-                <span class="pack-name">
-                  الباقة الأساسية
-                </span>
-
-                <span class="pack-price">
-                  399 درهم
-                </span>
-
-                <span class="pack-desc">
-                  عبوة واحدة
-                </span>
-
+                <span class="pack-name">الباقة الأساسية</span>
+                <span class="pack-price">399 درهم</span>
+                <span class="pack-desc">عبوة واحدة</span>
               </span>
-
             </label>
 
-            <label class="pack">
+            <!-- PACK 2 -->
 
+            <label class="pack">
               <input
                 type="radio"
                 name="pack"
                 value="2">
 
               <span class="pack-content">
-
                 <span class="pack-badge">
                   💕 عرض الباقتين
                 </span>
-
                 <span class="pack-icon">💕</span>
-
-                <span class="pack-name">
-                  الباقة الثنائية
-                </span>
-
-                <span class="pack-price">
-                  469 درهم
-                </span>
-
-                <span class="pack-desc">
-                  عبوتان
-                </span>
-
+                <span class="pack-name">الباقة الثنائية</span>
+                <span class="pack-price">469 درهم</span>
+                <span class="pack-desc">عبوتان</span>
               </span>
-
             </label>
 
-            <label class="pack">
+            <!-- PACK 3 -->
 
+            <label class="pack">
               <input
                 type="radio"
                 name="pack"
                 value="3">
 
               <span class="pack-content">
-
                 <span class="pack-badge">
                   🎁 عبوة هدية
                 </span>
-
                 <span class="pack-icon">💝</span>
-
-                <span class="pack-name">
-                  الباقة المميزة
-                </span>
-
-                <span class="pack-price">
-                  599 درهم
-                </span>
-
-                <span class="pack-desc">
-                  3 + 1 مجاناً
-                </span>
-
+                <span class="pack-name">الباقة المميزة</span>
+                <span class="pack-price">599 درهم</span>
+                <span class="pack-desc">3 + 1 مجاناً</span>
               </span>
-
             </label>
 
           </div>
 
-          <!-- NOM COMPLET -->
+          <!-- NOM -->
 
           <div class="form-group">
-
             <label for="fullname">
               الاسم الكامل *
             </label>
@@ -1873,13 +1532,11 @@ footer {
               maxlength="100"
               autocomplete="name"
               required>
-
           </div>
 
           <!-- TELEPHONE -->
 
           <div class="form-group">
-
             <label for="phone">
               رقم الهاتف *
             </label>
@@ -1893,52 +1550,34 @@ footer {
               autocomplete="tel"
               inputmode="tel"
               required>
-
           </div>
 
-          <!-- RESUME COMMANDE -->
+          <!-- RECAPITULATIF -->
 
           <div class="summary">
 
             <div class="summary-row">
-
               <span>المنتج</span>
-
-              <strong>
-                علكات الفيرومون
-              </strong>
-
+              <strong>علكات الفيرومون</strong>
             </div>
 
             <div class="summary-row">
-
               <span>الباقة المختارة</span>
-
               <strong id="packDisplay">
                 الباقة الأساسية
               </strong>
-
             </div>
 
             <div class="summary-row">
-
               <span>عدد العبوات</span>
-
-              <strong id="qtyDisplay">
-                1
-              </strong>
-
+              <strong id="qtyDisplay">1</strong>
             </div>
 
             <div class="summary-row summary-total">
-
               <span>المجموع</span>
-
               <strong>
-                <span id="totalPrice">399</span>
-                درهم
+                <span id="totalPrice">399</span> درهم
               </strong>
-
             </div>
 
           </div>
@@ -1946,7 +1585,6 @@ footer {
           <!-- CONSENTEMENT -->
 
           <label class="privacy-consent">
-
             <input
               type="checkbox"
               id="shareConsent"
@@ -1959,18 +1597,15 @@ footer {
               سيتم التواصل معي للحصول على معلومات
               التوصيل وتأكيد الطلب.
             </span>
-
           </label>
 
-          <!-- BOUTON ENVOI -->
+          <!-- ENVOYER -->
 
           <button
             type="submit"
             class="btn submit-btn"
             id="submitBtn">
-
             💗 إرسال طلب الشراء
-
           </button>
 
           <div
@@ -1989,14 +1624,11 @@ footer {
 
       </div>
     </div>
-
   </section>
 
 </main>
 
-<!-- =====================================
-     FOOTER
-===================================== -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -2009,9 +1641,7 @@ footer {
     ✨ LALA GLOW
   </div>
 
-  <p>
-    🌸 سر أنوثتك وجاذبيتك
-  </p>
+  <p>🌸 سر أنوثتك وجاذبيتك</p>
 
   <p class="footer-description">
     💖 منتجات للعناية والجمال
@@ -2030,36 +1660,25 @@ footer {
 
 <script>
 
-/* =====================================
-   GOOGLE APPS SCRIPT
-===================================== */
+/* GOOGLE SHEETS */
 
 const SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycby0z0uu5RG_Byav_4a4Y1kpyLrZlEQiDqd1H657zudQWeMvBI8e1kK5L7RC7M-G0pfN_A/exec";
 
-/* =====================================
-   PRODUIT UNIQUE
-===================================== */
+/* PRODUIT */
 
 const product = {
-
   id:"pheromone",
-
   name:"Pheromone Gummies",
-
   title:"علكات الفيرومون للعناية اليومية",
-
   images:[
     "images/pc.webp",
     "images/pu.png",
     "images/perfo.jpg"
   ]
-
 };
 
-/* =====================================
-   ELEMENTS
-===================================== */
+/* ELEMENTS */
 
 function el(id) {
   return document.getElementById(id);
@@ -2072,9 +1691,7 @@ const reducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)"
 ).matches;
 
-/* =====================================
-   CARROUSEL
-===================================== */
+/* CARROUSEL */
 
 let currentSlide = 0;
 let carouselTimer = null;
@@ -2096,9 +1713,8 @@ function renderCarousel() {
     slide.className = "carousel-slide";
 
     const image = document.createElement("img");
-
     image.src = src;
-    image.alt = product.title + " - " + (index + 1);
+    image.alt = product.title + " - " + (index+1);
 
     slide.appendChild(image);
     track.appendChild(slide);
@@ -2106,11 +1722,7 @@ function renderCarousel() {
     const thumb = document.createElement("button");
     thumb.type = "button";
     thumb.className = "carousel-thumb";
-
-    thumb.setAttribute(
-      "aria-label",
-      "الصورة " + (index + 1)
-    );
+    thumb.setAttribute("aria-label","الصورة " + (index+1));
 
     const thumbImage = document.createElement("img");
     thumbImage.src = src;
@@ -2118,7 +1730,7 @@ function renderCarousel() {
 
     thumb.appendChild(thumbImage);
 
-    thumb.addEventListener("click", () => {
+    thumb.addEventListener("click",() => {
       navigateSlide(index);
     });
 
@@ -2127,13 +1739,9 @@ function renderCarousel() {
     const dot = document.createElement("button");
     dot.type = "button";
     dot.className = "carousel-dot";
+    dot.setAttribute("aria-label","الصورة " + (index+1));
 
-    dot.setAttribute(
-      "aria-label",
-      "الصورة " + (index + 1)
-    );
-
-    dot.addEventListener("click", () => {
+    dot.addEventListener("click",() => {
       navigateSlide(index);
     });
 
@@ -2147,43 +1755,25 @@ function renderCarousel() {
 function showSlide(index) {
 
   const count = product.images.length;
-
-  currentSlide = (
-    index + count
-  ) % count;
+  currentSlide = (index + count) % count;
 
   el("carouselTrack").style.transform =
-    "translateX(-" + currentSlide * 100 + "%)";
+    "translateX(-" + currentSlide*100 + "%)";
 
-  [...el("carouselThumbnails").children]
-    .forEach((thumb,i) => {
+  [...el("carouselThumbnails").children].forEach((thumb,i) => {
+    thumb.classList.toggle("active",i === currentSlide);
+  });
 
-      thumb.classList.toggle(
-        "active",
-        i === currentSlide
-      );
-
-    });
-
-  [...el("carouselDots").children]
-    .forEach((dot,i) => {
-
-      dot.classList.toggle(
-        "active",
-        i === currentSlide
-      );
-
-    });
-
+  [...el("carouselDots").children].forEach((dot,i) => {
+    dot.classList.toggle("active",i === currentSlide);
+  });
 }
 
 function stopCarousel() {
 
   if (carouselTimer !== null) {
-
     clearInterval(carouselTimer);
     carouselTimer = null;
-
   }
 }
 
@@ -2201,117 +1791,82 @@ function startCarousel() {
   }
 
   carouselTimer = setInterval(() => {
-    showSlide(currentSlide + 1);
+    showSlide(currentSlide+1);
   },4000);
 }
 
 function navigateSlide(index) {
-
   showSlide(index);
   startCarousel();
 }
 
-el("previousSlide").addEventListener(
-  "click",
-  () => navigateSlide(currentSlide - 1)
-);
+el("previousSlide").addEventListener("click",() => {
+  navigateSlide(currentSlide-1);
+});
 
-el("nextSlide").addEventListener(
-  "click",
-  () => navigateSlide(currentSlide + 1)
-);
+el("nextSlide").addEventListener("click",() => {
+  navigateSlide(currentSlide+1);
+});
 
-el("productCarousel").addEventListener(
-  "mouseenter",
-  stopCarousel
-);
+el("productCarousel").addEventListener("mouseenter",stopCarousel);
+el("productCarousel").addEventListener("mouseleave",startCarousel);
 
-el("productCarousel").addEventListener(
-  "mouseleave",
-  startCarousel
-);
+el("productCarousel").addEventListener("touchstart",event => {
+  touchStartX = event.changedTouches[0].screenX;
+},{passive:true});
 
-el("productCarousel").addEventListener(
-  "touchstart",
-  event => {
+el("productCarousel").addEventListener("touchend",event => {
 
-    touchStartX =
-      event.changedTouches[0].screenX;
+  if (event.target.closest(".carousel-thumbnails")) {
+    return;
+  }
 
-  },
-  {passive:true}
-);
+  const difference =
+    touchStartX - event.changedTouches[0].screenX;
 
-el("productCarousel").addEventListener(
-  "touchend",
-  event => {
+  if (Math.abs(difference) > 45) {
+    navigateSlide(
+      currentSlide + (difference > 0 ? 1 : -1)
+    );
+  }
 
-    if (
-      event.target.closest(".carousel-thumbnails")
-    ) {
-      return;
-    }
+},{passive:true});
 
-    const difference =
-      touchStartX -
-      event.changedTouches[0].screenX;
+/* NAVIGATION */
 
-    if (Math.abs(difference) > 45) {
-
-      navigateSlide(
-        currentSlide +
-        (difference > 0 ? 1 : -1)
-      );
-
-    }
-
-  },
-  {passive:true}
-);
-
-/* =====================================
-   NAVIGATION
-===================================== */
-
-function openHome(scrollCollection = false) {
+function openHome(scrollCollection=false) {
 
   homePage.hidden = false;
   productPage.hidden = true;
 
   stopCarousel();
 
-  document.title =
-    "LALA GLOW | سر أنوثتك وجاذبيتك";
+  document.title = "LALA GLOW | سر أنوثتك وجاذبيتك";
 
   requestAnimationFrame(() => {
-
     if (scrollCollection) {
       el("collection").scrollIntoView();
     } else {
       window.scrollTo(0,0);
     }
-
   });
 }
 
-function openProduct(showOrder = false) {
+function openProduct(showOrder=false) {
 
   homePage.hidden = true;
   productPage.hidden = false;
 
-  document.title =
-    product.title + " | LALA GLOW";
+  document.title = product.title + " | LALA GLOW";
 
   startCarousel();
 
   requestAnimationFrame(() => {
-
     if (showOrder) {
       el("commande").scrollIntoView();
     } else {
       window.scrollTo(0,0);
     }
-
   });
 }
 
@@ -2322,72 +1877,55 @@ function handleRoute() {
   );
 
   if (hash === "#collection") {
-
     openHome(true);
     return;
-
   }
 
   if (hash === "#commande") {
-
     openProduct(true);
     return;
-
   }
 
   if (
     hash === "#produit/pheromone" ||
     hash === "#produit"
   ) {
-
     openProduct();
     return;
-
   }
 
   openHome();
 }
 
-window.addEventListener(
-  "hashchange",
-  handleRoute
-);
+window.addEventListener("hashchange",handleRoute);
 
-/* =====================================
-   PACKS
-===================================== */
+/* PACKS */
 
 const packs = {
-
   "1": {
     name:"الباقة الأساسية",
     quantity:1,
     total:399
   },
-
   "2": {
     name:"الباقة الثنائية",
     quantity:2,
     total:469
   },
-
   "3": {
     name:"الباقة المميزة - 3 + 1 مجاناً",
     quantity:4,
     total:599
   }
-
 };
 
 function selectedPackId() {
-
   return document.querySelector(
     'input[name="pack"]:checked'
   ).value;
 }
 
 function selectedPack() {
-
   return packs[selectedPackId()];
 }
 
@@ -2395,45 +1933,26 @@ function updatePrice() {
 
   const pack = selectedPack();
 
-  el("packDisplay").textContent =
-    pack.name;
-
-  el("qtyDisplay").textContent =
-    pack.quantity;
-
-  el("totalPrice").textContent =
-    pack.total;
+  el("packDisplay").textContent = pack.name;
+  el("qtyDisplay").textContent = pack.quantity;
+  el("totalPrice").textContent = pack.total;
 }
 
-document.querySelectorAll(
-  'input[name="pack"]'
-).forEach(input => {
-
-  input.addEventListener(
-    "change",
-    updatePrice
-  );
-
+document.querySelectorAll('input[name="pack"]').forEach(input => {
+  input.addEventListener("change",updatePrice);
 });
 
-/* =====================================
-   FORMULAIRE GOOGLE SHEETS
-   NOM + TELEPHONE
-===================================== */
+/* FORMULAIRE */
 
 const form = el("orderForm");
 const submitBtn = el("submitBtn");
 
 function showMessage(message,type) {
-
-  el("formMessage").textContent =
-    message;
-
-  el("formMessage").className =
-    "form-message " + type;
+  el("formMessage").textContent = message;
+  el("formMessage").className = "form-message " + type;
 }
 
-form.addEventListener("submit", async event => {
+form.addEventListener("submit",async event => {
 
   event.preventDefault();
 
@@ -2441,115 +1960,66 @@ form.addEventListener("submit", async event => {
     return;
   }
 
-  const fullname =
-    el("fullname").value.trim();
+  const fullname = el("fullname").value.trim();
+  const phone = el("phone").value.trim();
+  const packId = selectedPackId();
+  const pack = selectedPack();
 
-  const phone =
-    el("phone").value.trim();
-
-  const packId =
-    selectedPackId();
-
-  const pack =
-    selectedPack();
-
-  const consent =
-    el("shareConsent").checked
-      ? "yes"
-      : "no";
-
-  /* VALIDATION DU NOM */
+  const consent = el("shareConsent").checked
+    ? "yes"
+    : "no";
 
   if (!fullname) {
-
     showMessage(
       "المرجو إدخال الاسم الكامل.",
       "error"
     );
-
     return;
   }
 
-  /* VALIDATION DU TELEPHONE */
+  const normalizedPhone = phone.replace(/[\s-]/g,"");
 
-  const normalizedPhone =
-    phone.replace(/[\s-]/g,"");
-
-  const validPhone =
-    /^(?:\+212|0)[5-7]\d{8}$/.test(
-      normalizedPhone
-    );
-
-  if (!validPhone) {
-
+  if (!/^(?:\+212|0)[5-7]\d{8}$/.test(normalizedPhone)) {
     showMessage(
       "المرجو إدخال رقم هاتف مغربي صحيح.",
       "error"
     );
-
     return;
   }
 
-  /* VALIDATION DU CONSENTEMENT */
-
   if (consent !== "yes") {
-
     showMessage(
       "المرجو الموافقة على مشاركة معلومات الطلب.",
       "error"
     );
-
     return;
   }
 
-  /* DONNEES A ENVOYER */
-
   const data = {
-
     fullname:fullname,
-
     phone:normalizedPhone,
-
     product:"Pheromone Gummies",
-
     packId:packId,
-
     quantity:pack.quantity,
-
     total:pack.total,
-
     consent:consent
-
   };
 
   const params = new URLSearchParams();
 
-  Object.entries(data).forEach(
-    ([key,value]) => {
-
-      params.set(
-        key,
-        String(value)
-      );
-
-    }
-  );
+  Object.entries(data).forEach(([key,value]) => {
+    params.set(key,String(value));
+  });
 
   submitBtn.disabled = true;
-
-  submitBtn.textContent =
-    "جاري إرسال الطلب...";
+  submitBtn.textContent = "جاري إرسال الطلب...";
 
   try {
 
-    await fetch(SCRIPT_URL, {
-
+    await fetch(SCRIPT_URL,{
       method:"POST",
-
       mode:"no-cors",
-
       body:params
-
     });
 
     showMessage(
@@ -2567,43 +2037,28 @@ form.addEventListener("submit", async event => {
   } finally {
 
     submitBtn.disabled = false;
-
-    submitBtn.textContent =
-      "💗 إرسال طلب الشراء";
+    submitBtn.textContent = "💗 إرسال طلب الشراء";
 
   }
 
 });
 
-/* =====================================
-   VISIBILITE
-===================================== */
+/* VISIBILITE */
 
-document.addEventListener(
-  "visibilitychange",
-  () => {
+document.addEventListener("visibilitychange",() => {
 
-    if (document.hidden) {
-
-      stopCarousel();
-
-    } else {
-
-      startCarousel();
-
-    }
-
+  if (document.hidden) {
+    stopCarousel();
+  } else {
+    startCarousel();
   }
-);
 
-/* =====================================
-   DEMARRAGE
-===================================== */
+});
+
+/* DEMARRAGE */
 
 renderCarousel();
-
 updatePrice();
-
 handleRoute();
 
 </script>
